@@ -1,0 +1,259 @@
+20
+12
+id: 490f0f06-6b8f-480d-9d77-54a2c1547064
+file: Debian_1
+category: 60
+state: 100
+folder: /mnt
+date: 2022-04-24 19:04:29
+downloaded: 396361728
+size: 396361728
+progress: 91
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: d17bc3be-d39f-4193-a332-767311df53fc
+file: Void
+category: 60
+state: 100
+folder: /mnt
+date: 2022-04-24 18:26:19
+downloaded: 568328192
+size: 568328192
+progress: 93
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 20c47640-10f6-4aeb-8eda-60f740bdad85
+file: HoangChiBang.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2021-11-08 15:12:57
+downloaded: 1300456
+size: 1300456
+progress: 80
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 21ac8dd6-52af-449e-ae3d-ecd2bc1e5794
+file: Gura reacts to Ankha Dance gura version - YouTube.mkv
+category: 30
+state: 100
+date: 2021-11-11 18:38:29
+downloaded: 18966429
+size: 18933177
+progress: 100
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 8cc5cebd-3fbf-4b70-b4f4-1cef6a4e4731
+file: Gentoo_minimal.iso
+category: 60
+state: 100
+folder: /home/kritiqual/Downloads/Compressed
+date: 2021-11-24 17:09:42
+downloaded: 457179136
+size: 457179136
+progress: 91
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 12f367d6-d820-4f86-9169-fb15e37104c8
+file: anarchy-1.3.4-x86_64.iso
+category: 60
+state: 100
+folder: /mnt
+date: 2022-01-13 15:09:34
+downloaded: 934621184
+size: 934621184
+progress: 93
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 1c916b94-1afc-45fe-83f9-abfac6c9f46b
+file: music.zip
+category: 50
+state: 100
+folder: /home/kritiqual/Music
+date: 2022-01-09 22:22:21
+downloaded: 3356667211
+size: 3356667211
+progress: 99
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 5763814c-cd20-4e60-befc-706b80e0ac33
+file: President Zelenskyy addresses the world in English for the first time Come to your squares, your streets...to support Ukraine, to support freedom, to support life..mp4
+category: 30
+state: 100
+folder: /home/kritiqual/Downloads
+date: 2022-03-24 13:23:15
+downloaded: 11948592
+size: 11955972
+progress: 100
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 0b41fe55-8569-4898-b76f-8d963034f5f5
+file: Anarchy
+category: 60
+state: 130
+folder: /mnt
+date: 2022-04-26 21:29:16
+downloaded: 934621184
+size: 934621184
+progress: 100
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 947d3895-f8cd-46be-bc60-365644023bf1
+file: 277277360_307991508103355_3230281718178071370_n.mp4
+category: 30
+state: 100
+date: 2022-03-24 13:29:19
+downloaded: 171996
+size: 171996
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: bdec3d1f-0f04-432f-90b6-e63aafe11d63
+file: dl.html
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads
+date: 2022-06-09 15:09:47
+downloaded: 6236
+size: 6236
+progress: 100
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 8b467995-41ee-4b30-8796-739af27794aa
+file: sample.rar
+category: 50
+state: 100
+folder: /home/kritiqual/Downloads
+date: 2022-06-24 23:54:43
+downloaded: 12895
+size: 12895
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: fd2487f7-eea8-44c2-8a20-99d7e39ddf81
+file: PopOS
+category: 60
+state: 100
+folder: /mnt
+date: 2022-04-24 19:28:30
+downloaded: 2762833920
+size: 2762833920
+progress: 98
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 2e1ed286-a813-4726-893b-e3da5bf0858a
+file: Terraria.zip
+category: 50
+state: 130
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-05-23 19:49:24
+downloaded: 0
+size: 0
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 3d205533-62ae-47fa-b03f-447ec89289e4
+file: BÃI 8- Äá» CÆ¯Æ NG BÃI GIáº¢NG.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2021-11-08 14:45:35
+downloaded: 643811
+size: 643811
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 743db537-d5e7-4e41-8127-a4a09f2f1ce3
+file: Terraria.zip
+category: 50
+state: 130
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-05-23 19:50:06
+downloaded: 0
+size: 0
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 81d62eed-a19e-43dc-91f6-ebdb6b70b4e8
+file: Äá» cÆ°Æ¡ng bÃ i giáº£ng bÃ i 5.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2021-11-08 14:28:34
+downloaded: 604206
+size: 604206
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: ed4c7dac-8706-4c08-97c2-5b99e466d4e0
+file: BÃ i 8_ Pháº§n 1- ÄÆ°á»ng Äi ngáº¯n nháº¥t.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2021-11-08 14:45:45
+downloaded: 1060859
+size: 1060859
+progress: 98
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 5d993ce9-32eb-4486-bc4f-8d6886a429ef
+file: Phiáº¿u gá»­i hÃ ng.Nhanh*1.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-03-24 15:38:15
+downloaded: 108088
+size: 108088
+progress: 100
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 33966237-c64b-4fcb-be04-e1726a0b68b7
+file: Gentoo
+category: 60
+state: 100
+folder: /mnt
+date: 2022-04-24 17:33:55
+downloaded: 406847488
+size: 406847488
+progress: 86
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0

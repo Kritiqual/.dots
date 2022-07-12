@@ -1,0 +1,9 @@
+__pycache__
+*.log
+default.target.wants
+home/.config/BetterDiscord/plugins/0BDFDB.data.json
+home/.config/BetterDiscord/plugins/0BDFDB.raw.css
+home/.config/qBittorrent/rss/
+home/.config/qBittorrent/categories.json
+home/.config/qBittorrent/qBittorrent-data.conf
+home/.config/qBittorrent/watched_folders.json

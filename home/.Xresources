@@ -1,0 +1,67 @@
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+xscreensaver.fade:   false
+xscreensaver.unfade: false
+
+! =================
+! Official Dracula Scheme
+*.foreground: #F8F8F2
+*.background: #282A36
+
+*.color0:     #000000
+*.color8:     #4D4D4D
+
+*.color1:     #FF5555
+*.color9:     #FF6E67
+
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+
+*.color7:     #BFBFBF
+*.color15:    #E6E6E6
+
+! =================
+! Evondev Dracula Scheme
+! *.foreground: #f8f8f2
+! *.background: #1E1F35
+
+! *.color0: #21222c
+! *.color8: #8d92ff
+
+! *.color1: #ff5555
+! *.color9: #ff6e6e
+
+! *.color2: #20e3b2
+! *.color10: #20E3B2
+
+! *.color3: #fde181
+! *.color11: #EAC394
+
+! *.color4: #bd93f9
+! *.color12: #bd93f9
+
+! *.color5: #ff6bcb
+! *.color13: #ff6bcb
+
+! *.color6: #8be9fd
+! *.color14: #2cccff
+
+! *.color7: #f8f8f2
+! *.color15: #ffffff

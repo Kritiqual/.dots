@@ -1,0 +1,131 @@
+[user]
+	name = Kritiqual
+	email = kritiqual.pw@gmail.com
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	autocrlf = input
+	whitespace = cr-at-eol
+	safecrlf = false
+	pager = bat
+[diff]
+	tool = kitty
+	guitool = kitty.gui
+	ignoreSubmodules = all
+[difftool]
+	prompt = false
+	trustExitCode = true
+[difftool "kitty"]
+	cmd = kitty +kitten diff $LOCAL $REMOTE
+[difftool "kitty.gui"]
+	cmd = kitty kitty +kitten diff $LOCAL $REMOTE
+[color]
+	ui = always
+[color "advice"]
+	hint = yellow bold italic
+[color "branch"]
+	current = cyan bold reverse
+	local = blue bold dim
+	remote = red bold dim
+	upstream = green bold dim
+	plain =
+[color "diff"]
+	plain =
+	commit =
+	whitespace = red reverse
+	meta = yellow bold italic
+	frag = cyan bold reverse
+	func = blue bold italic
+	context =
+	contextBold =
+	contextDimmed =
+	old = red italic
+	oldBold =
+	oldDimmed =
+	oldMoved =
+	oldMovedDimmed =
+	oldMovedAlternative =
+	oldMovedAlternativeDimmed =
+	new = green italic
+	newBold =
+	newDimmed =
+	newMoved =
+	newMovedDimmed =
+	newMovedAlternative =
+	newMovedAlternativeDimmed =
+[color "decorate"]
+	HEAD = red bold
+	branch = blue
+	tag = red italic dim
+	stash = magenta italic dim
+	remoteBranch = green
+[color "grep"]
+	filename = blue bold
+	context = white dim
+	function = white dim
+	selected = white dim
+	linenumber = green bold
+	column = green bold
+	separator = magenta bold
+	match =
+	matchContext =
+	matchSelected = red bold
+[color "interactive"]
+	prompt = green bold
+	header = blue bold
+	help = yellow bold
+	error = red bold
+[color "push"]
+	error = red bold
+[color "remote"]
+	hint = cyan bold
+	warning = yellow bold
+	success = green bold
+	error = red bold
+[color "status"]
+	header = blue dim
+	added = green
+	changed = cyan
+	untracked = red
+	unmerged = magenta
+	branch = cyan bold italic
+	nobranch = red bold italic
+	localBranch = blue bold italic
+	remoteBranch = green bold italic
+[alias]
+	au = add -u
+	aa = add -A
+	br = branch
+	ck = checkout
+	co = checkout
+	cm = commit -m
+	rb = rebase
+	st = status
+	rt = remote
+	sm = submodule
+	ft = fetch
+	cl = clone
+	pl = pull
+	ps = push
+	rs = reset
+	ss = stash
+	tg = tag
+	ta = tag -a
+	kd = difftool --no-symlinks --dir-diff
+	rl = "reflog"
+	lg = "log --graph --date=format:'[%d/%m/%Y] —>— [%H:%M:%S]' --pretty=format:'\
+%C(cyan)%cd%C(auto)%d %n\
+%C(red)>>>> %C(green)Author%C(red): %C(blue)%an %C(red)<<<< %n\
+%C(yellow)Commit%C(red): %C(magenta)%h %C(reset)< %Cred%cn %n%n\
+%C(green)>%C(yellow)>%C(red)> %C(reset)%s%n'"
+	ll = "log --graph --pretty=format:'\
+%h %s'"
+# %C(auto,yellow)%h%C(auto,magenta) %G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto)%gD%d'"
+# %C(green)[%C(magenta)%cn %Creset> %C(red)%h%C(green)] %C(white)%s %C(blue)(%C(yellow)%cr%C(blue)) %C(blue)%d'"

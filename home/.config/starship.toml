@@ -1,0 +1,74 @@
+# format = '''
+# ${custom.date} [<](bold red)[K](bold cyan)\[$status\][A](bold cyan)[>](bold red) $time
+# $directory ${custom.rainbow}
+# '''
+add_newline = true
+continuation_prompt = "[▶](bold green) "
+format = '''$directory $status '''
+scan_timeout = 10
+
+[custom.date]
+command = "date +'%d/%m'"
+description = "The current date"
+format = '''[\[](red)[$output]($style)[\\\\](red)'''
+shell = ["bash", "--norc", "--noprofile"]
+style = "bold cyan"
+when = "true"
+
+[hostname]
+disabled = false
+format = '[$hostname]($style)'
+ssh_only = false
+style = "bold cyan"
+
+[character]
+error_symbol = '[>](bold red)'
+format = '$symbol'
+success_symbol = '[>](bold green)'
+[status]
+disabled = false
+format = '$symbol'
+map_symbol = true
+not_executable_symbol = '[>](bold red)'
+not_found_symbol = '[>](bold purple)'
+recognize_signal_code = true
+sigint_symbol = '[>](bold red)'
+signal_symbol = '[>](bold yellow)'
+success_symbol = '[>](bold green)'
+symbol = '[>](bold red)'
+
+[username]
+disabled = false
+format = '[$user]($style)'
+show_always = true
+style_root = "black bold"
+style_user = "white bold"
+
+[time]
+disabled = false
+format = '[/](red)[$time]($style)[\]](red)'
+style = "bold cyan"
+time_format = '%H:%M'
+
+[directory]
+format = '[\(](bold red)[$path]($style)[\)](bold red)'
+style = "bold green"
+truncation_length = 1
+[custom.rainbow]
+description = "Rainbow!"
+format = """\
+[>](bold red)\
+[>](bold yellow)\
+[>](bold green)\
+[>](bold cyan)\
+[>](bold blue)\
+[>](bold purple)\
+[>](bold white) """
+shell = ["bash", "--norc", "--noprofile"]
+when = "true"
+
+#         
+#'────────>\[$ram\]<────────'
+#┌───────────────────> ┌─┐
+#│                     │ │
+#└─>                   └─┘

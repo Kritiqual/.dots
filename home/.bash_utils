@@ -1,0 +1,272 @@
+##──── Fzf ───────────────────────────────────────────────────────────
+fzf_arr=($(fd -t f .bash /usr/share/fzf/))
+for f in "${fzf_arr[@]}"; do
+    [[ -f $f ]] && source $f || echo "$f not found"
+done
+##─────
+fzf_exclude="-E '*ache*' -E '.git' -E '__pycache__' -E '*.py[co]' -E '.zoom'"
+export FZF_DEFAULT_COMMAND="fd -H -t f ${fzf_exclude}"
+export FZF_ALT_C_COMMAND="fd -H -t d ${fzf_exclude}"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+##─────
+export FZF_DEFAULT_OPTS="\
+--layout=reverse --exit-0 \
+--bind ?:toggle-preview,change:first,\
+alt-u:first,alt-i:last,\
+alt-y:preview-top,alt-o:preview-bottom,\
+alt-j:preview-down,alt-k:preview-up,\
+alt-h:preview-page-up,alt-l:preview-page-down \
+--prompt='> ' --pointer='>' --marker='>' \
+--ansi --inline-info --border=rounded \
+--color=header:#6272a4,info:#ffb86c \
+--color=spinner:#ffb86c,border:#8be9fd \
+--color=fg:#f0f0f0,bg:#282a36,hl:#bd93f9 \
+--color=fg+:#f0f0f0,bg+:#44475a,hl+:#bd93f9 \
+--color=prompt:#50fa7b,pointer:#ff79c6,marker:#ff79c6 \
+--preview-window=70%"
+export FZF_CTRL_T_OPTS="--preview 'bat -p {} 2>/dev/null'"
+export FZF_ALT_C_OPTS="--preview 'exa -TaD {}'"
+##─────
+m() {
+    man -k . | fzf -q "$1" --preview-window=85% --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man 2>/dev/null | col -bx | bat -l man' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
+}
+##─────
+__install_dependencies() {
+    if [ ! -f /usr/bin/fzf ] || [ ! -f /usr/bin/dialog ]; then
+        echo "Installing some dependencies... "
+        sudo pacman -S --noconfirm --needed dialog fzf
+    fi
+}
+__choose_helper() {
+    opts=()
+    opts+=("0" "pacman")
+    opts+=("1" "yay")
+    opts+=("2" "paru")
+    opts+=("3" "aura")
+    choice=$(dialog --title "AUR HELPER" --menu \
+        "Choose what AUR helper ypu want to use" \
+        0 0 0 "${opts[@]}" 3>&1 1>&2 2>&3)
+
+    if [ ${?} == "0" ]; then
+        case ${choice} in
+        "0")
+            __HELPER="pacman"
+            ;;
+        "1")
+            __HELPER="yay"
+            ;;
+        "2")
+            __HELPER="paru"
+            ;;
+        "3")
+            __HELPER="aura"
+            ;;
+        esac
+    else
+        __HELPER="pacman"
+    fi
+    __install_helper
+}
+__install_helper() {
+    if [ ! -f /usr/bin/${__HELPER} ]; then
+        dialog --yesno "Install AUR helper?" 0 0
+        if [ ${?} == "0" ]; then
+            links=(
+                "https://aur.archlinux.org/yay-bin.git"
+                "https://aur.archlinux.org/paru-bin.git"
+                "https://aur.archlinux.org/aura-bin.git"
+            )
+            link=${links[${__HELPER-1}]}
+            sudo pacman -S --needed base-devel
+            git clone "${link}" bin
+            cd bin
+            [[ ${__HELPER} == "3" ]] && makepkg || makepkg -si
+        else
+            clear
+            echo "AUR helper not installed"
+        fi
+    else
+        clear
+    fi
+}
+__get_database() {
+    echo "Syncing database... "
+    sudo pacman -Syu
+    echo "Creating database... "
+    sudo pacman -Fyy
+    echo '1' >>~/.local/share/helper
+    clear
+}
+__updater() {
+    opts=()
+    opts+=("1" "Update pacman package only")
+    opts+=("2" "Update AUR package only")
+    opts+=("3" "Update full system")
+    choice=$(dialog --title "Updater" --menu \
+        "Choose what you want to update" \
+        0 0 0 "${opts[@]}" 3>&1 1>&2 2>&3)
+
+    if [ ${?} == "0" ]; then
+        clear
+        case ${choice} in
+        "1")
+            ${mng} -Syy
+            ;;
+        "2")
+            if [ ${pv} == "aura" ]; then
+                ${mng} -Ayu
+            else
+                ${mng} -Sua
+            fi
+            ;;
+
+        "3")
+            ${mng} -Syu
+            ;;
+        esac
+    fi
+}
+__core_function() {
+    export pv="${__HELPER}"
+    if [ ${__HELPER} == 'yay' ] || [ ${__HELPER} == 'paru' ]; then
+        export mng="${pv}"
+    else
+        export mng="sudo ${pv}"
+    fi
+    case ${1} in
+    '-C' | '-change' | '--change')
+        __choose_helper
+        sed -i "1 s/^.*$/${__HELPER}/g" ~/.local/share/helper
+        ;;
+
+    '-U' | '--upgrade' | '--update')
+        __updater
+        ;;
+
+    '-R' | '-remove' | '--remove')
+        ${__HELPER} -Qq |
+            fzf -m --preview-window=75% --preview 'bat -p \
+        <(${pv} -Sp --print-format "Repository      : %r" {} 2>/dev/null) \
+        <(${pv} -Qi {} 2>/dev/null) <(${pv} -Fl {} 2>/dev/null)' |
+            xargs -ro ${mng} -Rnsu
+        ;;
+    *)
+        ${__HELPER} -Slq |
+            fzf -m --preview-window=75% --preview 'bat -p \
+        <(${pv} -Si {} 2>/dev/null) \
+        <(${pv} -Fl {} 2>/dev/null)' |
+            xargs -ro ${mng} -Syu --needed
+        ;;
+    esac
+}
+pkg_fzf_query() {
+    #~~ make a check if aur helper exists or not and fallback to pacman
+    #~~ make a bootstrap of "${helper} -Fy"
+    #TODO: make a bind in fzf to change preview from -Si to additional -Fl ?
+    __install_dependencies
+    [ ! -f ~/.local/share/helper ] && touch ~/.local/share/helper
+
+    __HELPER=$(sed -n '1p' ~/.local/share/helper)
+    if [ -z ${__HELPER} ]; then
+        __choose_helper
+        echo "${__HELPER}" >~/.local/share/helper
+    fi
+
+    __HAS_DB=$(sed -n '2p' ~/.local/share/helper)
+    [ -z ${__HAS_DB} ] && __get_database
+
+    __core_function "$@"
+    unset pv && unset mng
+}
+alias pq='pkg_fzf_query'
+
+##──── Extract utils ─────────────────────────────────────────────────
+ex() {
+    if [ -f "$1" ]; then
+        case $1 in
+        *.tar.bz2) tar xjf $1 ;;
+        *.tar.gz) tar xzf $1 ;;
+        *.bz2) bunzip2 $1 ;;
+        *.rar) unrar x $1 ;;
+        *.gz) gunzip $1 ;;
+        *.tar) tar xf $1 ;;
+        *.tbz2) tar xjf $1 ;;
+        *.tgz) tar xzf $1 ;;
+        *.zip) unzip $1 ;;
+        *.Z) uncompress $1 ;;
+        *.7z) 7z x $1 ;;
+        *.deb) ar x $1 ;;
+        *.tar.xz) tar xf $1 ;;
+        *.tar.zst) unzstd $1 ;;
+        *) echo "'$1' cannot be extracted via ex()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+
+##──── Lock ──────────────────────────────────────────────────────────
+lock() {
+    CLEAR='#00000000'
+    BLUR='#ffffff1a'
+    TEXT='#ffffff'
+    WRONG='#ff5555'
+    VER='#69ff94'
+
+    i3lock \
+        --blur 5 \
+        --screen 1 \
+        \
+        --indicator \
+        --radius=70 \
+        --ring-width=3.70 \
+        --ring-color=#ffffff55 \
+        --line-color=$CLEAR \
+        --inside-color=$CLEAR \
+        \
+        --keyhl-color=$VER \
+        --bshl-color=$WRONG \
+        --separator-color=$VER \
+        --ignore-empty-password \
+        \
+        --lock-text="" \
+        --noinput-text="" \
+        --lockfailed-text="" \
+        \
+        --verif-text="" \
+        --verif-color=$TEXT \
+        --ringver-color=$VER \
+        --insidever-color=$CLEAR \
+        \
+        --wrong-text="" \
+        --wrong-color=$TEXT \
+        --ringwrong-color=$WRONG \
+        --insidewrong-color=$CLEAR \
+        \
+        --clock \
+        --time-size=25 \
+        --time-color=$TEXT \
+        --time-str="%T" \
+        --timeoutline-width=0 \
+        --timeoutline-color=$TEXT \
+        \
+        --date-size=13 \
+        --date-color=$TEXT \
+        --date-str="%d/%m/%Y" \
+        --dateoutline-width=0 \
+        --dateoutline-color=$TEXT
+}
+
+##──── Terminal's title ──────────────────────────────────────────────
+case ${TERM} in
+xterm* | rxvt* | Eterm* | aterm | kterm | gnome* | alacritty | st | konsole*)
+    # PROMPT_COMMAND='echo -ne "\033]0;K@A: ${PWD/#$HOME/\~}\007"'
+    # PROMPT_COMMAND='echo -ne "\033]0;K@A: ${PWD##*/}\007"'
+    PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+    ;;
+screen*)
+    # PROMPT_COMMAND='echo -ne "\033_K@A:${PWD/#$HOME/\~}\033\\"'
+    # PROMPT_COMMAND='echo -ne "\033_K@A:${PWD##*/}\033\\"'
+    PROMPT_COMMAND='echo -ne "\033_${PWD##*/}\033\\"'
+    ;;
+esac

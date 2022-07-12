@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1640621022637883-1</unique-id>
+	<command>/usr/bin/kitty %f</command>
+	<description>Open terminal in current directory</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>code</icon>
+	<name>Open VSCode here</name>
+	<unique-id>1641989858392805-1</unique-id>
+	<command>/usr/bin/code %f</command>
+	<description>Open VSCode in current directory</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

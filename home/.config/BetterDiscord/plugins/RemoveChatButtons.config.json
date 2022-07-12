@@ -1,0 +1,18 @@
+{
+    "currentVersionInfo": {
+        "version": "1.2.3",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "giftButton": true,
+        "gifButton": false,
+        "stickerButton": false,
+        "emojiButton": false,
+        "attachButton": false,
+        "cssOnly": true,
+        "dms": {
+            "friendsTab": false,
+            "premiumTab": true
+        }
+    }
+}

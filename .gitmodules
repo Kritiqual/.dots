@@ -1,0 +1,31 @@
+[submodule "dotdrop"]
+	path = dotdrop
+	url = https://github.com/deadc0de6/dotdrop
+	shallow = true
+	ignore = dirty
+	branch = master
+[submodule "home/.config/awesome"]
+	path = home/.config/awesome
+	url = https://github.com/Kritiqual/awesome
+	ignore = dirty
+	branch = main
+[submodule "home/.config/nvim"]
+	path = home/.config/nvim
+	url = https://github.com/Kritiqual/Nuavim
+	ignore = dirty
+	branch = main
+[submodule "home/.config/qBittorrent/dracula"]
+	path = home/.config/qBittorrent/dracula
+	url = https://github.com/dracula/qbittorrent
+	ignore = dirty
+	branch = master
+[submodule "home/.config/ranger/plugins/ranger_devicons"]
+	path = home/.config/ranger/plugins/ranger_devicons
+	url = https://github.com/alexanderjeurissen/ranger_devicons
+	ignore = dirty
+	branch = main
+[submodule "home/.config/ranger/plugins/ranger-archives"]
+	path = home/.config/ranger/plugins/ranger-archives
+	url = https://github.com/maximtrp/ranger-archives
+	ignore = dirty
+	branch = master

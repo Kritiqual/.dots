@@ -1,0 +1,35 @@
+{
+	"all": {
+		"folders": {
+			"3839008829": {
+				"autoRead": false,
+				"color1": [
+					241,
+					196,
+					15
+				],
+				"color2": [
+					"255",
+					"255",
+					"255"
+				],
+				"color3": null,
+				"color4": null,
+				"copyTooltipColor": false,
+				"iconID": "-1",
+				"muteFolder": false,
+				"swapColors": false,
+				"useCloseIcon": true
+			}
+		},
+		"general": {
+			"addSeparators": true,
+			"closeAllFolders": false,
+			"closeOtherFolders": true,
+			"closeTheFolder": false,
+			"extraColumn": true,
+			"forceOpenFolder": true,
+			"showCountBadge": true
+		}
+	}
+}

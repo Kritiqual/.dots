@@ -1,0 +1,37 @@
+{
+    "currentVersionInfo": {
+        "version": "2.0.2",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "categoryPresets": {
+            "enablePresets": true,
+            "theme": "nord"
+        },
+        "categoryEditor": {
+            "enableEditor": false,
+            "background": "var(--background-secondary)",
+            "defaultColor": "#b9bbbe",
+            "stringColor": "#2aa198",
+            "commentColor": "#4f545c",
+            "color1": "#859900",
+            "color2": "#268bd2",
+            "color3": "#F7768E",
+            "color4": "#F7768E",
+            "color5": "#268bd2",
+            "color6": "#2aa198",
+            "color7": "#b58900",
+            "color8": "#cb4b16",
+            "color9": "#cb4b16",
+            "color10": "#cb4b16",
+            "other": "#cb4b16"
+        },
+        "categoryLink": {
+            "enableLink": false,
+            "link": ""
+        },
+        "fontName": "Source Code Pro",
+        "fontImport": "",
+        "fontSize": "0.875rem"
+    }
+}

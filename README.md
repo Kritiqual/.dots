@@ -1,6 +1,6 @@
 # .dots
 
-[WIP] This repo contain all my dotfiles for my Arch linux, including config for AwesomeWM and Neovim
+[WIP] This repo contain all my dotfiles for Archlinux
 
 <details>
   <summary>PERSONAL'S NOTE</summary>

@@ -6,7 +6,7 @@
 	branch = master
 [submodule "home/.config/awesome"]
 	path = home/.config/awesome
-	url = https://github.com/Kritiqual/awesome
+	url = https://github.com/Kritiqual/Awesome
 	ignore = dirty
 	branch = main
 [submodule "home/.config/nvim"]

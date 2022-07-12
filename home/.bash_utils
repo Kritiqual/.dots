@@ -44,7 +44,7 @@ __choose_helper() {
     opts+=("2" "paru")
     opts+=("3" "aura")
     choice=$(dialog --title "AUR HELPER" --menu \
-        "Choose what AUR helper ypu want to use" \
+        "Choose what AUR helper you want to use" \
         0 0 0 "${opts[@]}" 3>&1 1>&2 2>&3)
 
     if [ ${?} == "0" ]; then
@@ -63,7 +63,9 @@ __choose_helper() {
             ;;
         esac
     else
-        __HELPER="pacman"
+        if [[ -z ${__HELPER} ]]; then
+            __HELPER="pacman"
+        fi
     fi
     __install_helper
 }
@@ -100,8 +102,12 @@ __get_database() {
 __updater() {
     opts=()
     opts+=("1" "Update pacman package only")
-    opts+=("2" "Update AUR package only")
-    opts+=("3" "Update full system")
+    if [ ${pv} != "pacman" ]; then
+        opts+=("2" "Update AUR package only")
+        opts+=("3" "Update full system")
+    else
+        opts+=("2" "Update full system")
+    fi
     choice=$(dialog --title "Updater" --menu \
         "Choose what you want to update" \
         0 0 0 "${opts[@]}" 3>&1 1>&2 2>&3)
@@ -113,10 +119,12 @@ __updater() {
             ${mng} -Syy
             ;;
         "2")
-            if [ ${pv} == "aura" ]; then
-                ${mng} -Ayu
-            else
-                ${mng} -Sua
+            if [ ${pv} != "pacman" ]; then
+                if [ ${pv} == "aura" ]; then
+                    ${mng} -Ayu
+                else
+                    ${mng} -Sua
+                fi
             fi
             ;;
 
@@ -144,17 +152,17 @@ __core_function() {
         ;;
 
     '-R' | '-remove' | '--remove')
-        ${__HELPER} -Qq |
+        ${__HELPER} -Qlq |
             fzf -m --preview-window=75% --preview 'bat -p \
-        <(${pv} -Sp --print-format "Repository      : %r" {} 2>/dev/null) \
-        <(${pv} -Qi {} 2>/dev/null) <(${pv} -Fl {} 2>/dev/null)' |
+                <(${pv} -Sp --print-format "Repository      : %r" {} 2>/dev/null) \
+                <(${pv} -Qi {} 2>/dev/null) <(${pv} -Fl {} 2>/dev/null)' |
             xargs -ro ${mng} -Rnsu
         ;;
     *)
         ${__HELPER} -Slq |
             fzf -m --preview-window=75% --preview 'bat -p \
-        <(${pv} -Si {} 2>/dev/null) \
-        <(${pv} -Fl {} 2>/dev/null)' |
+                <(${pv} -Si {} 2>/dev/null) \
+                <(${pv} -Fl {} 2>/dev/null)' |
             xargs -ro ${mng} -Syu --needed
         ;;
     esac

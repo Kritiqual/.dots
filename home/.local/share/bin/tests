@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+l=(a b c)
+
+# for i in $l; do
+#     s+="$i(| *)|"
+# done
+for i ($l) s+="$i(| *)|"
+
+s=$(echo "(${s%?})")
+echo $s

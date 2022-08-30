@@ -23,13 +23,14 @@
 			}
 		},
 		"general": {
-			"addSeparators": true,
-			"closeAllFolders": false,
 			"closeOtherFolders": true,
 			"closeTheFolder": false,
-			"extraColumn": true,
+			"closeAllFolders": false,
 			"forceOpenFolder": true,
-			"showCountBadge": true
+			"showCountBadge": true,
+			"extraColumn": true,
+			"addSeparators": true,
+			"addFolderIcon": false
 		}
 	}
 }

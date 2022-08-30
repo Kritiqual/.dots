@@ -14195,105 +14195,2764 @@ pip install matplotlib numpy
 #1656247564
 gsm add https://github.com/alexanderjeurissen/ranger_devicons.git home/.config/ranger/plugins/
 #1656247572
-gsm add https://github.com/alexanderjeurissen/ranger_devicons.git home/.config/ranger/plugins/ranger_devicons#1656424476
+gsm add https://github.com/alexanderjeurissen/ranger_devicons.git home/.config/ranger/plugins/ranger_devicons
+#1656424476
 gsm update --init --recursive --remote
-#1656591039
-ls /etc/sudoers.d/
-#1656591045
-sudo ls /etc/sudoers.d/
-#1656591065
-sudo cat /etc/sudoers.d/kritiqual
-#1656591442
-gsm add https://github.com/maximtrp/ranger-archives home/.config/ranger/plugins/ranger-archives
-#1657555779
-gsm update --recursive --remote
-#1657555809
+#1659446145
+man readline
+#1659446310
+v ~/.inputrc
+#1659446105
+man input
+#1659446110
+touch .inputrc
+#1659446114
+xdg-ninja
+#1659446127
+rm .inputrc
+#1659446343
+set -o vi
+#1659446583
+set -o emacs
+#1659446657
+cp ~/.inputrc home/
+#1659446664
+dotdrop install
+#1659446722
+set -o vi
+#1659446830
+y -S zsh
+#1659446903
+starship explain
+#1659448146
+set show-mode-in-prompt om
+#1659448148
+set show-mode-in-prompt on
+#1659448148
+set show-mode-in-prompt on
+#1659448161
+set -o vi
+#1659448166
+
+#1659448628
+et -o vi
+#1659448631
+set -o vi
+#1659452814
+kitty + list-fonts --psnames | grep "Cascadia Code"
+#1659452915
+kitty + list-fonts --psnames | grep "Cascadia Code PL"
+#1659452945
+kitty + list-fonts --psnames | grep "Cascadia Code"
+#1659452969
+kitty + list-fonts --psnames | grep "Cascadia"
+#1659453926
+sudo
+#1659453931
+sudo -E ranger
+#1659453962
+sudo pacman -Syu
+#1659455712
+clone-in-kitty
+#1659455805
+kitty --debug-input
+#1659456145
+history
+#1659457004
+kitty @
+#1659519106
+whereis awesome
+#1659519116
+locate awesome
+#1659519482
+reset
+#1659519314
+man readline
+#1659519216
+v .bashrc
+#1659519482
+reset
+#1659519314
+man readline
+#1659519216
+v .bashrc
+#1659519862
+cat test
+#1659519866
+rm test
+#1659519920
+dotbare fadd
+#1659519940
+dotbare fstat
+#1659519958
+dotbare
+#1659519989
+dotbare fadd -f -d
+#1659520016
+cd .xdman
+#1659520020
+dotbare fadd -f
+#1659520087
+dotdrop -h
+#1659520118
+dotdrop -d install
+#1659520130
+dotdrop install
+#1659520146
+cd
+#1659520154
+rm -rf .cfg/
+#1659520158
+dotbare finit
+#1659455805
+kitty --debug-input
+#1659456145
+history
+#1659457004
+kitty @
+#1659519106
+whereis awesome
+#1659519116
+locate awesome
+#1659519482
+reset
+#1659519314
+man readline
+#1659519216
+v .bashrc
+#1659520332
+dotbare fadd
+#1659520335
+dotbare fadd -f
+#1659520342
+dotbare add .bashrc
+#1659520366
+dotbare add .bash_profile .imwheelrc .inputrc .Xresources
+#1659520384
+dotbare commit -m "test 1"
+#1659520410
+dotbare remote add https://github.com/Kritiqual/test-dotbare
+#1659520473
+dotbare pull
+#1659520493
+dotbare pull origin main
+#1659520546
+dotbare finit
+#1659520569
+dotbare add .bashrc .bash_profile .imwheelrc .inputrc .Xresources
+#1659520606
+dotbare commit -m "Test 1"
+#1659520617
+dotbare remote add origin https://github.com/Kritiqual/test-dotbare
+#1659520626
+dotbare push -u origin main
+#1659520646
+dotbare fedit
+#1659520662
+dotbare fstat
+#1659520668
+dotbare status
+#1659520675
+dotbare branch
+#1659520734
+dotbare checkout
+#1659520744
+dotbare
+#1659520758
+dotbare flog
+#1659520806
+rm -rf .cfg
+#1659540639
+google-chrome-stable
+#1659545168
+_dotbare_completion_cmd
+#1659545908
+dotdrop install
+#1659547913
+xprop
+#1659548494
+env | rg QT
+#1659548600
+xprop
+#1659548732
+xprop
+#1659548934
+xprop
+#1659549795
+dbus-launch
+#1659549820
+y -S --neede gnome-keyring libsecret
+#1659549823
+y -S --needed gnome-keyring libsecret
+#1659549873
+reboot
+#1659549965
+killall code
+#1659550985
+man fzf
+#1659581934
+xdg-mime
+#1659581938
+xdg-mime query
+#1659581941
+xdg-mime query png
+#1659581944
+xdg-mime query .png
+#1659581947
+xdg-mime query jpg
+#1659581961
+man xdg-mime
+#1659582287
+viewnior
+#1659582746
+y -Rns feh
+#1659582773
+y -S feh
+#1659584707
+cat /proc/cmdline
+#1659582773
+y -S feh
+#1659583490
+cd /etc/modprobe.d/
+#1659583494
+cat blacklists.conf
+#1659583542
+cd /boot/
+#1659583546
+cd EFI/
+#1659583556
+cd de
+#1659583562
+cd dell/
+#1659583565
+cd bios/
+#1659583568
+cd recovery/
+#1659583578
+cd Boot/
+#1659583581
+cat bootx64.efi
+#1659583584
+v bootx64.efi
+#1659582773
+y -S feh
+#1659584586
+cd
+#1659584590
+cd etc/
+#1659584592
+cd modprobe.d/
+#1659584596
+cat blacklists.conf
+#1659584602
+cd /etc/modprobe.d/
+#1659584609
+sudo rm blacklists.conf
+#1659584621
+sv nobeep.conf
+#1659584640
+cat etc/modprobe.d/blacklists.conf
+#1659585459
+sv /etc/ly/xsetup.sh
+#1659585521
+sv /etc/ly/config.ini
+#1659585563
+cd /etc/ly
+#1659585569
+cat wsetup.sh
+#1659585574
+cat xsetup.sh
+#1659585588
+cat save
+#1659617840
+chooser -h
+#1659618026
+updater -h
+#1659618030
+menu -h
+#1659618035
+show_menu -h
+#1659618040
+installer -h
+#1659619469
+cat localboot.cfg
+#1659619483
+cd EFI/
+#1659619485
+cd BOOT/
+#1659621033
+now
+#1659622355
+shellcheck
+#1659622360
+dos2unix
+#1659622365
+man dos2unix
+#1659626528
+ping localhost
+#1659627148
+cowsay
+#1659627211
+sl
+#1659627222
+y -S sl
+#1659627229
+sl
+#1659627248
+y -Rns sl
+#1659627265
+fortune
+#1659627268
+y -S fortune
+#1659627274
+y -Ss fortune
+#1659627229
+sl
+#1659627248
+y -Rns sl
+#1659627274
+y -Ss fortune
+#1659627300
+y -S fortune
+#1659627379
+y -S fortune-mod
+#1659627403
+fortune
+#1659627411
+y -S cowsay
+#1659627419
+fortune | cowsay
+#1659627447
+y -Rns fortune-mod cowsay
+#1659627559
+y -S asciiquarium
+#1659627617
+asciiquarium | lolcat
+#1659627729
+cmatrix
+#1659627735
+cmatrix | lolcat
+#1659627744
+bpytop | lolcat
+#1659627750
+btw | lolcat
+#1659627767
+ranger | lolcat
+#1659627804
+y -S cowsay fortune-mod
+#1659627843
+asciiquarium
+#1659627874
+asciiquarium |lolcat
+#1659627893
+fortune | cowsay | lolcat
+#1659627904
+v .bashrc
+#1659627930
+reset
+#1659627975
+cowthink
+#1659627989
+fortune | cowthink
+#1659627995
+fortune | cowthink | cowsay
+#1659628010
+bruh | cowthink | cowsay
+#1659628018
+echo "bruh" | cowthink | cowsay
+#1659628026
+echo "bruh" | cowthink
+#1659628029
+echo "bruh" | cowsay
+#1659628036
+asciiquarium | cowsay
+#1659628063
+v .bashrc
+#1659628087
+y -S aalib
+#1659628101
+y -S sl
+#1659628106
+sl | lolcat
+#1659628125
+aafire | lolcat
+#1659628132
+aafire
+#1659628150
+y -S figlet
+#1659628157
+figlet
+#1659628161
+figlet -h
+#1659628172
+figlet "Archlinux" | lolcat
+#1659628181
+man figlet
+#1659628237
+cal
+#1659628241
+calcurse
+#1659628305
+y -Ss oneko
+#1659628310
+y -S oneko
+#1659628334
+oneko
+#1659628351
+oneko &
+#1659628395
+killall oneko
+#1659628411
+oneko &
+#1659628743
+killall oneko
+#1659628755
+bpytop
+#1659628773
+oneko
+#1659628781
+oneko &
+#1659628784
+pkill oneko
+#1659628792
+oneko &
+#1659628799
+pkill oneko && oneko &
+#1659628804
+pkill oneko && oneko & || oneko &
+#1659628813
+pkill oneko && oneko || oneko &
+#1659629774
+w
+#1659629779
+free -h
+#1659629865
+killall oneko
+#1659629958
+kitty --detach oneko &
+#1659633177
+pip install --user matplotlib-backend-kitty
+#1659633208
+export MPLBACKEND='module://matplotlib-backend-kitty'
+#1659633218
+python -i
+#1659633527
+pip uninstall --user matplotlib-backend-kitty
+#1659633531
+pip uninstall matplotlib-backend-kitty
+#1659633746
+nvim +Tutor
+#1659635397
+ping 0
+#1659635404
+ping 0.1
+#1659695750
+echo
+#1659696878
+y -S lutris
+#1659696908
+y -S wine
+#1659697016
+sudo pacman -S --needed lib32-mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader
+#1659697047
+reset
+#1659697284
+y -S wine-mono
+#1659697545
+garena
+#1659697632
+rm -rf Games/
+#1659697719
+y -S --needed wine-mono
+#1659697927
+cd .local/share/Games
+#1659697935
+cd .local/share/
+#1659697940
+mkdir Games
+#1659697953
+y -S wine-mono
+#1659698224
+wine --version
+#1659698316
+lutris --version
+#1659698320
+man lutris
+#1659698327
+lutris -v
+#1659698481
+cd .local/share/Games/
+#1659698485
+rm -rf garena/
+#1659698774
+cd .wine/
+#1659698839
+cd /usr/lib/python3.10/site-packages/lutris/
+#1659698844
+cd util/
+#1659698848
+cd wine/
+#1659698896
+cd /usr/lib/python3.10/site-packages/lutris/
+#1659698904
+sv config.py
+#1659698969
+cd .local/share
+#1659699012
+ne lutris wine-mono lib32-mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader
+#1659699041
+man pacman
+#1659699101
+y -Rnsu lutris wine wine-mono lib32-mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader
+#1659699115
+rm -rf .wine/ lutris
+#1659699128
+rm .wget-hsts
+#1659703626
+y -S --edit dotbare
+#1659703634
+y -S --hot-edit dotbare
+#1659703637
+man yaay
+#1659703638
+man yay
+#1659704268
+find
+#1659704286
+fd -t f dotbare.plugin.bash /
+#1659704289
+do fd
+#1659704404
+man 3 readline
+#1659703637
+man yaay
+#1659703638
+man yay
+#1659703803
+yay -S --edit-menu dotbare
+#1659703987
+yay -S --editmenu dotbare
+#1659704069
+sudo -E ranger
+#1659723069
+vim
+#1659723086
+y -S neovim-nightly-bin awesome-git
+#1659760849
+netg
+#1659760854
+nmtui
+#1659760783
+v .bashrc
+#1659760790
+v .bash_profile
+#1659761027
+sv /etc/ly/config.ini
+#1659761051
+sv /etc/ly/xsetup.sh
+#1659761199
+v .bash_profile
+#1659761328
+fd -t f .Xauthority /
+#1659761341
+fd -t f *auth* /
+#1659761350
+fd -t f "*auth*" /
+#1659761358
+fd -t f --glob "*auth*" /
+#1659761370
+fd -t f --glob "*auth*" / | fzf
+#1659761386
+fd -t f --glob "*authority" / | fzf
+#1659761392
+fd -t f --glob "*autho" / | fzf
+#1659761398
+fd -t f --glob "*autho*" / | fzf
+#1659761412
+fd -t f --glob "[xX]auth*" / | fzf
+#1659761243
+echo $XAUTHORITY
+#1659761254
+sudo cd /
+#1659761259
+cd /
+#1659761262
+sudo ls
+#1659761266
+sudo ls -l
+#1659761602
+xauth -f ~/.lyxauth
+#1659761836
+printenv XAUTHORITY
+#1659761654
+env | rg AUTH
+#1659762093
+fd -t f .pam_env
+#1659762128
+fd -t f .pam_environment
+#1659762132
+fd -t f .pam_environment /
+#1659762460
+sv /etc/ly/xsetup.sh
+#1659762498
+sv /etc/ly/config.ini
+#1659762603
+env | rg XAUTH
+#1659762608
+v .bash_profile
+#1659763141
+sv /etc/ly/xsetup.sh
+#1659791941
+unlock
+#1659792240
+sudo cp -p /etc/ly/xsetup.sh /etc/ly/xsetup.sh.bak
+#1659792243
+sv /etc/ly/xsetup.sh
+#1659792307
+env | rg XAUTH
+#1659792309
+reboot
+#1659792370
+sudo cp -p /etc/ly/xsetup.sh.bak /etc/ly/xsetup.sh
+#1659792378
+cd /etc/ly
+#1659792382
+rm xsetup.sh.bak
+#1659792392
+sv xsetup.sh
+#1659792398
+sudo rm xsetup.sh.bak
+#1659793297
+systemctl get-default
+#1659793825
+echo $XDG_RUNTIME_DIR
+#1659794422
+npm config list
+#1659794432
+npm config ls -l
+#1659794970
+cat /etc/bash.bashrc
+#1659795226
+ssh
+#1659795569
+bp
+#1659795571
+bpytop
+#1659795579
+killall caprine
+#1659800739
+y -Ss doom-emacs
+#1659800746
+y -Ss emacs
+#1659800785
+y -Ss doomemacs
+#1659801547
+column
+#1659801550
+row
+#1659855237
+unlock
+#1659891322
+sudo systemctl disable sddm.service
+#1659891330
+sudo systemctl enable ly.service
+#1659891335
+y -Rnsu sddm
+#1659891376
+systemd-analyze blame
+#1659891390
+systemd-analyze critical-chain
+#1659951456
+man readline
+#1659951684
+dotdrop install
+#1659951554
+v .bashrc
+#1659951604
+mkdir -p .config/readline
+#1659951613
+mv .inputrc .config/readline/inputrc
+#1659952056
+touch .bash_completion
+#1659952058
+xdg-ninja
+#1659952153
+cd .npm/
+#1659952030
+gsm update --remote --recursive --init
+#1659952239
+npm config list
+#1659952283
+rm -rf .npm/
+#1659952285
+npm
+#1659952342
+npm config list
+#1659952372
+cd .local/share/
+#1659952378
+cd npm
+#1659952690
+rm .npm/
+#1659952694
+rm -rf .npm/
+#1659952696
+npm
+#1659952800
+rm -rf .npm/
+#1659952803
+npm
+#1659952904
+locate wine
+#1659952915
+y -Rnsu wine
+#1659952930
+rm -rf $(locate wine)
+#1659952690
+rm .npm/
+#1659952694
+rm -rf .npm/
+#1659952696
+npm
+#1659952800
+rm -rf .npm/
+#1659952803
+npm
+#1659952915
+y -Rnsu wine
+#1659952930
+rm -rf $(locate wine)
+#1659952965
+fd -d ~ wine
+#1659952971
+fd wine ~
+#1659952978
+fd wine /
+#1659952997
+fd -H wine
+#1659953000
+fd -H wine ~
+#1659953045
+locate wine | head -n
+#1659953052
+locate wine | less
+#1659953074
+fd -t f wine ~/.local/share
+#1659953082
+fd -H -t f wine ~/.local/share
+#1659953088
+fd --glob -t f wine
+#1659953090
+man fd
+#1659953138
+reset
+#1659953148
+fd wine --search-path ~/.local/share
+#1659953222
+locate wine | sed -n
+#1659953247
+locate wine | sed -n '15p'
+#1659953256
+locate wine | head -n 15
+#1659953263
+locate wine | head -n 20
+#1659953268
+locate wine | head -n 25
+#1659953280
+locate wine | head -n 30
+#1659953291
+locate wine | head -n 23
+#1659953303
+rm -rf $(locate wine | head -n 23)
+#1659953304
+ks
+#1659953399
+man locate
+#1659953408
+updatedb
+#1659953414
+sudo updatedb
+#1659953421
+locate wine
+#1659953455
+npm
+#1659953642
+rm -rf .npm/
+#1659953643
+npm
+#1659953786
+npm cache --help
+#1659953793
+npm help cache
+#1659953804
+npm help cache -l
+#1659953818
+npm cache
+#1659953872
+npm cache verify
+#1659953877
+cd .npm/
+#1659953818
+npm cache
+#1659953858
+reset
+#1659953863
+npm cache verify
+#1659953937
+rm -rf .npm/
+#1659953958
+npm
+#1659953965
+npm cache verify
+#1659953971
+rm -rf .npm/
+#1659954205
+npm config get cache
+#1659954215
+npm config get tmp
+#1659954219
+npm config get temp
+#1659954224
+npm config get prefix
+#1659954245
+npm config get cache
+#1659954282
+npm config list
+#1659954319
+npm config ls
+#1659954335
+npm cfg
+#1659954340
+npm help
+#1659954501
+xdg-ninja
+#1659955274
+man fzf
+#1659955349
+echo $?
+#1659955555
+install --help
+#1659959078
+y -Ss shotcut
+#1659959084
+y -S shotcut
+#1659961361
+y -S pacseek
+#1659961389
+pacseek
+#1659961433
+alias pk="pacseek"
+#1659961435
+pk
+#1659965126
+y -S yakuake
+#1659965161
+y -Rnsu yakuake pacseek
+#1659965180
+y -Rnsu yakuake
+#1659970733
+dotdrop install
+#1659970769
+g status
+#1659970823
+gsm update --remote --recursive
+#1659970890
+gst
+#1659970895
 gaa
-#1657555810
-gst
-#1657555835
-git commit -m "Update submodules"
-#1657555843
-git push origin
-#1657555917
-git fetch origin master
-#1657555927
-git remote -vv
-#1657555936
-git fetch origin main
-#1657555944
-gbr
-#1657555949
-gco main
-#1657555959
-git pull origin main
-#1657555973
-gst
-#1657556059
-gsm update --recursive --remote
-#1657556059
-gsm update --recursive --remote
-#1657558270
-mv .dots/ .dots.tmp
-#1657558287
-git clone https://github.com/Kritiqual/.dots
-#1657562408
-submodules=($(git config -f .gitmodules --name-only --get-regexp 'submodule\..*\.path' | cut -f2 -d.))
-#1657562423
-for name in "${submodules[@]}"; do
-    path="$(git config -f .gitmodules --get submodule."$name".path)"
-    url="$(git config -f .gitmodules --get submodule."$name".url)"
-    git submodule add "$url" "$path"
-done
-#1657564259
-gsm add https://github.com/suconakh/awesome-awesome-rc Resources/AL/Suconakh
-#1657563910
-cd .dots.tmp/
-#1657563913
-ls -la
-#1657563916
+#1659970903
+gau
+#1659970976
+gsm update --remote --recursive
+#1659971008
+g st
+#1659971011
+gau
+#1659971121
+g st
+#1659971156
+ga home/.config/awesome/ home/.config/nvim/ home/.config/npm/npmrc
+#1659975228
+man chmod
+#1659975260
+chmod +x --recursive .dots/home/.local/bin/
+#1659975276
+cd home/.local/bin/
+#1659982078
+g help -a | awk '!/^$/&&!/See/&&!/Main/&&!/Ancillary/&&!/Interacting/&&!/Low-*/&&!/Command/&&!/sh-i18n/&&!/sh-setup/ {print $1}' | head -n 140 | fzf --preview="git help {}"
+#1659982203
+ghp
+#1659982651
+man fzf
+#1659982819
+ghp
+#1659983120
+man fzf
+#1659983178
+ghp
+#1659983146
+ghp
+#1659983386
+man fzf
+#1659984072
+ghp
+#1659984319
+lock
+#1659984419
+man i3lock
+#1659984496
+man fzf
+#1659984501
+man i3lock
+#1659984688
+cd home/.local/bin/
+#1659984862
+lock
+#1659984864
+path
+#1659984923
+dotdrop install 
+#1659984934
+lock
+#1659984938
+ex
+#1659985055
+7zz
+#1659985056
+7z
+#1659985069
+unrar
+#1659985153
+tar
+#1659985164
+bunzip2
+#1659985169
+man 7zz
+#1659985174
+7zz help
+#1659985181
+7zz --help
+#1659985329
+man_fzf 
+#1659985356
+lock_custom 
+#1659985465
+man -k .
+#1659985482
+man -k . | bat
+#1659985356
+lock_custom 
+#1659985465
+man -k .
+#1659985482
+man -k . | bat
+#1660011408
+test="~/.test"
+#1660011426
+if [ -f ${test} ]; then echo "1"; fi
+#1660011438
+if [ ! -f ${test} ]; then echo "1"; fi
+#1660011483
+touch ~/.test
+#1660011507
+test=~/.test
+#1660011518
+rm .test
+#1660011522
+touch ${test}
+#1660016012
+man getopts
+#1660016015
+man getopt
+#1660016031
+getopts --help
+#1660019340
+dotbare 
+#1660025155
+cat .local/share/helper 
+#1660025164
+reset
+#1660026453
+a="Show menu"
+#1660026467
+echo $a | awk '{print $1 $2}'
+#1660026473
+echo $a | awk '{print $1" \"$2}'
+#1660026476
+echo $a | awk '{print $1" "$2}'
+#1660026798
+man_fzf
+#1660052571
+cat .local/share/helper 
+#1660057546
+choice="pacman"
+#1660057563
+if [ ! -f /usr/bin/${choice} ]; then echo "${choice} not found"; else echo "${choice} found in /usr/bin"; fi
+#1660057810
+cat .local/share/helper 
+#1660058027
+cat ~/.local/share/helper 
+#1660121971
+rm .test 
+#1660122495
+choice=$(printf "%s\n" "$("a" "b" "c")" | fzf
+#1660122509
+choice=$(printf "%s\n" "$("a" "b" "c")" | fzf)
+#1660122520
+choice=$(printf "%s\n" "("a" "b" "c")" | fzf)
+#1660122528
+choice=$(printf "%s\n" ("a" "b" "c") | fzf)
+#1660122541
+printf "%s\n"
+#1660122552
+printf "%s\n" "a" "b" "c"
+#1660122601
+printf 
+#1660122626
+d=$(printf "%s\n" "a" "b" "c" | fzf)
+#1660122631
+echo $d
+#1660122656
+printf 
+#1660122730
+printf "%s\n" $("a" "b" "c")
+#1660122737
+printf "%s\n" ("a" "b" "c")
+#1660122741
+printf "%s\n" "a" "b" "c"
+#1660122746
+man printf
+#1660122821
+printf 
+#1660122830
+printf "%s\n" "a" "b"
+#1660124932
+d=$(printf "%s\n" "a" "b" "c" | fzf -m)
+#1660124939
+echo ${d}
+#1660125128
+pacman -Ayu
+#1660125134
+sudo pacman -A
+#1660126209
+chmod +x --recursive .local/share/bin
+#1660126230
+test_script -ab
+#1660126260
+env bash
+#1660126274
+test_script -ab
+#1660126293
+test_script -a a -b b
+#1660126304
+test_script -ab b
+#1660126308
+test_script -a b b
+#1660126629
+test_script 
+#1660136518
+y -Ss srccpu
+#1660136521
+y -Ss srccpy
+#1660136529
+y -Ss scrcpy
+#1660136809
+man_fzf
+#1660136830
+dotbare
+#1660145254
+test_script -ab
+#1660145264
+test_script 
+#1660145936
+man getopts
+#1660145938
+man getopt
+#1660146030
+test_script 
+#1660146033
+test_script -a
+#1660146035
+test_script -ab
+#1660146036
+test_script -abc
+#1660146321
+test_script 
+#1660146324
+test_script -a
+#1660146357
+test_script -ab
+#1660146424
+test_script -abc
+#1660146466
+test_script -ab
+#1660146629
+test_script -ac
+#1660146632
+test_script -abc
+#1660146981
+test_script -a
+#1660147025
+test_script -b
+#1660147028
+test_script -ab
+#1660147031
+test_script -ac
+#1660147033
+test_script -bc
+#1660147037
+test_script -abc
+#1660147040
+test_script -ca
+#1660147044
+test_script -cb
+#1660147046
+test_script -cc
+#1660147048
+test_script -cccc
+#1660147098
+test_script -a
+#1660147100
+test_script -b
+#1660147104
+test_script -c
+#1660147108
+test_script -ab
+#1660147198
+test_script -a
+#1660147324
+test_script --ab
+#1660147327
+test_script -a -b
+#1660147364
+test_script -a
+#1660147417
+test_script 
+#1660147491
+test_script -a
+#1660147492
+test_script -b
+#1660147495
+test_script -c
+#1660147497
+ -ab
+#1660147536
+test_script -a
+#1660147540
+test_script -n
+#1660147544
+test_script
+#1660147555
+echo $?
+#1660147568
+test_script -a
+#1660147555
+echo $?
+#1660147581
+test_script -a
+#1660147586
+test_script 0
+#1660147642
+test_script 
+#1660147645
+test_script 0
+#1660147670
+test_script -a
+#1660147673
+test_script -ab
+#1660147702
+test_script 
+#1660147705
+test_script 0
+#1660147707
+test_script -h
+#1660147735
+test_script
+#1660147770
+test_script -bc
+#1660147779
+test_script -a -bc
+#1660147781
+test_script -abc
+#1660148028
+test_script -a
+#1660148451
+test_script -b
+#1660148465
+test_script -a
+#1660148481
+test_script -b
+#1660148484
+test_script -ab
+#1660148491
+test_script -ba
+#1660148497
+test_script -ac
+#1660148499
+test_script -ca
+#1660148502
+test_script -bc
+#1660148504
+test_script -cb
+#1660148507
+test_script -abc
+#1660148509
+test_script -bac
+#1660148511
+test_script -bca
+#1660148520
+test_script -acb
+#1660148530
+test_script -cab
+#1660148533
+test_script -cba
+#1660148537
+test_script -cbv
+#1660148555
+test_script -abc
+#1660148557
+test_script -abcv
+#1660148599
+test_script -abh
+#1660149392
+test_script -a
+#1660149397
+test_script -ab
+#1660149405
+test_script -ac
+#1660149416
+test_script -b
+#1660149436
+test_script
+#1660149830
+test_script 
+#1660149869
+test_script -a
+#1660149871
+test_script -b
+#1660149873
+test_script -c
+#1660149875
+test_script -ab
+#1660149875
+test_script -ab
+#1660150140
+test_script 
+#1660150143
+test_script -a
+#1660150179
+test_script 0
+#1660150182
+ a
+#1660150186
+test_script 
+#1660150187
+test_script a
+#1660150189
+test_script 12
+#1660150206
+test_script -d
+#1660150215
+test_script -a
+#1660150222
+test_script -b
+#1660150223
+test_script -c
+#1660150229
+test_script -ac
+#1660150231
+test_script -bc
+#1660150233
+test_script -ab
+#1660150237
+test_script -abc
+#1660150725
+chmod +x --recursive .local/share/bin
+#1660151674
+test_script -a
+#1660151696
+test_script -ab
+#1660151702
+test_script -a b -b
+#1660151725
+test_script -ab b
+#1660151751
+test_script -a "b" "b"
+#1660151753
+test_script -a "b" "c"
+#1660151756
+test_script -a "b"
+#1660151771
+test_script -a ("1" "2")
+#1660151782
+t=("a" "b")
+#1660151789
+test_script -a $t
+#1660152005
+test_script -a arg1 arg2
+#1660152015
+test_script -a arg1 -m arg2
+#1660152017
+test_script -a arg1 -a arg2
+#1660152413
+sudo pacman -S -Q
+#1660152428
+p -SQ
+#1660152806
+test_script -a
+#1660152428
+p -SQ
+#1660152806
+test_script -a
+#1660207569
+echo -e "\e[1;30m"
+#1660207577
+echo -e "\e[1;31mbruh"
+#1660207580
+echo -e "\e[1;39mbruh"
+#1660207582
+echo -e "\e[1;30mbruh"
+#1660207635
+echo -e "\e[1;30m;41mbruh"
+#1660207638
+echo -e "\e[1;30m\e[41mbruh"
+#1660207790
+echo -e "\e[1;90mGRAY TEXT"
+#1660207919
+echo -e "\e[1;37mBRUH"
+#1660207925
+echo -e "\e[1;90mBRUH"
+#1660208254
+echo -e 
+#1660208262
+echo -e "\e[1;107mBRUH"
+#1660208276
+echo -e "\e[1;31m\e[107mBRUH"
+#1660208906
+[[ -z $(sed -n '1p' ~/.local/share/helper) ]] && echo "NOT FOUND" || echo "FOUND"
+#1660209174
+read -r a b <<< "$(sed -n '1p' ~/.local/share/helper) $(sed -n '2p' ~/.local/share/helper)"
+#1660209178
+echo $a
+#1660209180
+echo $b
+#1660209295
+man_fzf 
+#1660209313
+man read
+#1660209318
+read --help
+#1660209416
+a=$(cat ~/.local/share/helper | awk 'NR==1 {print $0}')
+#1660209418
+echo $a
+#1660209424
+b=$(cat ~/.local/share/helper | awk 'NR==2 {print $0}')
+#1660209429
+echo $b
+#1660210611
+test_script -h
+#1660210763
+test_script -bh
+#1660210776
+test_script -b
+#1660210777
+test_script -bh
+#1660210781
+test_script -b -h
+#1660210798
+test_script -bh
+#1660210814
+test_script -ab
+#1660210816
+test_script -bh
+#1660210997
+set mode_a mode_b
+#1660211044
+set a b
+#1660211053
+echo $(($a + $b))
+#1660211068
+c=$(($a + $b))
+#1660211084
+c=$(( $a + $b \))
+#1660211087
+c=$(( $a + $b ))
+#1660211113
+a=1 b=0
+#1660211121
+echo $(($a + $b))
+#1660211346
+a=("1" "2" "3")
+#1660211361
+for i in "${a[@]}"; do b_${i}=0; done
+#1660211386
+for i in "${a[@]}"; do set b_${i}=0; done
+#1660211392
+
+#1660211412
+a=("1" "2" "3")
+#1660211430
+for i in "${a[@]}"; do set b_${i}=0; done
+#1660211433
+echo b_1
+#1660211437
+echo $b_1
+#1660211441
+echo ${b_1}
+#1660211659
+a=("1" "2")
+#1660211682
+for i in "${a[@]}"; do set b_${i}=0; done
+#1660211690
+echo ${!b_1}
+#1660211718
+a=("1" "2")
+#1660211737
+for i in "${a[@]}"; do declare b_${i}=0; done
+#1660211745
+echo "${b[@]}"
+#1660211754
+echo "${b_1}"
+#1660211756
+echo "${b_2}"
+#1660211759
+echo "${b_3}"
+#1660217575
+sha256sum Kritiqual
+#1660217579
+sha256sum --help
+#1660217607
+sha256sum "Kritiqual"
+#1660217621
+sha256sum -t "Kritiqual"
+#1660217625
+sha256sum -b "Kritiqual"
+#1660217683
+echo -n "Kritiqual" | sha256sum 
+#1660217691
+echo -n "Kritiqual" | sha128sum 
+#1660217698
+sha1sum
+#1660217703
+echo -n "Kritiqual" | sha1sum 
+#1660232673
+exit
+#1660232671
+tmux
+#1660327709
+draft_pacman_fzf -C
+#1660327714
+draft_pacman_fzf -F
+#1660327802
+draft_pacman_fzf 
+#1660327805
+draft_pacman_fzf -F
+#1660327816
+draft_pacman_fzf -V
+#1660327872
+draft_pacman_fzf -B
+#1660327893
+draft_pacman_fzf -G
+#1660327902
+draft_pacman_fzf -H
+#1660327995
+draft_pacman_fzf -F -h
+#1660328015
+draft_pacman_fzf -F -J
+#1660328031
+sudo pacman -M
+#1660328051
+draft_pacman_fzf -G
+#1660328173
+draft_pacman_fzf -F -G
+#1660328180
+sudo pacman -M -N
+#1660328267
+draft_pacman_fzf --p
+#1660328290
+draft_pacman_fzf --m
+#1660328367
+poweroff 
+#1660464210
+y -S wezterm
+#1660465158
+wezterm show-keys
+#1660465401
+wezterm --version
+#1660465475
+wezterm imgcat
+#1660465817
+y -Rns alacritty
+#1660466361
+y -Rns wezterm
+#1660466365
+y -Rnsu wezterm
+#1660466376
+y -S wezterm-nightly-bin
+#1660466589
+wezterm ls-fonts
+#1660466597
+wezterm ls-fonts | rg Cascadia
+#1660466601
+wezterm ls-fonts | rg Cascadia"
+#1660466605
+wezterm ls-fonts | rg "Cascadia"
+#1660466639
+wezterm ls-fonts --list-systems
+#1660466642
+wezterm ls-fonts --list-system
+#1660466657
+wezterm ls-fonts --list-system | rg "Cascadia Code"
+#1660466657
+wezterm ls-fonts --list-system | rg "Cascadia Code"
+#1660467047
+wezterm ls-font
+#1660467049
+wezterm ls-fonts
+#1660467168
+dotdrop install
+#1660467243
+ran
+#1660467247
+ranger 
+#1660467781
+wezterm ls-fonts
+#1660468332
+wezterm list-keys
+#1660468336
+wezterm -h
+#1660468342
+wezterm show-keys
+#1660468482
+show-keys
+#1660468485
+wezterm show-keys
+#1660469074
+wezterm ls-fonts
+#1660471036
+wezterm show-keys
+#1660471635
+aa
+#1660472639
+wezterm show-keys
+#1660473421
+wezterm show-keys --lua-key-table search_mode
+#1660473427
+wezterm show-keys --key-table search_mode
+#1660473444
+wezterm show-keys --key-table copy_mode
+#1660473516
+wezterm show-keys
+#1660473548
+reset
+#1660474165
+dotdrop install
+#1660475718
+cat .bashrc
+#1660475736
+v .bashrc
+#1660476135
+v .bashrc 
+#1660476204
+v .bashrc
+#1660476228
+cat .bashrc
+#1660476916
+v .bashrc
+#1660478683
+mailto://kritiqual.pw@gmail.com
+#1660479619
+xev
+#1660480424
+cat .bashrc
+#1660480783
+killall wezterm
+#1660481524
+y -Rns wezterm
+#1660481535
+y -Rns wezterm-nightly-bin
+#1660481632
+y -S wezterm-nightly-bin
+#1660482141
+dotdrop install
+#1660482341
+bruh
+#1660482338
+echo
+#1660482380
+aa
+#1660482384
+range
+#1660482394
+ranger
+#1660482631
+bpytop 
+#1660483199
+v
+#1660483514
+man wezterm
+#1660483518
+wezterm --help
+#1660483532
+wezterm shelp-completion
+#1660483539
+wezterm shell-completion
+#1660483548
+wezterm shell-completion --shell bash
+#1660483990
+reset
+#1660483993
+l;s
+#1660484733
+wezterm ls-fonts
+#1660486090
+man ln
+#1660486122
+ln -s ~/.dots/home/.config/awesome/.stylua.toml .
+#1660487461
+ranger
+#1660489105
+wezterm -v
+#1660489122
+wezterm --version
+#1660490132
+killall thunar
+#1660490136
+killall wezterm
+#1660490139
+bpytop 
+#1660491079
+dotdrop remove ~/.config/wezterm
+#1660491094
+rm -rf wezterm
+#1660491234
+dotdrop install
+#1660491850
+y -Rns wezterm-nightly-bin
+#1660491850
+y -Rns wezterm-nightly-bin
+#1660492287
+fd -t f wezterm /
+#1660492335
+sudo rm -rf /run/user/1000/wezterm
+#1660492342
+fd wezterm /
+#1660498588
+mktemp -h
+#1660498592
+mktemp --help
+#1660589035
+cat /etc/security/pam_env.conf 
+#1660589067
+v .bashrc
+#1660589076
+v .bash_profile 
+#1660589232
+cat .gtkrc-2.0 
+#1660589244
+touch ~/.gtkrc-2.0.mine
+#1660589249
+xdg-ninja
+#1660590058
+echo "x${GRUB_INIT_TUNE}"
+#1660589232
+cat .gtkrc-2.0 
+#1660589244
+touch ~/.gtkrc-2.0.mine
+#1660589249
+xdg-ninja
+#1660589622
+sudo mount /dev/sda2 /mnt
+#1660589625
+cd /mnt
+#1660589630
+cd EFI/
+#1660589633
+cd BOOT/
+#1660589645
+sv grub.cfg 
+#1660589685
+cd vent
+#1660589688
+cd ventoy/
+#1660589697
+cd /nt
+#1660589713
 cd
-#1657563922
-rm .dots.tmp/
-#1657563926
-rm -rf .dots.tmp/
-#1657563934
-mv .dots/ .dots.tmp
-#1657563956
-git clone --recurse-submodules https://github.com/Kritiqual/.dots1
-#1657563934
-mv .dots/ .dots.tmp
-#1657563956
-git clone --recurse-submodules https://github.com/Kritiqual/.dots1
-#1657619266
-cd Downloads/
-#1657619411
-rm -rf .dots/
-#1657619416
-gcl --recurse-submodules https://github.com/Kritiqual/.dots
-#1657619726
-cd .dots/
-#1657619728
-git submodule status 
-#1657619752
-cd Downloads/
-#1657619756
-rm -rf .dots/
-#1657619834
-cd Down
-#1657619836
+#1660589714
+sudo umount -R /mnt
+#1660589726
+ks
+#1660589733
+cd .boot
+#1660589736
+cd /boot
+#1660589746
+cd grub/
+#1660589751
+v grub.cfg 
+#1660589359
+cd /boot/
+#1660589362
+cd EFI/
+#1660589365
+cd arch/
+#1660589375
+cd grub/
+#1660589388
+sv grub.cfg 
+#1660589431
+cat grub.cfg 
+#1660589451
+cd /etc/grub.d
+#1660590417
+cat /etc/default/grubb
+#1660590418
+cat /etc/default/grub
+#1660590256
+info grub -n play
+#1660590962
+sudo mount /dev/sda1 /mnt
+#1660590969
+cd /mnt
+#1660590976
+cat Archlinux.iso 
+#1660590985
+cat -A Archlinux.iso 
+#1660591148
+cat /etc/default/grub.bak 
+#1660591158
+rm grub.bak
+#1660591167
+rm /etc/default/grub.bak
+#1660591171
+sudo rm /etc/default/grub.bak
+#1660591803
+gsettings
+#1660591818
+gsettings list-schemas
+#1660591935
+y -Ss kde-gtk
+#1660591943
+y -S kde-gtk-config
+#1660591983
+kde-gtk-config
+#1660592098
+y -Rnsu shotcut
+#1660592125
+y -Rns kde-gtk-config
+#1660592199
+y -S themix-full-git
+#1660633275
+y -Ss oo-mox
+#1660635093
+y -S wezterm-nightly-bin
+#1660635262
+dotdrop install
+#1660635501
+rm .gtkrc-2.0*
+#1660635748
+cat .Xresources 
+#1660636053
+y -Rnsu thmix-full-git
+#1660636057
+y -Rnsu themix-full-git
+#1660636150
+pip list
+#1660636159
+pip install --upgrade pip
+#1660637400
+wezterm --help
+#1660637409
+wezterm start
+#1660637447
+wezterm launch_menu
+#1660638183
+tic
+#1660638867
+kitty +kitten themes
+#1660639062
+kitty +kitten icat
+#1660639229
+polybar &
+#1660639062
+kitty +kitten icat
+#1660639098
+kitty +kitten panel
+#1660639109
+rogi
+#1660639111
+rofi
+#1660639123
+kitty +kitten panel rofi -show run
+#1660639139
+y -S polybar
+#1660639148
+
+#1660639160
+kitty +kitten polybar &
+#1660639168
+kitty +kitten panel polybar &
+#1660639173
+kitty +kitten panel polybar
+#1660639255
+polybar &
+#1660639298
+killall polybar
+#1660639395
+kitty +kitten panel
+#1660639408
+kitty +kitten panel sh -c "polybar &"
+#1660639419
+kitty +kitten panel "polybar &"
+#1660639429
+kitty +kitten panel polybar
+#1660639477
+kitty +kitten panel polybar --lines 0 --columns 0
+#1660639484
+kitty +kitten panel polybar --lines 1 --columns 1
+#1660639501
+kitty +kitten panel --lines 1 --columns 1 polybar
+#1660639508
+kitty +kitten panel --lines 0 --columns 0 polybar
+#1660639518
+kitty +kitten panel --lines 0 --columns 0 --edge bottom polybar
+#1660639534
+kitty +kitten panel --lines 10 --columns 10 --edge bottom polybar
+#1660639551
+kitty +kitten panel --lines 100 --columns 100 --edge bottom polybar
+#1660639567
+kitty --detach +kitten panel --lines 100 --columns 100 --edge bottom polybar
+#1660639573
+kitty --detach kitty +kitten panel --lines 100 --columns 100 --edge bottom polybar
+#1660639594
+kitty --detach kitty +kitten panel --lines 100 --columns 100 --edge bottom bash -c "polybar"
+#1660639606
+kitty --detach kitty +kitten panel --lines 1000 --columns 1000 --edge bottom bash -c "polybar"
+#1660639617
+kitty --detach kitty +kitten panel --lines 1920 --columns 1080 --edge bottom bash -c "polybar"
+#1660639626
+kitty --detach kitty +kitten panel --lines 1920 --columns 1080 --edge bottom polybar
+#1660639632
+kitty --detach kitty +kitten panel --lines 1000 --columns 1000 --edge bottom polybar
+#1660639650
+kitty --detach kitty +kitten panel --lines 1000 --columns 1000 --edge bottom polybar > /dev/null
+#1660639656
+polybar
+#1660639689
+polybar 2>/dev/null
+#1660639656
+polybar
+#1660639689
+polybar 2>/dev/null
+#1660639705
+kitty --detach kitty +kitten panel --lines 1000 --columns 1000 --edge bottom bash -c "polybar 2>/dev/null &"
+#1660639725
+kitty --detach kitty +kitten panel --lines 1000 --columns 1000 --edge bottom polybar 2>/dev/null
+#1660639731
+kitty --detach kitty +kitten panel --lines 1000 --columns 1000 --edge bottom bash -c "polybar 2>/dev/null"
+#1660639747
+kitty --detach kitty +kitten panel --edge bottom bash -c "polybar 2>/dev/null"
+#1660639752
+kitty --detach kitty +kitten panel bash -c "polybar 2>/dev/null"
+#1660639759
+kitty --detach kitty +kitten panel polybar
+#1660639853
+kitty +kitten themes
+#1660640016
+wezterm
+#1660640182
+kitty +kitten unicode_input
+#1660640192
+kitty +kitten themes
+#1660641068
+pfetch --help
+#1660641071
+man pfetch
+#1660641076
+man neofetch
+#1660641252
+bpytop 
+#1660641756
+aaaaaaaaaaaaaaaaaaaaaa
+#1660641778
+
+#1660642651
+man wezterm
+#1660642655
+wezterm -h
+#1660642670
+wezterm shell-completion
+#1660642676
+wezterm shell-completion --shell bash | cat
+#1660642676
+wezterm shell-completion --shell bash | cat
+#1660642928
+wezterm list
+#1660642932
+wezterm cli list
+#1660642965
+wezterm ssh
+#1660642977
+wezterm show-keys
+#1660642984
+wezterm help
+#1660642989
+wezterm start
+#1660643037
+wezterm --config debug_key_events true start
+#1660643042
+wezterm --config debug_key_events=true true start
+#1660643070
+wezterm --config debug_key_events=true start
+#1660643146
+wezterm shell-completion -h
+#1660643164
+wezterm shell-completion --shell bash
+#1660663619
+bpytop 
+#1660663815
+warn 
+#1660670155
+tic
+#1660670157
+man tic
+#1660670212
+man_fzf 
+#1660670212
+man_fzf 
+#1660670440
+ls /usr/share/terminfo/
+#1660670452
+cd /usr/share/terminfo/
+#1660670456
+cd k
+#1660670468
+cat kitty
+#1660670311
+touch .terminfo
+#1660670313
+xdg-ninja
+#1660670334
+man terminfo
+#1660670563
+fd kitty.terminfo /
+#1660670576
+cd /usr/lib/kitty
+#1660670582
+cd terminfo/
+#1660670598
+cd /usr/share/terminfo/
+#1660670607
+fd kitty .
+#1660670619
+cat ./x/xterm-kitty 
+#1660670915
+env | XCURSOR
+#1660670917
+env | rg XCURSOR
+#1660670949
+XCURSOR_PATH=${XCURSOR_PATH}:"~/.icons" wezterm
+#1660671013
+cat .gtkrc-2.0 
+#1660671018
+rm .terminfo 
+#1660671044
+XCURSOR_THEME="Sweet-cursors" wezterm
+#1660671262
+gsettings get org.gnome.desktop.interface cursor-size
+#1660671265
+gsettings get org.gnome.desktop.interface cursor-theme
+#1660671301
+dconf watch /
+#1660671336
+ld /usr/share/icons/*/cursors
+#1660671373
+man gsettings 
+#1660671456
+rg Xcursor.theme ~/.config/xorg/Xresoures
+#1660671461
+rg Xcursor.theme ~/.Xresoures
+#1660671466
+rg Xcursor.theme ~/.Xresources
+#1660671472
+rg Xcursor.theme
+#1660671489
+cat .gtkrc-2.0 
+#1660671534
+WEZTERM_LOG=trace wezterm
+#1660671557
+WEZTERM_LOG=trace wezterm | rg cursor
+#1660671884
+XCURSOR_THEME=Sweet-cursors wezterm
+#1660671884
+XCURSOR_THEME=Sweet-cursors wezterm
+#1660672216
+killall wezterm
+#1660672237
+killall wezterm*
+#1660672241
+killall wezterm-mux-server
+#1660672243
+bpytop 
+#1660672261
+killall wezterm-gui
+#1660672624
+bpytop 
+#1660672624
+bpytop 
+#1660672835
+d .bashrc
+#1660672838
+d
+#1660672847
+d home/.bashrc
+#1660672850
+d home/.bashrc ~/.bashrc
+#1660672857
+d .
+#1660672865
+g d
+#1660672868
+g diff
+#1660672876
+g kd
+#1660674635
+dc && g kd
+#1660672876
+g kd
+#1660674635
+dc && g kd
+#1660674835
+y -S polybar-git rofi-git
+#1660675124
+y -S rofi polybar
+#1660675137
+y -Rnsu polybar-git
+#1660675165
+y -Rnsu i3-wm
+#1660675186
+y -Ss polybar-git rofi-git
+#1660675196
+y -S rofi-git
+#1660675211
+y -Ss polybar-git
+#1660675265
+y -Rnsu fortune-mod cowsay asciiquarium figlet sl
+#1660675285
+y -R aalib
+#1660675297
+y -Rns aalib
+#1660675301
+y -Rnsu aalib
+#1660675332
+y -S rofi-git polybar-git
+#1660675616
+y -Rnsu polybar-git rofi-git
+#1660675625
+y -S rofi polybar
+#1660675647
+y -S polybar-git
+#1660675660
+man yay
+#1660675720
+y -Gp polybar-git
+#1660675740
+y -Rns python-packaging
+#1660675749
+y -Rnsu python-packaging
+#1660675769
+y -Rnsu python-sphinx
+#1660675798
+y -Rnsu i3-wm
+#1660676195
+co
+#1660676299
+kitty +kitten list-fonts --psnames | grep "Fira Code Regular"
+#1660676306
+kitty list-fonts --psnames | grep "Fira Code Regular"
+#1660676313
+kitty list-fonts --psnames | grep "Cascadia Code"
+#1660676405
+bpytop 
+#1660676412
+ncm
+#1660676413
+n
+#1660676415
+ncmpcpp 
+#1660676424
+ncmpcpp 2>/dev/null
+#1660676495
+yay -S polybar
+#1660676563
+y -S neovim-nightly-bin awesome-git
+#1660676814
+man fzf
+#1660677248
+alias
+#1660677658
+echo ${hstignore[@]}
+#1660677678
+echo $HSTIGNORE
+#1660677693
+echo $HISTIGNORE
+#1660736277
+co
+#1660736286
+rt
+#1660736290
+rf
+#1660736533
+man -k .
+#1660738110
+fp
+#1660739492
+[200~tempfile=$(mktemp)   && curl -o $tempfile https://raw.githubusercontent.com/wez/wezterm/main/termwiz/data/wezterm.terminfo   && tic -x -o ~/.terminfo $tempfile   && rm $tempfile~
+#1660739503
+tempfile=$(mktemp)   && curl -o $tempfile https://raw.githubusercontent.com/wez/wezterm/main/termwiz/data/wezterm.terminfo   && tic -x -o ~/.terminfo $tempfile   && rm $tempfile
+#1660739509
+cd .terminfo/
+#1660739513
+cd w
+#1660739533
 cd
-#1657619837
-cd Downloads/
-#1657619843
-gcl --recurse-submodules https://github.com/Kritiqual/.dots
-#1657619856
-rm -rf .dots/
-#1657619875
-gcl --recurse-submodules https://github.com/Kritiqual/awesome
-#1657620148
-rm -rf awesome/
-#1657620165
-gcl --recurse-submodules https://github.com/Kritiqual/Nuavim
-#1657620244
-rm -rf Nuavim/
+#1660739509
+cd .terminfo/
+#1660739560
+fd terminfo /
+#1660739577
+cd /usr/lib/terminfo
+#1660739616
+tempfile=$(mktemp)   && curl -o $tempfile https://raw.githubusercontent.com/wez/wezterm/main/termwiz/data/wezterm.terminfo   && sudo tic -x -o /usr/share/terminfo $tempfile   && rm $tempfile
+#1660739621
+cd
+#1660739627
+cd /usr/share/terminfo
+#1660739629
+cd w
+#1660739666
+wezterm ls-fonts
+#1660743459
+rofi -h
+#1660743487
+rofi -font "Cascadia Code PL" -show drun
+#1660743508
+rofi -font "FiraCode NF" -show drun
+#1660743513
+rofi -font "Cascadia Code PL" -show run
+#1660743518
+rofi -font "Cascadia Code PL" -show window
+#1660743528
+rofi -font "Cascadia Code PL" -show combi
+#1660743672
+htop
+#1660743712
+lazygit 
+#1660743721
+lazygit
+#1660743834
+polybar
+#1660743834
+polybar
+#1660744016
+$ git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+#1660744040
+Downloads/
+#1660744045
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+#1660744203
+cd polybar-themes/
+#1660744223
+bash ~/.config/polybar/launch.sh 
+#1660744225
+bash ~/.config/polybar/launch.sh --hack
+#1660744289
+killall polybar
+#1660744296
+cat setup.sh 
+#1660744346
+rm ~/.config/polybar/
+#1660744350
+rm -rf ~/.config/polybar/
+#1660744351
+cd
+#1660744359
+rm -rf .local/share/fonts/
+#1660749846
+setxkbmap -h
+#1660749849
+setxkbmap --help
+#1660749852
+setxkbmap -help
+#1660749934
+localectl list-x11-keymap-options 
+#1660749982
+localectl list-x11-keymap-options > x11
+#1660750095
+cat /usr/share/X11/xkb/rules/xorg.lst 
+#1660750106
+cat /usr/share/X11/xkb/rules/xorg.lst > x11_2
+#1660750118
+cat -p /usr/share/X11/xkb/rules/xorg.lst > x11_2
+#1660750126
+cat --colors=never /usr/share/X11/xkb/rules/xorg.lst > x11_2
+#1660750133
+cat --color=never /usr/share/X11/xkb/rules/xorg.lst > x11_2
+#1660754773
+y -Ss xcape
+#1660754785
+y -S xcape-git
+#1660754837
+sudo cp etc/X11/xorg.conf /etc/X11/xorg.conf
+#1660754975
+setxkbmap -option "caps:ctrl_modifier"
+#1660755003
+xev
+#1660755066
+fzf
+#1660755078
+bp
+#1660755079
+bpytop 
+#1660755163
+xev
+#1660756413
+sudo cp etc/X11/xorg.conf /etc/X11/xorg.conf
+#1660756423
+echo
+#1660756430
+echo $?
+#1660808219
+v config.yaml 
+#1660817824
+wezterm show-keys | rg debug
+#1660817844
+wezterm debug
+#1660817850
+wezterm --help
+#1660817979
+wezterm show-keys
+#1660817990
+wezterm show-keys | rg Debug
+#1660818072
+reset
+#1660818996
+killall wezterm-gui
+#1660819340
+la
+#1660819499
+echo a
+#1660822576
+cat .bashrc
+#1660822599
+sudo time tree /
+#1660823476
+bpytop 
+#1660825815
+lua
+#1660825994
+cd "/home/kritiqual/.dots"
+#1660825994
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826006
+cd "/home/kritiqual/.dots"
+#1660826006
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826083
+cd "/home/kritiqual/.dots"
+#1660826083
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826102
+cd "/home/kritiqual/.dots"
+#1660826102
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826188
+cd "/home/kritiqual/.dots"
+#1660826188
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826225
+cd "/home/kritiqual/.dots"
+#1660826225
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826407
+cd "/home/kritiqual/.dots"
+#1660826407
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826431
+cd "/home/kritiqual/.dots"
+#1660826431
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826440
+luarocks
+#1660826442
+rocks
+#1660826515
+cd "/home/kritiqual/.dots"
+#1660826515
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826535
+cd "/home/kritiqual/.dots"
+#1660826535
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826646
+cd "/home/kritiqual/.dots"
+#1660826646
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826658
+cd "/home/kritiqual/.dots"
+#1660826658
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826726
+cd "/home/kritiqual/.dots"
+#1660826726
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826774
+cd "/home/kritiqual/.dots"
+#1660826774
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826800
+cd "/home/kritiqual/.dots"
+#1660826800
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826837
+cd "/home/kritiqual/.dots"
+#1660826837
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826842
+cd "/home/kritiqual/.dots"
+#1660826842
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660826852
+cd "/home/kritiqual/.dots"
+#1660826852
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660829437
+wezterm show-keys | rg SUPER
+#1660829474
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660829487
+wezterm show-keys | rg SUPER
+#1660830067
+cd "/home/kritiqual/.dots"
+#1660830067
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660830087
+wezterm show-keys | rg SUPER
+#1660832310
+wezterm show-keys 
+#1660832454
+wezterm show-keys > wt_keys
+#1660832871
+wezterm show-keys | rg ToggleFull
+#1660832916
+wezterm show-keys > wt_keys
+#1660834211
+cd "/home/kritiqual/.dots"
+#1660834211
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660834985
+wezterm show-keys > wt_keys
+#1660836026
+echo
+#1660837642
+wezterm show-keys > wt_keys
+#1660838136
+LS
+#1660838520
+cd "/home/kritiqual/.dots"
+#1660838521
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660838534
+cd "/home/kritiqual/.dots"
+#1660838534
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660838599
+cd "/home/kritiqual/.dots"
+#1660838599
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660838637
+cd "/home/kritiqual/.dots"
+#1660838637
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660838685
+cd "/home/kritiqual/.dots"
+#1660838685
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660838714
+cd "/home/kritiqual/.dots"
+#1660838714
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660838730
+cd "/home/kritiqual/.dots"
+#1660838730
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660837642
+wezterm show-keys > wt_keys
+#1660838136
+LS
+#1660839140
+cd "/home/kritiqual/.dots"
+#1660839140
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660839151
+cd "/home/kritiqual/.dots"
+#1660839151
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660839608
+bpytop 
+#1660840228
+cd "/home/kritiqual/.dots"
+#1660840228
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660840239
+cd "/home/kritiqual/.dots"
+#1660840239
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660840259
+cd "/home/kritiqual/.dots"
+#1660840260
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660840272
+cd "/home/kritiqual/.dots"
+#1660840272
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660840285
+cd "/home/kritiqual/.dots"
+#1660840285
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841505
+cd "/home/kritiqual/.dots"
+#1660841505
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841522
+cd "/home/kritiqual/.dots"
+#1660841522
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841535
+cd "/home/kritiqual/.dots"
+#1660841535
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841542
+cd "/home/kritiqual/.dots"
+#1660841542
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841546
+cd "/home/kritiqual/.dots"
+#1660841546
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841556
+cd "/home/kritiqual/.dots"
+#1660841556
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841599
+cd "/home/kritiqual/.dots"
+#1660841599
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841612
+cd "/home/kritiqual/.dots"
+#1660841612
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841617
+cd "/home/kritiqual/.dots"
+#1660841617
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841620
+cd "/home/kritiqual/.dots"
+#1660841620
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841653
+cd "/home/kritiqual/.dots"
+#1660841653
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660841675
+cd "/home/kritiqual/.dots"
+#1660841675
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842533
+cd "/home/kritiqual/.dots"
+#1660842533
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842545
+cd "/home/kritiqual/.dots"
+#1660842546
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842553
+cd "/home/kritiqual/.dots"
+#1660842553
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842561
+cd "/home/kritiqual/.dots"
+#1660842561
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842567
+cd "/home/kritiqual/.dots"
+#1660842567
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842595
+cd "/home/kritiqual/.dots"
+#1660842595
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842610
+cd "/home/kritiqual/.dots"
+#1660842610
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842732
+cd "/home/kritiqual/.dots"
+#1660842732
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842759
+cd "/home/kritiqual/.dots"
+#1660842759
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842767
+cd "/home/kritiqual/.dots"
+#1660842767
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842774
+cd "/home/kritiqual/.dots"
+#1660842774
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842785
+cd "/home/kritiqual/.dots"
+#1660842785
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842789
+cd "/home/kritiqual/.dots"
+#1660842789
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842813
+cd "/home/kritiqual/.dots"
+#1660842814
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660842824
+cd "/home/kritiqual/.dots"
+#1660842824
+lua "/home/kritiqual/.dots/tempCR.lua"
+#1660843157
+cd "/home/kritiqual/.dots/home/.config/wezterm/mapping"
+#1660843157
+lua "/home/kritiqual/.dots/home/.config/wezterm/mapping/keys.lua"
+#1660844640
+weterm show-keys
+#1660844683
+wezterm show-keys
+#1660845058
+wezterm show-kes
+#1660845060
+wezterm show-keys
+#1660845176
+wezterm show-keys | rg SUPER
+#1660845319
+wezterm show-keys | rg l
+#1660845687
+wezterm show-keys
+#1660846236
+wezterm debug
+#1660846248
+wezterm
+#1660846267
+wezterm -h
+#1660846275
+wezterm start
+#1660846456
+wezterm
+#1660846465
+wezterm start
+#1660846490
+wezterm
+#1660846496
+wezterm-gui start
+#1660846529
+DEBUG_TRACE="Log" wezterm
+#1660846572
+wezterm-gui start
+#1660850285
+hiberna
+#1660850288
+hibernate
+#1660850388
+systemctl hibernate 
+#1660871934
+sudo systemctl restart NetworkManager.service 
+#1660871945
+systemctl status NetworkManager.service 
+#1660872233
+y -S zsh
+#1660872480
+toz
+#1660872494
+echo $SHELL
+#1660874200
+man zstyle
+#1660874205
+zstyle --help
+#1660875552
+y -S fzy
+#1660875559
+man fzy
+#1660875581
+fzy
+#1660875591
+ls | fzy
+#1660875609
+y -Rns fzy
+#1660877003
+man zsh
+#1660877006
+zsh --help
+#1660877017
+zsh --help | rg -l
+#1660877024
+zsh --help | rg "-l"
+#1660877033
+zsh --help | rg "l"
+#1660877043
+zsh --help | rg "i"
+#1660877047
+zsh --help | rg "c"
+#1660877823
+set
+#1660877834
+set | cat
+#1660877839
+set | bat
+#1660877903
+toz
+#1660878129
+alias poweroff
+#1660878137
+builtin
+#1660878141
+command
+#1660878192
+toz
+#1660879302
+cat
+#1660878192
+toz
+#1660879302
+cat
+#1660879888
+cat .bash_profile > .zprofile
+#1660879898
+cat -p .bash_profile > .zprofile
+#1660879935
+bat --colot=never .bash_profile > .zprofile 
+#1660879942
+bat --color=never .bash_profile > .zprofile 
+#1660879945
+cat .zprofile 
+#1660879954
+v .zprofile 
+#1660879962
+rm .zprofile 
+#1660879966
+rm .zhist 
+#1660880132
+zsh -c "man typeset"
+#1660880141
+zsh -c "typeset --help"
+#1660880147
+zsh -c "typeset -h"
+#1660879464
+cd /etc/zsh/
+#1660879586
+cd
+#1660879591
+cat .zsh
+#1660879592
+cat .zshrc 
+#1660880991
+zsh -v
+#1660881001
+zsh --version
+#1660882756
+man cp
+#1660883009
+zsh
+#1660883130
+cat .zshrc 
+#1660883136
+cd .zi/
+#1660883253
+cd cd .zi/bin/
+#1660883257
+cd .zi/bin/
+#1660883260
+cd
+#1660883263
+rm .zi
+#1660883266
+rm -rf .zi
+#1660883270
+rm .config/zi
+#1660883273
+rm -rf .config/zi
+#1660883395
+rm .zshrc
+#1660884717
+cat
+#1660885129
+y -S zsh-theme-powerlevel10k-git
+#1660885148
+zsh
+#1660886045
+dotdrop install
+#1660886145
+rm .bashrc
+#1660886149
+rm .bash_profile 
+#1660886153
+dotdrop install
+#1660886113
+dotdrop 
+#1660886117
+dotdrop install
+#1660886220
+cd
+#1660886247
+dotdrop install
+#1660889861
+rm .wget-hsts 
+#1660889892
+man wget
+#1660889995
+wget
+#1660890010
+wget archfi.sf.net
+#1660890020
+xdg-ninja
+#1660890876
+toz
+#1660893108
+dotdrop install
+#1661007628
+echo $HISTIGNORE 
+#1661007921
+m fzf
+#1661007928
+m echo
+#1661007939
+m m
+#1661007942
+m man
+#1661007946
+m 'man
+#1661007951
+m < 'man
+#1661007957
+m "'man"
+#1661008721
+echo $MANPAGER
+#1661094170
+lt -L 2
+#1661094201
+lt -L 1
+#1661094228
+ls --git
+#1661094156
+la
+#1661168462
+:Q

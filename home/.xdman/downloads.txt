@@ -1,4 +1,4 @@
-20
+21
 12
 id: 490f0f06-6b8f-480d-9d77-54a2c1547064
 file: Debian_1
@@ -112,6 +112,19 @@ date: 2022-04-26 21:29:16
 downloaded: 934621184
 size: 934621184
 progress: 100
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 06cd18a6-56d8-4098-8d88-08384c813561
+file: refcard.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-08-26 23:44:35
+downloaded: 455924
+size: 455924
+progress: 0
 tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0

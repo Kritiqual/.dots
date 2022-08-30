@@ -1,0 +1,12 @@
+RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
+INITIAL_QUERY="${*:-}"
+IFS=: read -ra selected < <(
+    FZF_DEFAULT_COMMAND="$RG_PREFIX $(printf %q "$INITIAL_QUERY")" \
+        fzf \
+        --prompt 'Rg> ' --delimiter : --disabled --query "$INITIAL_QUERY" \
+        --bind "change:reload:sleep 0.1; $RG_PREFIX {q} || true" \
+        --bind "alt-f:unbind(change)+change-prompt(Fzf> )+enable-search+clear-query" \
+        --bind "alt-r:change-prompt(Rg> )+disable-search+reload($RG_PREFIX {q} || true)+rebind(change)" \
+        --preview 'bat -p {1} --highlight-line {2}' --preview-window=up,80%,border-bottom
+)
+[ -n "${selected[0]}" ] && nvim "${selected[0]}" "+${selected[1]}"

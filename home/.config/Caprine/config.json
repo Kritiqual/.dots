@@ -6,9 +6,9 @@
 	"zoomFactor": 1,
 	"lastWindowState": {
 		"x": 480,
-		"y": 189,
+		"y": 216,
 		"width": 960,
-		"height": 677,
+		"height": 648,
 		"isMaximized": false
 	},
 	"menuBarMode": false,
@@ -38,5 +38,6 @@
 	"isSpellCheckerEnabled": false,
 	"spellCheckerLanguages": [],
 	"alwaysOnTop": false,
-	"showAlwaysOnTopPrompt": true
+	"showAlwaysOnTopPrompt": true,
+	"autoUpdate": true
 }

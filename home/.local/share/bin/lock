@@ -1,0 +1,21 @@
+CLEAR='#00000000'
+BLUR='#ffffff1a'
+TEXT='#ffffff'
+WRONG='#ff5555'
+VER='#69ff94'
+
+i3lock \
+    --blur 5 --screen 1 \
+    --indicator --radius=70 --ring-width=3.70 --ignore-empty-password \
+    \
+    --verif-text="" --wrong-text="" \
+    --lock-text="" --noinput-text="" --lockfailed-text="" \
+    --ring-color="#ffffff55" --line-color=$CLEAR --inside-color=$CLEAR \
+    --keyhl-color=$VER --bshl-color=$WRONG --separator-color=$VER \
+    --verif-color=$TEXT --ringver-color=$VER --insidever-color=$CLEAR \
+    --wrong-color=$TEXT --ringwrong-color=$WRONG --insidewrong-color=$CLEAR \
+    \
+    --clock \
+    --time-str="%T" --time-size=25 --date-str="%d/%m/%Y" --date-size=13 \
+    --time-color=$TEXT --timeoutline-width=0 --timeoutline-color=$TEXT \
+    --date-color=$TEXT --dateoutline-width=0 --dateoutline-color=$TEXT

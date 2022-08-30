@@ -1,0 +1,310 @@
+#TODO: Rewrite the code based on the idea from test_script
+
+##==================================================================##
+##                                                                  ##
+##                  Define functions and variables                  ##
+##                                                                  ##
+##==================================================================##
+##──── Initialization function ───────────────────────────────────────
+install_dependencies() {
+    if [[ ! $+commands[fzf] ]]; then
+        echo "Installing missing dependencies... "
+        sudo pacman -S --noconfirm --needed fzf
+    fi
+}
+get_database() {
+    echo "Syncing database... "
+    sudo pacman -Syy
+    echo "Creating database... "
+    sudo pacman -Fyy
+    echo '1' >>~/.local/share/helper
+    clear
+}
+APP="\e[1;32mpacman_fzf"
+SWITCH="\e[1;35m"
+TITLE="\e[1;33m"
+ARGS="\e[1;34m"
+NALLOW="\e[1;31mnot allowed"
+ALLOW="\e[1;32mis allowed"
+ERR="[\e[1;31mERR\e[0m]"
+MS="\e[1;36mMulti-selection"
+RS="\e[0m"
+CMD="\e[1;32mpq"
+
+##──── Core subfunction ──────────────────────────────────────────────
+installer() {
+    if [[ ${#} -eq 1 ]]; then
+        case ${1} in
+        -h | help | -help | --help)
+            echo -e "\
+Choose what packages you want to install
+${TITLE}Command${RS}:
+    ${CMD} ${SWITCH}[-I] ${ARGS}<Argument>
+
+${TITLE}Arguments${RS}:
+    ${ARGS}packages name                     ${RS}Name of packages to install
+    ${ARGS}-h ${RS}| ${ARGS}help ${RS}| ${ARGS}-help ${RS}| ${ARGS}--help        ${RS}Show this help
+
+${TITLE}NOTE${RS}: ${MS} ${ALLOW}"
+            ;;
+        -*) echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}$1" ;;
+        *) ${mng} -Syu --needed ${@} ;;
+        esac
+    elif [ ${#} -gt 1 ]; then
+        echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}${@:2}"
+    else
+        ${pv} -Slq |
+            fzf -m --preview-window=80% --prompt="${pv^}> " --preview 'bat -p \
+                <(${pv} -Si {1} 2>/dev/null) <(${pv} -Fl {1} 2>/dev/null)' |
+            xargs -ro ${pv} -Syu --needed
+
+    fi
+}
+
+remover() {
+    if [[ ${#} -eq 1 ]]; then
+        case ${1} in
+        -h | help | -help | --help)
+            echo -e "\
+Choose what packages you want to remove
+${TITLE}Command${RS}:
+    ${CMD} ${SWITCH}[-R] ${ARGS}<Argument>
+
+${TITLE}Arguments${RS}:
+    ${ARGS}package name                      ${RS}Name of the packages to remove
+    ${ARGS}-h ${RS}| ${ARGS}help ${RS}| ${ARGS}-help ${RS}| ${ARGS}--help        ${RS}Show this help
+
+${TITLE}NOTE${RS}: ${MS} ${ALLOW}"
+            ;;
+        -*) echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}$1" ;;
+        *) ${mng} -Rnsu ${@} ;;
+        esac
+    elif [[ ${#} -gt 1 ]]; then
+        echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}${@:2}"
+    else
+        ${pv} -Qq |
+            fzf -m --preview-window=80% --prompt="${HELPER^}> " --preview 'bat -p \
+                <(${pv} -Sp --print-format "Repository      : %r" {} 2>/dev/null) \
+                <(${pv} -Qi {} 2>/dev/null) <(${pv} -Fl {} 2>/dev/null)' |
+            xargs -ro ${mng} -Rnsu
+    fi
+}
+
+updater() {
+    if [[ ${#} -eq 1 ]]; then
+        case ${1} in
+        -h | help | -help | --help)
+            echo -e "\
+Choose what you want to update (Full system, AUR pkg, pacman pkg)
+${TITLE}Command${RS}:
+    ${CMD} ${SWITCH}[-C] ${ARGS}<Argument>
+
+${TITLE}Arguments${RS}:
+    ${ARGS}full ${RS}| ${ARGS}-full ${RS}| ${ARGS}--full             ${RS}Update full system
+    ${ARGS}aur ${RS}| ${ARGS}-aur ${RS}| ${ARGS}--aur                ${RS}Update AUR package
+    ${ARGS}pac ${RS}| ${ARGS}-pac ${RS}| ${ARGS}--pac                ${RS}Update pacman package
+    ${ARGS}-h ${RS}| ${ARGS}help ${RS}| ${ARGS}-help ${RS}| ${ARGS}--help        ${RS}Show this help
+
+${TITLE}NOTE${RS}: ${MS} ${NALLOW}"
+            ;;
+        "Update full system" | full | -full | --full) ${mng} -Syu ;;
+        "Update pacman package only" | pac | -pac | --pac) ${mng} -Syy ;;
+        "Update AUR package only" | aur | -aur | --aur)
+            if [[ ${HELPER} != "pacman" ]]; then
+                [[ ${HELPER} != "aura" ]] && ${mng} -Sua || ${mng} -Ayu
+            else
+                clear && echo -e "${ARGS}Pacman ${RS}does not support updating AUR packages"
+            fi
+            ;;
+        *) echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}$1" ;;
+        esac
+    elif [ ${#} -gt 1 ]; then
+        echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}${@:2}"
+    else
+        opts=("Update pacman package only")
+        if [ ${mng} == "pacman" ]; then
+            opts+=("Update full system")
+        else
+            opts+=("Update AUR package only")
+            opts+=("Update full system")
+        fi
+        update=$(
+            printf "%s\n" "${opts[@]}" | fzf \
+                +m --height=5% --border=none --info=hidden \
+                --prompt="Choose what to update: "
+        )
+
+        if [[ ${?} -eq 0 ]]; then
+            case ${update} in
+            "Update pacman package only" | pac | -pac | --pac)
+                ${mng} -Syy
+                ;;
+            "Update AUR package only" | aur | -aur | --aur)
+                if [ ${HELPER} != "pacman" ]; then
+                    if [ ${HELPER} != "aura" ]; then
+                        ${mng} -Sua
+                    else
+                        ${mng} -Ayu
+                    fi
+                else
+                    clear && echo "Pacman does not support updating AUR packages"
+                fi
+                ;;
+            "Update full system" | pac | -pac | --pac)
+                ${mng} -Syu
+                ;;
+            esac
+        else
+            clear && echo -e "${ERR} Update aborted."
+        fi
+    fi
+}
+
+chooser() {
+    #TODO: Change logic of update?
+    #TODO: Reduce amount of code in update and chooser main execution
+    #NOTE: if it first time, echo helper to file
+    #NOTE: then check if it exist and install
+    #NOTE: if not first time, then check if it exist and sed it
+    if [[ ${#} -eq 1 ]]; then
+        case ${1} in
+        -h | help | -help | --help)
+            echo -e "\
+Choose what helper you want to use (pacman, yay, paru, aura)
+${TITLE}Command${RS}:
+    ${CMD} ${SWITCH}[-C] ${ARGS}<Argument>
+
+${TITLE}Arguments${RS}:
+    ${ARGS}pacman ${RS}| ${ARGS}yay ${RS}| ${ARGS}paru ${RS}| ${ARGS}aura        ${RS}Choose selected helper
+    ${ARGS}-h ${RS}| ${ARGS}help ${RS}| ${ARGS}-help ${RS}| ${ARGS}--help        ${RS}Show this help
+
+${TITLE}NOTE${RS}: ${MS} ${NALLOW}"
+            ;;
+        pacman | yay | paru | aura) ;;
+        *) echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}$1" ;;
+        esac
+    elif [[ ${#} -gt 1 ]]; then
+        echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}${@:2}"
+        # else
+        # opts=("pacman" "yay" "paru" "aura")
+        # choice=$(
+        #     printf "%s\n" "${opts[@]}" | fzf \
+        #         +m --height=5% --border=none --info=hidden \
+        #         --prompt="Choose your Helper: "
+        # )
+
+        # if [[ ${?} -ne 0 ]]; then
+        #     if [ -z ${HELPER} ]; then
+        #         choice="pacman"
+        #     fi
+        # fi
+        # if [[ ! -f /usr/bin/${choice} ]]; then
+        #     opts=("yes" "no")
+        #     install=$(
+        #         printf "%s\n" "${opts[@]}" | fzf \
+        #             +m --height=5% --border=none --info=hidden \
+        #             --prompt="Install missing Helper? "
+        #     )
+
+        #     if [[ ${install} == "yes" ]]; then
+        #         sudo pacman -S --needed base-devel
+        #         git clone "https://aur.archlinux.org/${choice}-bin.git" bin
+        #         cd bin
+        #         if [ ${1} == "aura" ]; then
+        #             makepkg
+        #             sudo pacman -U *.pkg.tar.zst
+        #         else
+        #             makepkg
+        #         fi
+        #     elif [[ ${?} != "0" ]] || [[ ${install} == "no" ]]; then
+        #         clear
+        #         choice="pacman"
+        #         echo -e "${ERR} Helper ${ARGS}${choice}${RS} not installed. This will default to ${ARGS}pacman"
+        #     fi
+        # else
+        #     clear
+        # fi
+        # sed -i "1 s/.*/${choice}/g" ~/.local/share/helper
+    fi
+}
+
+show_menu() {
+    if [[ ${#} -eq 1 ]]; then
+        case ${1} in
+        -h | help | -help | --help)
+            echo -e "\
+Show menu to select what to do
+${TITLE}Command${RS}:
+    ${CMD} ${SWITCH}[-M] ${ARGS}<Argument>
+
+${TITLE}Arguments${RS}:
+    ${ARGS}-h ${RS}| ${ARGS}help ${RS}| ${ARGS}-help ${RS}| ${ARGS}--help        ${RS}Show this help
+
+${TITLE}NOTE${RS}: ${MS} ${NALLOW}"
+            ;;
+        -h2 | help2 | -help2 | --help2)
+            echo -e "\
+Show this selection menu
+${TITLE}Command${RS}:
+    ${CMD} ${SWITCH}[-M] ${ARGS}<Argument>
+
+${TITLE}Arguments${RS}:
+    ${ARGS}-h ${RS}| ${ARGS}help ${RS}| ${ARGS}-help ${RS}| ${ARGS}--help        ${RS}Show this help
+
+${TITLE}NOTE${RS}: ${MS} ${NALLOW}"
+            ;;
+        *) echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}$1" ;;
+        esac
+    elif [[ ${#} -gt 1 ]]; then
+        echo -e "${ERR} ${APP} ${SWITCH}-C${RS}: Invalid options ${ARGS}${@:2}"
+    else
+        opts=("Install packages" "Remove packages" "Update packages" "Choose helper" "Show menu")
+        menu=$(
+            printf "%s\n" "${opts[@]}" | fzf \
+                +m --height=15 --info=hidden \
+                --prompt="Choose what to do: " \
+                --preview='[[ {} == "Show menu" ]] && pacman_fzf {} -h2 || pacman_fzf {} -h'
+        )
+        [[ ${?} == "0" ]] && pacman_fzf "${menu}"
+    fi
+}
+
+##──── Core main function ────────────────────────────────────────────
+core_function() {
+    ##──── Begin ─────────────────────────────────────────────────────────
+    install_dependencies
+
+    ##──── Main execution ────────────────────────────────────────────────
+    [[ ! -f ~/.local/share/helper ]] && touch ~/.local/share/helper
+
+    HELPER=$(sed -n '1p' ~/.local/share/helper)
+    [[ -z ${HELPER} ]] && chooser
+
+    HAS_DB=$(sed -n '2p' ~/.local/share/helper)
+    [[ -z ${HAS_DB} ]] && get_database
+    export pv="${HELPER}"
+    if [[ ${pv} == yay ]] || [[ ${pv} == paru ]]; then
+        export mng="${pv}"
+    else
+        export mng="sudo ${pv}"
+    fi
+    if [[ ${#} -eq 0 ]]; then
+        installer
+    else
+        case "${1}" in
+        -S | "Install packages") installer ${@:2} ;;
+        -R | "Remove packages") remover ${@:2} ;;
+        -U | "Update packages") updater ${@:2} ;;
+        -C | "Choose helper") chooser ${@:2} ;;
+        -M | "Show menu") show_menu ${@:2} ;;
+        *) echo -e "${ERR} ${APP} ${SWITCH}$1${RS}: Invalid options ${ARGS}${@}" ;;
+        esac
+    fi
+}
+
+##==================================================================##
+##                                                                  ##
+##                              Execute                             ##
+##                                                                  ##
+##==================================================================##
+core_function "$@"

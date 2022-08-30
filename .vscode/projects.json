@@ -28,16 +28,7 @@
 		"enabled": true
 	},
 	{
-		"name": "04. Lib",
-		"rootPath": "/usr/share/awesome",
-		"paths": [],
-		"tags": [
-			"02. Awesome"
-		],
-		"enabled": true
-	},
-	{
-		"name": "05. Nvim",
+		"name": "04. Nvim",
 		"rootPath": "~/.dots/home/.config/nvim",
 		"paths": [],
 		"tags": [
@@ -47,11 +38,18 @@
 		"enabled": true
 	},
 	{
-		"name": "06. Page",
-		"rootPath": "~/Projects/kritiqual.github.io",
+		"name": "05. Study",
+		"rootPath": "~/Projects/Study",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "06. Lib",
+		"rootPath": "/usr/share/awesome",
 		"paths": [],
 		"tags": [
-			"04. Projects"
+			"02. Awesome"
 		],
 		"enabled": true
 	},
@@ -65,7 +63,16 @@
 		"enabled": true
 	},
 	{
-		"name": "08. Wiki",
+		"name": "08. Page",
+		"rootPath": "~/Projects/kritiqual.github.io",
+		"paths": [],
+		"tags": [
+			"04. Projects"
+		],
+		"enabled": true
+	},
+	{
+		"name": "09. Wiki",
 		"rootPath": "~/Projects/ter-wiki",
 		"paths": [],
 		"tags": [
@@ -74,15 +81,17 @@
 		"enabled": true
 	},
 	{
-		"name": "09. Study",
-		"rootPath": "~/Projects/Study",
+		"name": "10. Aura-tr",
+		"rootPath": "~/Projects/aura",
 		"paths": [],
-		"tags": [],
+		"tags": [
+			"04. Projects"
+		],
 		"enabled": true
 	},
 	{
-		"name": "10. Aura-tr",
-		"rootPath": "~/Projects/aura",
+		"name": "11. Shapez-tr",
+		"rootPath": "~/Projects/shapez-vi",
 		"paths": [],
 		"tags": [
 			"04. Projects"

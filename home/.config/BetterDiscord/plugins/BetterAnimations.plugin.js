@@ -3,7 +3,7 @@
  * @author arg0NNY
  * @authorLink https://github.com/arg0NNY/DiscordPlugins
  * @invite M8DBtcZjXD
- * @version 1.1.3
+ * @version 1.1.5
  * @description Improves your whole Discord experience. Adds highly customizable switching animations between guilds, channels, etc. Introduces smooth new message reveal animations, along with popout animations, and more.
  * @website https://github.com/arg0NNY/DiscordPlugins/tree/master/BetterAnimations
  * @source https://github.com/arg0NNY/DiscordPlugins/blob/master/BetterAnimations/BetterAnimations.plugin.js
@@ -21,7 +21,7 @@ module.exports = (() => {
                     "github_username": 'arg0NNY'
                 }
             ],
-            "version": "1.1.3",
+            "version": "1.1.5",
             "description": "Improves your whole Discord experience. Adds highly customizable switching animations between guilds, channels, etc. Introduces smooth new message reveal animations, along with popout animations, and more.",
             github: "https://github.com/arg0NNY/DiscordPlugins/tree/master/BetterAnimations",
             github_raw: "https://raw.githubusercontent.com/arg0NNY/DiscordPlugins/master/BetterAnimations/BetterAnimations.plugin.js"
@@ -31,7 +31,7 @@ module.exports = (() => {
                 "type": "fixed",
                 "title": "Fixed",
                 "items": [
-                    "Fixed popouts overflowing the window borders."
+                    "Fixed guild animation executing when switching between channels."
                 ]
             }
         ]
@@ -91,9 +91,12 @@ module.exports = (() => {
             } = DiscordModules;
 
             const {
-                ActionTypes,
                 MessageStates
             } = DiscordConstants;
+
+            const ActionTypes = {
+                MESSAGE_CREATE: 'MESSAGE_CREATE'
+            }
 
             const ChannelIntegrationsSettingsWindow = WebpackModules.getByProps('setSection', 'saveWebhook');
             const ExpressionPickerActions = WebpackModules.getByProps('setExpressionPickerView');
@@ -1018,7 +1021,7 @@ module.exports = (() => {
 
                 patchChannelActions() {
                     Patcher.after(ChannelActions, 'selectChannel', (self, params, value) => {
-                        GuildIdHistory.push(params[0]);
+                        GuildIdHistory.push(params[0].guildId);
                     });
                 }
 
@@ -1945,6 +1948,18 @@ module.exports = (() => {
                             },
                         )),
 
+                        new Settings.SettingField(null, React.createElement(DiscordModules.TextElement, {
+                            children: [
+                                'Not your language? Help translate the plugin on the ',
+                                React.createElement(DiscordModules.Anchor, {
+                                    children: 'Crowdin page',
+                                    href: 'https://crwd.in/betterdiscord-betteranimations'
+                                }),
+                                '.'
+                            ],
+                            className: `${DiscordModules.TextElement.Colors.STANDARD} ${DiscordModules.TextElement.Sizes.SIZE_14}`
+                        }), () => {}, document.createElement('div')),
+
                         // Guild section
                         new Settings.SettingGroup('Guild Animations').append(
 
@@ -2128,7 +2143,8 @@ module.exports = (() => {
                                 this.saveSettings();
                             })
 
-                        ),
+                        )
+
                     );
 
                     element.classList.add(SETTINGS_CLASSNAME);

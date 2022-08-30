@@ -5,7 +5,6 @@
     "ms-vscode-remote.remote-containers",
     "ms-edgedevtools.vscode-edge-devtools",
     "firefox-devtools.vscode-firefox-debug",
-    "eg2.vscode-npm-script",
     "vscodevim.vim",
     "kiteco.kite",
     "ms-vscode.azure-account",
@@ -14,7 +13,6 @@
     "hediet.vscode-drawio",
     "bierner.color-info",
     "leetcode.vscode-leetcode",
-    "slevesque.vscode-hexdump",
     "shalldie.background",
     "formulahendry.auto-rename-tag",
     "ms-azuretools.vscode-docker",
@@ -76,7 +74,6 @@
     "yasht.terminal-all-in-one",
     "benbusby.earthbound-themes",
     "ustymukhman.matrix-theme",
-    "aaronpowell.vscode-profile-switcher",
     "evondev.dracula-high-contrast",
     "victoriadrake.kabukicho",
     "proxzima.sweetdracula",
@@ -132,6 +129,10 @@
     "perkovec.emoji",
     "emilast.logfilehighlighter",
     "cliffordfajardo.highlight-line-vscode",
-    "bierner.github-markdown-preview"
+    "bierner.github-markdown-preview",
+    "rapidapi.vscode-rapidapi-client",
+    "ittwist.vasuki-dark-theme",
+    "ms-vscode.hexeditor",
+    "mintlify.document"
   ]
 }

@@ -1,0 +1,21 @@
+set editing-mode emacs
+set show-mode-in-prompt on
+set show-all-if-ambiguous on
+
+#----
+set vi-ins-mode-string "\e[0;32m⏺ "
+set vi-cmd-mode-string "\e[0;31m⏺ "
+
+set keymap vi-insert
+"\ee": emacs-editing-mode
+Control-l: clear-screen
+
+set keymap vi-command
+"\ee": emacs-editing-mode
+Control-l: clear-screen
+
+#----
+set emacs-mode-string "\e[0;35m⏺ "
+
+set keymap emacs
+"\ee": vi-editing-mode

@@ -1,10 +1,8 @@
 actions:
-  pre:
-    setupibus: ibus-setup
-    sysddir: mkdir -p ~/.config/systemd/user/default.target.wants
   post:
-    mpdctl: systemctl --user enable mpd.service
-    ssdir: mkdir -p ~/Pictures/Screenshots
+    setupibus: "[[ ! -z {{@@ env['DISPLAY'] @@}} ]] && ibus-setup"
+    mpdsv: systemctl --user enable mpd.service
+    xdgdir: mkdir -p ~/Projects ~/Pictures/Screenshots ~/Music/lyrics
 config:
   backup: false
   banner: false
@@ -12,181 +10,96 @@ config:
   keepdot: true
   showdiff: true
   check_version: true
-  dotpath: ~/.dots/home
-  minversion: 1.10.0
+  dotpath: ~/.dots
+variables:
+  cfg: home/.config
 dynvariables:
   ffcss: fd -t d .default-release ~/.mozilla/firefox
 dotfiles:
-  f_starship.toml:
-    src: .config/starship.toml
-    dst: ~/.config/starship.toml
-    link: absolute
-  f_bashrc:
-    src: .bashrc
-    dst: ~/.bashrc
-    link: absolute
-  f_bash_profile:
-    src: .bash_profile
-    dst: ~/.bash_profile
-    link: absolute
-  f_gitconfig:
-    src: .config/git/config
-    dst: ~/.config/git/config
-    link: absolute
-  f_imwheelrc:
-    src: .imwheelrc
-    dst: ~/.imwheelrc
-    link: absolute
-  f_Xresources:
-    src: .Xresources
-    dst: ~/.Xresources
-    link: absolute
-  d_awesome:
-    src: .config/awesome
-    dst: ~/.config/awesome
-    link: absolute
-  f_alacritty:
-    src: .config/alacritty/alacritty.yml
-    dst: ~/.config/alacritty/alacritty.yml
-    link: absolute
-  f_bat:
-    src: .config/bat/config
-    dst: ~/.config/bat/config
-    link: absolute
-  d_betterdiscord_stable:
-    src: .config/BetterDiscord/data/stable
-    dst: ~/.config/BetterDiscord/data/stable
-    link: absolute
-  d_betterdiscord_plugins:
-    src: .config/BetterDiscord/plugins
-    dst: ~/.config/BetterDiscord/plugins
-    link: absolute
-  d_betterdiscord_themes:
-    src: .config/BetterDiscord/themes
-    dst: ~/.config/BetterDiscord/themes
-    link: absolute
-  d_bpytop:
-    src: .config/bpytop
-    dst: ~/.config/bpytop
-    link: absolute
-  f_caprinecfg:
-    src: .config/Caprine/config.json
-    dst: ~/.config/Caprine/config.json
-    link: absolute
-  f_caprinecss:
-    src: .config/Caprine/custom.css
-    dst: ~/.config/Caprine/custom.css
-    link: absolute
-  f_ffcss:
-    src: firefox
-    dst: "{{@@ ffcss @@}}/chrome"
-    link: absolute
-  f_gh:
-    src: .config/gh/config.yml
-    dst: ~/.config/gh/config.yml
-    link: absolute
-  d_gtk-2.0:
-    src: .config/gtk-2.0
-    dst: ~/.config/gtk-2.0
-    link: absolute
-  d_gtk-3.0:
-    src: .config/gtk-3.0
-    dst: ~/.config/gtk-3.0
-    link: absolute
-  f_ibus-bamboocfg:
-    src: .config/ibus-bamboo/ibus-bamboo.config.json
-    dst: ~/.config/ibus-bamboo/ibus-bamboo.config.json
+  d_home:
+    src: home
+    dst: ~
+    link: link_children
+    instignore:
+      - ".config"
+      - ".local"
+      - ".xdman"
+      - "firefox"
+  d_config:
+    src: "{{@@ cfg @@}}"
+    dst: ~/.config
+    link: link_children
+    instignore:
+      - "BetterDiscord"
+      - "Caprine"
+      - "gh"
+      - "mpd"
+      - "qt5ct"
+      - "Thunar"
+      - "viewnior"
+      - "ibus-bamboo"
+  BD_plugins_and_themes:
+    src: "{{@@ cfg @@}}/BetterDiscord"
+    dst: ~/.config/BetterDiscord
+    link: link_children
+    instignore:
+      - "data"
+  BD_data:
+    src: "{{@@ cfg @@}}/BetterDiscord/data"
+    dst: ~/.config/BetterDiscord/data
+    link: link_children
+  Caprine:
+    src: "{{@@ cfg @@}}/Caprine"
+    dst: ~/.config/Caprine
+    link: link_children
+  ibus_bamboo:
+    src: "{{@@ cfg @@}}/ibus-bamboo"
+    dst: ~/.config/ibus-bamboo
     link: absolute
     actions:
       - setupibus
-  d_kitty:
-    src: .config/kitty
-    dst: ~/.config/kitty
+  gh:
+    src: "{{@@ cfg @@}}/gh"
+    dst: ~/.config/gh
+    link: link_children
+  mpd:
+    src: "{{@@ cfg @@}}/mpd"
+    dst: ~/.config/mpd
+    link: link_children
+  qt5ct:
+    src: "{{@@ cfg @@}}/qt5ct"
+    dst: ~/.config/qt5ct
+    link: link_children
+  thunar:
+    src: "{{@@ cfg @@}}/Thunar"
+    dst: ~/.config/Thunar
+    link: link_children
+  viewnior:
+    src: "{{@@ cfg @@}}/viewnior"
+    dst: ~/.config/viewnior
+    link: link_children
+  Xdman:
+    src: home/.xdman
+    dst: ~/.xdman
+    link: link_children
+  d_ffchrome:
+    src: home/firefox
+    dst: "{{@@ ffcss @@}}/chrome"
     link: absolute
-  d_lazygit:
-    src: .config/lazygit
-    dst: ~/.config/lazygit
+  d_local:
+    src: home/.local
+    dst: ~/.local
+    link: link_children
+    instignore:
+      - "share"
+  d_localbin:
+    src: home/.local/share/bin
+    dst: ~/.local/share/bin
     link: absolute
-  d_mpdpl:
-    src: .config/mpd/playlists
-    dst: ~/.config/mpd/playlists
-    link: absolute
-  f_mpdcfg:
-    src: .config/mpd/mpd.conf
-    dst: ~/.config/mpd/mpd.conf
-    link: absolute
-  d_ncmpcpp:
-    src: .config/ncmpcpp
-    dst: ~/.config/ncmpcpp
-    link: absolute
-  f_neofetchcfg:
-    src: .config/neofetch/config.conf
-    dst: ~/.config/neofetch/config.conf
-    link: absolute
-  d_nvim:
-    src: .config/nvim
-    dst: ~/.config/nvim
-    link: absolute
-  f_picomcfg:
-    src: .config/picom/picom.conf
-    dst: ~/.config/picom/picom.conf
-    link: absolute
-  f_pythonrc:
-    src: .config/python/pythonrc
-    dst: ~/.config/python/pythonrc
-    link: absolute
-  d_qbittorrentcfg:
-    src: .config/qBittorrent
-    dst: ~/.config/qBittorrent
-    link: absolute
-  d_ranger:
-    src: .config/ranger
-    dst: ~/.config/ranger
-    link: absolute
-  d_systemd:
-    src: .config/systemd
-    dst: ~/.config/systemd
-    link: absolute
-  f_thunar:
-    src: .config/Thunar/uca.xml
-    dst: ~/.config/Thunar/uca.xml
-    link: absolute
-  f_viewniorcfg:
-    src: .config/viewnior/viewnior.conf
-    dst: ~/.config/viewnior/viewnior.conf
-    link: absolute
-  f_userdirs:
-    src: .config/user-dirs.dirs
-    dst: ~/.config/user-dirs.dirs
-    link: absolute
-  f_userlocale:
-    src: .config/user-dirs.locale
-    dst: ~/.config/user-dirs.locale
-    link: absolute
-  f_zoomcfg:
-    src: .config/zoomus.conf
-    dst: ~/.config/zoomus.conf
-    link: absolute
-  f_xdmancfg:
-    src: .xdman/config.txt
-    dst: ~/.xdman/config.txt
-    link: absolute
-  f_xdmansettings:
-    src: .xdman/settings.json
-    dst: ~/.xdman/settings.json
-    link: absolute
-  f_xdmandl:
-    src: .xdman/downloads.txt
-    dst: ~/.xdman/downloads.txt
-    link: absolute
-  mpd_ctl:
-    src:
-    dst:
-    actions:
-      - sysddir
-      - mpdctl
-      - ssdir
 profiles:
   Archie:
     dotfiles:
       - ALL
+    actions:
+      - mpdsv
+      - xdgdir

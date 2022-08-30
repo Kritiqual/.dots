@@ -2,7 +2,7 @@
  * @name PluginRepo
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 2.3.4
+ * @version 2.3.7
  * @description Allows you to download all Plugins from BD's Website within Discord
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -17,7 +17,7 @@ module.exports = (_ => {
 		"info": {
 			"name": "PluginRepo",
 			"author": "DevilBro",
-			"version": "2.3.4",
+			"version": "2.3.7",
 			"description": "Allows you to download all Plugins from BD's Website within Discord"
 		}
 	};
@@ -151,7 +151,6 @@ module.exports = (_ => {
 				return plugins;
 			}
 			render() {
-				let automaticLoading = BDFDB.BDUtils.getSettings(BDFDB.BDUtils.settingsIds.automaticLoading);
 				if (!this.props.tab) this.props.tab = "Plugins";
 				
 				this.props.entries = (!loading.is && grabbedPlugins.length ? this.filterPlugins() : []).map(plugin => BDFDB.ReactUtils.createElement(RepoCardComponent, {
@@ -213,21 +212,12 @@ module.exports = (_ => {
 								plugin: _this,
 								keys: ["general", key],
 								label: _this.defaults.general[key].description,
-								note: _this.defaults.general[key].autoload && !automaticLoading && "Automatic Loading has to be enabled",
-								disabled: _this.defaults.general[key].autoload && !automaticLoading,
 								value: _this.settings.general[key],
 								onChange: value => {
 									_this.settings.general[key] = value;
 									BDFDB.ReactUtils.forceUpdate(this);
 								}
-							})),
-							!automaticLoading && BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Flex, {
-								className: BDFDB.disCN.marginbottom20,
-								children: BDFDB.ReactUtils.createElement("div", {
-									className: BDFDB.disCNS.settingsrowtitle + BDFDB.disCNS.settingsrowtitledefault + BDFDB.disCN.cursordefault,
-									children: "To experience Plugin Repo in the best way. I would recommend you to enable BD's intern Automatic-Loading Feature, that way all downloaded Files are loaded into Discord without the need to reload."
-								})
-							})
+							}))
 						].flat(10).filter(n => n)
 					})
 				];
@@ -671,7 +661,7 @@ module.exports = (_ => {
 						SettingsView: ["render", "componentWillUnmount"]
 					},
 					after: {
-						StandardSidebarView: "render"
+						StandardSidebarView: "default"
 					}
 				};
 				
@@ -730,6 +720,7 @@ module.exports = (_ => {
 							let index = e2.returnValue.indexOf(e2.returnValue.find(n => n.section == "themes") || e2.returnValue.find(n => n.section == BDFDB.DiscordConstants.UserSettingsSections.DEVELOPER_OPTIONS) || e2.returnValue.find(n => n.section == BDFDB.DiscordConstants.UserSettingsSections.HYPESQUAD_ONLINE));
 							if (index > -1) {
 								e2.returnValue.splice(index + 1, 0, {
+									className: "pluginrepo-tab",
 									section: "pluginrepo",
 									label: "Plugin Repo",
 									element: _ => {

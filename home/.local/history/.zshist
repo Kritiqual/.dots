@@ -1,0 +1,536 @@
+: 1661515035:0;mkdir __pycache__
+: 1661515049:0;rmdir __pycache__
+: 1661515054:0;mkdir tache
+: 1661515865:0;time dp install
+: 1661516056:0;Tabnine
+: 1661517433:0;p10k
+: 1661517443:0;p10k segment
+: 1661517547:0;p10k reload
+: 1661518830:0;spectrum_bls
+: 1661518832:0;spectrum_ls
+: 1661519086:0;echo $ZI[SNIPPETS_DIR]
+: 1661519192:0;bindkey | rg "\\e"
+: 1661519194:0;bindkey | rg "\e"
+: 1661519349:0;bindkey -a
+: 1661519358:0;bindkey | rg "\6\["
+: 1661520007:0;fd -t f '*zcompdump'
+: 1661520014:0;fd -t f --glob '*zcompdump'
+: 1661520017:0;fd -t f --glob '*zcompdump' ~
+: 1661520024:0;fd -t f zcompdump ~
+: 1661520026:0;fd -t f zcompdump /
+: 1661520033:0;fd zcompdump /
+: 1661520063:0;echo $ZI[ZCOMPDUMP_DIR]
+: 1661520143:0;echo $ZI[COMPDUMP_PATH]
+: 1661520378:0;echo $ZI[CACHE_DIR]
+: 1661520382:0;echo $ZI[CACHE_HOME]
+: 1661520911:0;trash --help
+: 1661521223:0;compinit
+: 1661521550:0;echo $ZI_CACHE_DIR
+: 1661521557:0;echo $ZSH_CACHE_HOME
+: 1661521560:0;echo $ZSH_CACHE_IR
+: 1661522178:0;bindkey -e
+: 1661522263:0;KEYTIMEOUT=15
+: 1661522267:0;KEYTIMEOUT=100
+: 1661522295:0;:3 $KEYTIMEOUT
+: 1661522308:0;bindkey | rg "\^\["
+: 1661522834:0;true|false
+: 1661522838:0;false|true
+: 1661522878:0;echo
+: 1661523154:0;p10k configure
+: 1661523219:0;cat $ZDOTDIR/.zshrc
+: 1661523323:0;echo &
+: 1661523330:0;read &
+: 1661523341:0;read
+: 1661524224:0;echo "a"
+: 1661524296:0;for f in $ZDOTDIR/config\
+done
+: 1661524320:0;for f in $ZDOTDIR/config; do\
+echo $f\
+dome\
+done
+: 1661524329:0;for f in $ZDOTDIR/config; do\
+echo $f\
+done
+: 1661524333:0;for f in $ZDOTDIR/config/*; do\
+echo $f\
+done
+: 1661524620:0;bindkey -L
+: 1661524626:0;bindkey -L | rg '\^\['
+: 1661524632:0;bindkey -L | rg "\^\["
+: 1661524705:0;ziconsole -h
+: 1661525011:0;KEYTIMEOUT=50
+: 1661525132:0;bindkey -h
+: 1661525136:0;bindkey -l
+: 1661525153:0;bindkey -M main
+: 1661525311:0;killall xcape || xcape -e 'Caps_Lock=Escape'
+: 1661525487:0;xcape -h
+: 1661525678:0;export KEYTIMEOUT=10
+: 1661525755:0;KEYTIMEOUT=1
+: 1661526935:0;exa -a
+: 1661526937:0;exa -al
+: 1661527933:0;exa --oneline
+: 1661527937:0;exa --oneline -l
+: 1661527981:0;exa -Rl
+: 1661527992:0;rmdir .tache
+: 1661528005:0;exa -R
+: 1661528010:0;cd tache
+: 1661528018:0;rmdir tache
+: 1661528103:0;exa -l -i
+: 1661528111:0;exa -l -g
+: 1661528119:0;exa -l -h
+: 1661528129:0;exa -l -S
+: 1661528143:0;exa -l -n
+: 1661528157:0;exa -l -u
+: 1661528159:0;exa -l -U
+: 1661528171:0;exa -l --no-filesize
+: 1661528206:0;EXA_GRID_ROWS=3 exa
+: 1661528209:0;EXA_GRID_ROWS=3 exa -H
+: 1661528211:0;EXA_GRID_ROWS=3 exa -h
+: 1661528215:0;EXA_GRID_ROWS=3 exa --hidden
+: 1661528217:0;EXA_GRID_ROWS=3 exa -a
+: 1661528222:0;EXA_GRID_ROWS=1 exa -a
+: 1661528417:0;rg a .bashrc
+: 1661528441:0;rg --colors 'match:fg:blue'
+: 1661528467:0;rg --colors 'match:fg:blue' a .bashrc
+: 1661528519:0;rg --colors 'match:fg:blue' --colors 'line:bg:green' a .bashrc
+: 1661528527:0;rg --colors 'match:fg:blue' --colors 'line:fg:green' a .bashrc
+: 1661528533:0;rg --colors 'match:fg:blue' --colors 'line:fg:magenta' a .bashrc
+: 1661528560:0;rg --colors 'match:fg:blue' --colors 'line:fg:magenta' --column a .bashrc
+: 1661528577:0;rg --colors 'match:fg:blue' --colors 'line:fg:magenta' --colors 'column:fg:yellow' --column a .bashrc
+: 1661528622:0;rg --colors 'match:fg:blue' --colors 'line:fg:magenta' --colors 'column:fg:yellow' --column a
+: 1661528634:0;rg --colors 'match:fg:blue' --colors 'line:fg:magenta' --colors 'column:fg:yellow' --column an
+: 1661528636:0;rg --colors 'match:fg:blue' --colors 'line:fg:magenta' --colors 'column:fg:yellow' --column ana
+: 1661528641:0;rg --colors 'match:fg:blue' --colors 'line:fg:magenta' --colors 'column:fg:yellow' --column anar
+: 1661528646:0;rg --colors 'match:fg:blue' --colors 'line:fg:magenta' --colors 'column:fg:yellow' --column asd
+: 1661528695:0;rg svn .local/zi/bin
+: 1661528738:0;svn --help
+: 1661528742:0;svn config
+: 1661528746:0;svn help
+: 1661528773:0;svn pl
+: 1661528881:0;gsub update --init --recursive --remote
+: 1661529094:0;gst
+: 1661529107:0;acs | rg "git status"
+: 1661529110:0;gs
+: 1661529533:0;sudo zsh
+: 1661529603:0;sudoedit vipm
+: 1661529611:0;sud vipm
+: 1661529614:0;sudo vipm
+: 1661529677:0;se .bashrc
+: 1661529690:0;se /root/.bashrc
+: 1661529698:0;sus -
+: 1661529700:0;sus -h
+: 1661529776:0;echo $SUDO_ASKPASS
+: 1661529841:0;sus
+: 1661529849:0;sus echo "aaaa"
+: 1661529865:0;sus cat /root/.bash_history
+: 1661529870:0;sus cat /root/.bashrc
+: 1661529876:0;sus su
+: 1661529889:0;su
+: 1661532471:0;echo $SHELL
+: 1661532471:0;exa -la
+: 1661532343:0;xdg-open refcard.pdf
+: 1661533248:0;tree .
+: 1661534258:0;zmodload zsh/curses
+: 1661535419:0;echo $INSTALLED_COMPS
+: 1661536425:0;hyperfine --warmup fd
+: 1661536452:0;hyperfine --warmup 3 fd
+: 1661536459:0;hyperfine fd
+: 1661537427:0;command vivid
+: 1661537433:0;builtin vivid
+: 1661538157:0;pacman_fzf
+: 1661569808:0;chmod +x autorun.sh
+: 1661570086:0;pkill oneko
+: 1661570554:0;zbrowse
+: 1661570588:0;zcat
+: 1661570985:0;xcape -e "Caps_Lock=Escape"
+: 1661571024:0;xcape -e Caps_Lock=Escape
+: 1661571057:0;killall xcape
+: 1661575409:0;xev
+: 1661575485:0;sudo echo
+: 1661575865:0;echo ${terminfo[kpp]}
+: 1661576143:0;echoti
+: 1661576148:0;echoti --help
+: 1661576223:0;echo ${terminfo[@]}
+: 1661576277:0;echo $terminfo[smkx]
+: 1661576287:0;echo $+terminfo[smkx]
+: 1661576298:0;terminfo
+: 1661576306:0;echo $terminfo
+: 1661616108:0;hyperfine aura
+: 1661616111:0;hyperfine ls
+: 1661616139:0;hyperfine --warmup=5 ls
+: 1661616153:0;hyperfine --warmup 5 ls
+: 1661616166:0;hyperfine --warmup
+: 1661616174:0;hyperfine --warmup 3 exa
+: 1661616186:0;hyperfine -N --prepare exa
+: 1661616201:0;hyperfine -N --prepare exa ls
+: 1661616220:0;hyperfine -N --warmup 3 exa
+: 1661616238:0;hyperfine --help
+: 1661616243:0;hexyl
+: 1661616269:0;hyperfine 'command ls' exa
+: 1661616293:0;hyperfine echo :3
+: 1661616304:0;hyperfine echo ':3
+: 1661616305:0;hyperfine echo ':3'
+: 1661616399:0;if [[ $LS_COLORS == $(vivid generate dracula) ]]; then\
+echo "SAME"\
+else\
+echo "DIFF"\
+fi
+: 1661616444:0;kitty +kitten diff $LS_COLORS $(vivid generate dracula)
+: 1661618198:0;showkey -h
+: 1661618245:0;showkey -k <$(echo "^[3;5~")
+: 1661618252:0;touch test
+: 1661618256:0;v test
+: 1661618278:0;showkey -k test
+: 1661618283:0;showkey -k < test
+: 1661618288:0;showkey -k
+: 1661618303:0;showkey -s
+: 1661618567:0;for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
+: 1661618971:0;bindkey | rg '\\e'
+: 1661618975:0;bindkey | rg '\ew'
+: 1661618982:0;bindkey | rg '\\\ew'
+: 1661618986:0;bindkey | rg 'w'
+: 1661619016:0;bindkey | rg '\^\[l'
+: 1661619063:0;bindkey | bat
+: 1661619325:0;bindkey -v
+: 1661619774:0;sed -i "s|bindkey -e|bindkey -v|g" ~/.local/zi/snippets/OMZL::key-bindings.zsh/OMZL::key-bindings.zsh
+: 1661619808:0;sed -i "s|bindkey -v|bindkey -e|g" $ZI[SNIPPETS_DIR]/OMZL::key-bindings.zsh/OMZL::key-bindings.zsh
+: 1661619943:0;echo $KEYTIMEOUT
+: 1661620242:0;export VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+: 1661620264:0;export VI_MODE_SET_CURSOR=true
+: 1661620301:0;export MODE_INDICATOR="NORM>>> "
+: 1661620314:0;export INSERT_MODE_INDICATOR="INS>>> "
+: 1661620335:0;export INSERT_MODE_INDICATOR=" <<<INS"
+: 1661620345:0;export MODE_INDICATOR=" <<<NOR"
+: 1661620551:0;sudo pacman -S
+: 1661620870:0;echo $RPS1
+: 1661620888:0;echo $RPROMPT
+: 1661621072:0;v
+: 1661621658:0;fd
+: 1661621933:0;bat
+: 1661621936:0;vivid
+: 1661621980:0;yay -Qeq | rg exa
+: 1661622161:0;export LS_COLORS="$(vivid generate dracula)"
+: 1661622366:0;fzf-tab-complete
+: 1661622438:0;vivid --help
+: 1661622936:0;fzf
+: 1661623174:0;echo $FZF_ALT_C_COMMAND
+: 1661623185:0;`__fzf_cd__`
+: 1661623188:0;__fzf_cd__
+: 1661623388:0;rm 1
+: 1661623391:0;rm test
+: 1661623755:0;rm .cache/zi/.zcompdump
+: 1661623907:0;rg 'Aloxaf---fzf-tab'
+: 1661623939:0;rg 'Aloxaf---fzf-tab' /
+: 1661623945:0;rg 'Aloxaf---fzf-tab' ~
+: 1661625546:0;asciidoctor
+: 1661668581:0;echo $LS_COLORS
+: 1661668748:0;vivid generate dracula
+: 1661668771:0;echo $LS_COLORS > $DS/LS_COLORS
+: 1661668786:0;vivid generate dracula $DS/LS_COLORS_VIVID
+: 1661668792:0;vivid generate dracula > $DS/LS_COLORS_VIVID
+: 1661668954:0;dircolor
+: 1661669090:0;exa
+: 1661669130:0;/
+: 1661669456:0;dircolors -h
+: 1661669472:0;dircolors -c
+: 1661669476:0;dircolors -b
+: 1661669480:0;dircolors -p
+: 1661669565:0;curl https://raw.githubusercontent.com/dracula/dircolors/main/.dircolors
+: 1661669579:0;wget https://raw.githubusercontent.com/dracula/dircolors/main/.dircolors
+: 1661669587:0;rm .wget-hsts
+: 1661669598:0;dircolors .dircolors
+: 1661669609:0;dircolors --help
+: 1661669640:0;dircolors -b ~/.dircolors
+: 1661669778:0;rm LS_COLORS*
+: 1661669806:0;dircolors ~/.dircolors
+: 1661669817:0;eval "$(dircolors ~/.dircolors)"
+: 1661669831:0;cd dotdrop
+: 1661669846:0;la
+: 1661669994:0;for theme in $(vivid theme); do\
+echo "Theme: $theme"\
+LS_COLORS=$(vivid generate $theme)\
+ls\
+echo\
+done
+: 1661670396:0;cd main
+: 1661670421:0;dircolors
+: 1661670764:0;rm .dircolors
+: 1661671346:0;export --help
+: 1661671350:0;export -h
+: 1661672025:0;fd -t f .zcompdump ~
+: 1661672074:0;trash .local/share/.zcompdump
+: 1661672079:0;fd -H -t f .zcompdump ~
+: 1661673037:0;sed -i "s|bindkey -e |bindkey -v|g" $file
+: 1661673213:0;sudo systemctl status paccache.service
+: 1661673219:0;systemctl status paccache.service
+: 1661673227:0;systemctl status paccache.timer
+: 1661673246:0;systemctl edit paccache.timer
+: 1661673544:0;echo $file
+: 1661673566:0;sed -i "s|^bindkey '\ew'|#&|" $file
+: 1661673683:0;sed -e '/bindkey '\ew'/ s/^#*/#/g' -i $file
+: 1661673687:0;sed -e '/bindkey '\\ew'/ s/^#*/#/g' -i $file
+: 1661673701:0;sed -e "/bindkey '\ew'/ s/^#*/#/g" -i $file
+: 1661673728:0;sed -e "/^bindkey -s/ s/^#*/#/g" -i $file
+: 1661673818:0;sed -e "/kill-region/ s/^#*/#/g" -i $file
+: 1661673834:0;sed -e "/^bindkey \^r/ s/^#*/#/g" -i $file
+: 1661673841:0;sed -e "/^bindkey '\^r'/ s/^#*/#/g" -i $file
+: 1661673854:0;sed -e "/^bindkey '\\ew'/ s/^#*/#/g" -i $file
+: 1661673857:0;sed -e "/^bindkey '\ew'/ s/^#*/#/g" -i $file
+: 1661673863:0;sed -e "/^bindkey \'\ew\'/ s/^#*/#/g" -i $file
+: 1661674078:0;sed -e '/*copy-shell*/ s/^#*/#/' -i $file
+: 1661674083:0;sed -e '/*copy-prev*/ s/^#*/#/' -i $file
+: 1661674090:0;sed -e '/copy-prev*/ s/^#*/#/' -i $file
+: 1661674383:0;ranger
+: 1661674487:0;rm .zcompdump
+: 1661674560:0;fd -H -t f .zcompdump
+: 1661674698:0;fd -t f -H .zcompdump
+: 1661674765:0;fd -t f .zcompdump
+: 1661674769:0;fd -t f -H .zcompdump ~
+: 1661674800:0;env | rg LC
+: 1661674808:0;env | rg LC_ALL
+: 1661674818:0;echo $LC_COLLATE
+: 1661674820:0;echo $LC_COLATE
+: 1661674963:0;abbrev
+: 1661702114:0;lsl
+: 1661702737:0;timezsh
+: 1661703391:0;cd /usr/local/share/zsh
+: 1661703410:0;fd -t d -H zsh/site-functions
+: 1661703425:0;fd -t d -H zsh
+: 1661703439:0;fd -t d -H site-functions /
+: 1661703454:0;cd /usr/share/zsh/site-functions
+: 1661703463:0;cat _exa
+: 1661703492:0;exa cd
+: 1661703495:0;cd
+: 1661703553:0;paccache --help
+: 1661703564:0;paccache -d -ruk0
+: 1661703570:0;paccache -d
+: 1661703576:0;paccache -ruk0
+: 1661703588:0;paccache -rk3
+: 1661703706:0;exa .config
+: 1661707793:0;cd .local/share/applications
+: 1661707863:0;cp /usr/share/applications/kitty.desktop ~/.local/share/applications
+: 1661707885:0;cp /usr/share/applications/nvim.desktop ~/.local/share/applications
+: 1661707976:0;rm ~/.local/share/applications/nvim.desktop
+: 1661708146:0;rm .local/share/applications/kitty.desktop
+: 1661708361:0;cp kitty.desktop nvim.desktop ranger.desktop ~/.local/share/applications
+: 1661708394:0;v ranger.desktop
+: 1661708417:0;v nvim.desktop
+: 1661711767:0;exit
+: 1661712661:0;compinit --help
+: 1661794362:0;ziconsole
+: 1661794668:0;as
+: 1661794680:0;alias-finder "pip"
+: 1661794683:0;alias-finder "pacman"
+: 1661794685:0;alias-finder "sudo pacman"
+: 1661794691:0;alias-finder -h
+: 1661794705:0;alias-finder -e "git"
+: 1661794709:0;alias-finder -le "git"
+: 1661794712:0;alias-finder -l -e "git"
+: 1661794727:0;yolo
+: 1661794740:0;alias gimmeh
+: 1661794928:0;google
+: 1661794996:0;google bruh
+: 1661795091:0;frontend react
+: 1661795100:0;frontend reactjs
+: 1661795108:0;frontend reactjs components
+: 1661795134:0;safe-paste
+: 1661795169:0;lol
+: 1661795222:0;zoxide
+: 1661795235:0;_ZO_ECHO=1
+: 1661795254:0;export ZO_ECHO=1
+: 1661795289:0;echo _ZO_MAXAGE
+: 1661795293:0;echo $_ZO_MAXAGE
+: 1661795295:0;echo $ZO_MAXAGE
+: 1661795441:0;copypath
+: 1661795451:0;copyfile
+: 1661795454:0;copyfile -yh
+: 1661795456:0;copyfile -h
+: 1661795459:0;copyfile --help
+: 1661795486:0;copyfile .bashrc
+: 1661795588:0;title test
+: 1661795605:0;title "test"
+: 1661795679:0;nvm
+: 1661795682:0;npm
+: 1661795697:0;npm help help
+: 1661795706:0;npm help help-search
+: 1661795711:0;npm help-search
+: 1661795720:0;npm help-search install
+: 1661795726:0;npm help install
+: 1661795735:0;npm -l
+: 1661795743:0;npm help -l install
+: 1661795979:0;acpi
+: 1661795987:0;acpi --help
+: 1661795996:0;acpi -b
+: 1661795999:0;acpi -i
+: 1661796019:0;acpi -a
+: 1661796022:0;acpi -c
+: 1661796033:0;acpi -t
+: 1661796038:0;acpi -V
+: 1661796070:0;acpi -p
+: 1661796416:0;chuck
+: 1661796461:0;for i in {1..20}; do chuck; done
+: 1661796466:0;for i in {1..100}; do chuck; done
+: 1661796841:0;rm a.out
+: 1661796955:0;gh completion --shell zsh
+: 1661796998:0;gh repo help
+: 1661797006:0;gh repo --help
+: 1661797031:0;gh repo view
+: 1661797583:0;hibernate
+: 1661819729:0;xset q
+: 1661819882:0;omz
+: 1661820154:0;gh
+: 1661820163:0;toggle-fzf-tab
+: 1661820407:0;showkey -a
+: 1661821026:0;which g
+: 1661821242:0;git_list_aliases
+: 1661821281:0;git_log_file
+: 1661821296:0;git_main_branch
+: 1661821321:0;git_count_all
+: 1661823295:0;
+: 1661821437:0;gai
+: 1661821606:0;killall Caprine
+: 1661821609:0;killall caprine
+: 1661822814:0;chezmoi completion
+: 1661822817:0;chezmoi completion zsh
+: 1661822835:0;chezmoi completion zsh > $ZSH_CACHE_DIR/completions/_chezmoi
+: 1661822879:0;chezmoi
+: 1661822902:0;chezmoi --help | bat
+: 1661822973:0;chezmoi init
+: 1661822982:0;chezmoi add ~/.bashrc
+: 1661823006:0;chezmoi edit .bashr
+: 1661823008:0;chezmoi edit .bashrc
+: 1661823059:0;chezmoi cd
+: 1661823134:0;chezmoi --help
+: 1661823148:0;chezmoi edit-config
+: 1661823326:0;chezmoi remove .bashrc
+: 1661823339:0;chezmoi add .gtkrc-2.0
+: 1661823353:0;chezmoi edit .gtkrc-2.0
+: 1661823364:0;chezmoi diff
+: 1661823380:0;chezmoi -v -n
+: 1661823390:0;chezmoi -n apply
+: 1661823398:0;chezmoi -n -v apply
+: 1661824133:0;exec zsh -l
+: 1661824154:0;rm $ZI[ZCOMPDUMP_PATH]
+: 1661824165:0;rm "$ZI[ZCOMPDUMP_PATH]"
+: 1661824323:0;echo $ZI[ZCOMPDUMP_PATH]
+: 1661824351:0;echo $ZI[HOME_DIR]
+: 1661824457:0;exec zsh
+: 1661824500:0;rm .local/share/.zcompdump
+: 1661824502:0;zicompinit
+: 1661825022:0;echo $ZSH_CACHE_DIR
+: 1661825239:0;tree --level 0
+: 1661825245:0;tree -L 2 .
+: 1661825257:0;tree -L 2 . -h
+: 1661825262:0;tree -L 2 . --hidden
+: 1661825301:0;cbonsai
+: 1661825463:0;pacman -Q
+: 1661825466:0;pacman -Qq
+: 1661825468:0;pacman -Qqg
+: 1661825584:0;yay -Q
+: 1661825585:0;yay -Qq
+: 1661825591:0;yay -Qqeg
+: 1661825604:0;yay -Qqe
+: 1661825640:0;xkeycaps
+: 1661825694:0;reset
+: 1661825765:0;reset && y -Qeq
+: 1661825880:0;cd .cache/yay/bashhub-client/pkg
+: 1661825886:0;sudo ls
+: 1661825907:0;sudo rm -rf bashhub-client
+: 1661825959:0;adb
+: 1661826087:0;evtest
+: 1661826096:0;sudo evtest
+: 1661826197:0;fuseiso --help
+: 1661826204:0;fuseiso -h
+: 1661826327:0;lazygit
+: 1661826394:0;mtpfs
+: 1661826669:0;diff
+: 1661826674:0;diff --help
+: 1661826952:0;reset && y -Qe
+: 1661827139:0;whereis
+: 1661827142:0;whereis --help
+: 1661827200:0;xorg-appres
+: 1661827610:0;reboot
+: 1661828039:0;reset && y -Qe
+: 1661828100:0;reset; y -Qe | rg ^x
+: 1661828121:0;reset; y -Qe | rg x
+: 1661828142:0;reset; y -Qe | rg "xf|xo"
+: 1661828151:0;reset; y -Qe | rg "^xf|^xo"
+: 1661828180:0;reset; y -Qeg | rg "^xf|^xo"
+: 1661828190:0;reset; y -Qeq | rg "^xf|^xo"
+: 1661828203:5;y -Rnsu xorg-iceauth
+: 1661828317:0;reset; y -Qeq | rg "^xf|^xo"
+: 1661828323:0;appres
+: 1661828401:0;X
+: 1661828410:0;Xorg
+: 1661828441:0;Xnest --help
+: 1661828449:0;Xnest -help
+: 1661828525:0;sessreg
+: 1661828528:0;sessreg -h
+: 1661828534:0;sessreg -help
+: 1661828537:0;sessreg --
+: 1661828541:0;sessreg --help
+: 1661828577:0;smproxy --help
+: 1661828600:0;twm
+: 1661828663:0;reset; y -Qeq | rg "^xf|^xo"
+: 1661828672:0;x11p
+: 1661828677:0;x11perf --help
+: 1661828755:0;reset; y -Qeq | rg "^xf|^xo"
+: 1661828765:0;xcmsdb
+: 1661828768:0;xcmsdb --help
+: 1661828818:0;reset; y -Qeq | rg "^xf|^xo"
+: 1661828824:0;reset; y -Qeqg | rg "^xf|^xo"
+: 1661828966:0;xdriinfo
+: 1661829009:0;reset; y -Qeqg | rg "^xf|^xo"
+: 1661829124:0;xkbbell
+: 1661829176:0;reset; y -Qeqg | rg "^xf|^xo"
+: 1661829189:0;xlsatoms
+: 1661829205:0;xlsclients
+: 1661829291:0;xpr
+: 1661829325:0;xwininfo
+: 1661829366:0;xvfb-run --help
+: 1661829378:0;reset; y -Qeqg | rg "^xf|^xo"
+: 1661829627:0;dmidecode --help
+: 1661829722:0;file
+: 1661829734:0;file home/.bashrc
+: 1661829748:0;fuse3
+: 1661829751:0;fuse
+: 1661829920:0;sudo gfdisk
+: 1661829947:0;cgdisk
+: 1661829954:0;sudo cgdisk
+: 1661829960:0;cfdisk
+: 1661829963:0;sudo cfdisk
+: 1661830111:0;lsof
+: 1661830263:0;peek
+: 1661830325:0;pinta
+: 1661830943:0;command vi
+: 1661830949:0;command vim
+: 1661830952:0;command nvim
+vi
+eval $(starship init bash)
+eval "$(starship init bash)"
+zi
+ls
+: 1661830982:0;bash
+: 1661831285:0;gsub update --init --recursive --remote
+: 1661831502:0;gst
+: 1661831510:0;gst help
+: 1661831523:0;git stash apply
+: 1661831548:0;alias-finder -l -e "git status"
+: 1661831550:0;gs
+: 1661831688:0;chmod +x main/handlers/autorun.sh
+: 1661831923:0;gs
+: 1661831935:0;ga Resources/
+: 1661831950:0;gs -s
+: 1661831967:0;gaa
+: 1661832009:0;alias gcm
+: 1661832105:0;gsub update --init --recursive --remote
+: 1661832181:0;gaa
+: 1661832293:0;gl
+: 1661832298:0;glg
+: 1661832301:0;gll
+: 1661832313:0;alias-finder -e -l "git log"
+: 1661832317:0;ggb
+: 1661832320:0;glgo
+: 1661832349:0;gsub update --init --remote --recursive dotdrop
+: 1661832358:0;ga dotdrop
+: 1661832515:0;ga home/.config/awesome home/.config/nvim

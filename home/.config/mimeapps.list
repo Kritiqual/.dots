@@ -1,0 +1,7 @@
+[Default Applications]
+x-scheme-handler/tg=userapp-Telegram Desktop-6CRDO1.desktop
+image/png=viewnior.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-6CRDO1.desktop;
+image/png=viewnior.desktop;feh.desktop

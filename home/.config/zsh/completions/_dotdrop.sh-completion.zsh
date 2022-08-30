@@ -1,0 +1,1 @@
+/home/kritiqual/.dots/dotdrop/completion/_dotdrop.sh-completion.zsh

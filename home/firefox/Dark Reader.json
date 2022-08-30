@@ -21,7 +21,7 @@
         "styleSystemControls": true,
         "lightColorScheme": "Default",
         "darkColorScheme": "Dracula",
-        "immediateModify": false
+        "immediateModify": true
     },
     "presets": [],
     "customThemes": [],
@@ -66,15 +66,22 @@
         "deepsource.io",
         "admin.microsoft.com",
         "mail.google.com",
-        "app.slack.com"
+        "app.slack.com",
+        "terraria.wiki.gg",
+        "a1833a1a-9458-41e7-9275-ed62c62640cd",
+        "wezfurlong.org",
+        "wiki.zshell.dev"
     ],
     "siteListEnabled": [],
     "applyToListedOnly": false,
     "changeBrowserTheme": false,
     "syncSettings": true,
     "syncSitesFixes": false,
-    "automation": "",
-    "automationBehaviour": "OnOff",
+    "automation": {
+        "enabled": false,
+        "mode": "",
+        "behavior": "OnOff"
+    },
     "time": {
         "activation": "18:00",
         "deactivation": "9:00"
@@ -85,6 +92,10 @@
     "enableForProtectedPages": false,
     "enableContextMenus": false,
     "detectDarkTheme": false,
+    "displayedNews": [
+        "mobile"
+    ],
+    "automationBehaviour": "OnOff",
     "readNews": [
         "thanks-2021",
         "5m-users",

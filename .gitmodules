@@ -29,3 +29,8 @@
 	url = https://github.com/maximtrp/ranger-archives
 	ignore = dirty
 	branch = master
+[submodule "home/.config/BetterDiscord"]
+	path = home/.config/BetterDiscord
+	url = https://github.com/Kritiqual/BetterDiscord
+	ignore = dirty
+	branch = main

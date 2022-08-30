@@ -1,0 +1,16 @@
+calcurse
+cbonsai
+cmatrix
+cronie
+dotbare
+dolphin
+hollywood
+irssi
+linux-headers
+lolcat
+oneko
+pinta
+qalculate-gtk
+starship
+youtube-dl
+zoom

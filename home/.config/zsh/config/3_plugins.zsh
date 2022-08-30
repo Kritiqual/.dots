@@ -22,17 +22,16 @@ zi ice depth'1' && zi lucid light-mode for \
     atload'source $ZDOTDIR/.p10k.zsh' nocd romkatv/powerlevel10k
 
 zi wait lucid light-mode for \
-    atload'zicompinit; zicdreplay' z-shell/F-Sy-H Aloxaf/fzf-tab \
-    atload"_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
-    blockf atpull'zi creinstall -q .' zsh-users/zsh-completions \
-    z-shell/{zui,zi-console,zbrowse,zzcomplete} davidde/git
+    z-shell/{zui,zi-console,zbrowse,zzcomplete} Aloxaf/fzf-tab \
+    atload'zicompinit; zicdreplay' z-shell/F-Sy-H davidde/git \
+    atload'_zsh_autosuggest_start' zsh-users/zsh-autosuggestions \
+    blockf atpull'zi creinstall -q .' zsh-users/zsh-completions
 
-zi is-snippet wait lucid for OMZL::{key-bindings,spectrum,functions,clipboard}.zsh \
-    OMZP::{sudo,web-search,frontend-search,safe-paste,extract,universalarchive} \
-    OMZP::{copypath,copyfile,history,alias-finder,lol,npm,nvm,gitignore,gh} \
-    as'completion' OMZP::fd/_fd as'completion' OMZP::ripgrep/_ripgrep
+zi is-snippet wait lucid for OMZL::{key-bindings,spectrum,functions,clipboard}.zsh OMZP::sudo \
+    OMZP::{extract,universalarchive,safe-paste,copypath,copyfile,history,lol,npm,nvm,alias-finder,web-search,frontend-search} \
+    atclone'gh completion --shell zsh > _gh' OMZP::gitignore as'completion' OMZP::fd/_fd as'completion' OMZP::ripgrep/_ripgrep
 zi ice has'svn' svn && zi snippet OMZP::aliases
-zi ice has'svn' svn && zi snippet OMZP::pip
+zi ice has'svn' svn && zi snippet OMZP::pip && zi cdisable pip >/dev/null
 # zi ice has'svn' svn multisrc'{aliases}'
 
 #######################################################
@@ -46,6 +45,5 @@ export ZSH_AUTOSUGGEST_STRATEGY="completion"
 export ZICONSOLE_THEME=zdharma-256
 export ZICONSOLE_LAYOUT=default
 
-if [[ ! -d $ZSH_CACHE_DIR/completions ]]; then
-    command mkdir -p $ZSH_CACHE_DIR/completions
-fi
+alias ex="extract"
+alias af="alias-finder -l -e"

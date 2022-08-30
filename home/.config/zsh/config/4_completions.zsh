@@ -9,20 +9,18 @@ zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX
 zstyle ':completion:*:matches' group 'yes'
 zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*:options' auto-description '%d'
-if [[ -d "$ZI[HOME_DIR]" ]]; then
-    if [[ ! -z $(command ls -A "$ZI[PLUGINS_DIR]"/Aloxaf---fzf-tab) ]]; then
-        zstyle ':completion:*:corrections' format '[%d]'
-        zstyle ':completion:*:descriptions' format '[%d]'
-        zstyle ':completion:*:messages' format '[%d]'
-        zstyle ':completion:*:warnings' format '[no matches found]'
-        zstyle ':completion:*' format '[%d]'
-    else
-        zstyle ':completion:*:corrections' format ' %F{green} -- %d (errors: %e) --%f'
-        zstyle ':completion:*:descriptions' format ' %F{yellow} -- %d --%f'
-        zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
-        zstyle ':completion:*:warnings' format ' %F{red} -- no matches found --%f'
-        zstyle ':completion:*' format ' %F{yellow} -- %d --%f'
-    fi
+if [[ -d "$ZI[PLUGINS_DIR]/Aloxaf---fzf-tab" ]]; then
+    zstyle ':completion:*:corrections' format '[%d]'
+    zstyle ':completion:*:descriptions' format '[%d]'
+    zstyle ':completion:*:messages' format '[%d]'
+    zstyle ':completion:*:warnings' format '[no matches found]'
+    zstyle ':completion:*' format '[%d]'
+else
+    zstyle ':completion:*:corrections' format ' %F{green} -- %d (errors: %e) --%f'
+    zstyle ':completion:*:descriptions' format ' %F{yellow} -- %d --%f'
+    zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
+    zstyle ':completion:*:warnings' format ' %F{red} -- no matches found --%f'
+    zstyle ':completion:*' format ' %F{yellow} -- %d --%f'
 fi
 zstyle ':completion:*:default' list-prompt '%S%M matches%s'
 zstyle ':completion:*' menu select

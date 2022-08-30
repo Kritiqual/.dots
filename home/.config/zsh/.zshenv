@@ -1,8 +1,3 @@
-#######################################################
-#/===================================================\#
-#|>          DEFINING VARIABLES AND PATHS           <|#
-#\===================================================/#
-#######################################################
 ##-----ZI----------------------------------------------
 typeset -A ZI
 export ZI[HOME_DIR]="${HOME}/.local/zi"
@@ -14,22 +9,22 @@ else
     if [ "$TERM" = "linux" ]; then
         printf %b '\e[40m' '\e[8]'
         printf %b '\e[37m' '\e[8]'
-        printf %b '\e]P0282a36'
-        printf %b '\e]P86272a4'
+        printf %b '\e]P0191a2e'
+        printf %b '\e]P88d92ff'
         printf %b '\e]P1ff5555'
-        printf %b '\e]P9ff7777'
-        printf %b '\e]P250fa7b'
-        printf %b '\e]PA70fa9b'
-        printf %b '\e]P3f1fa8c'
+        printf %b '\e]P9ff6e6e'
+        printf %b '\e]P220e3b2'
+        printf %b '\e]PA50fa7b'
+        printf %b '\e]P3fde181'
         printf %b '\e]PBffb86c'
-        printf %b '\e]P4bd93f9'
-        printf %b '\e]PCcfa9ff'
-        printf %b '\e]P5ff79c6'
-        printf %b '\e]PDff88e8'
-        printf %b '\e]P68be9fd'
-        printf %b '\e]PE97e2ff'
-        printf %b '\e]P7f8f8f2'
-        printf %b '\e]PFffffff'
+        printf %b '\e]P49b87fd'
+        printf %b '\e]PCbd93f9'
+        printf %b '\e]P5ff6bcb'
+        printf %b '\e]PDff79c6'
+        printf %b '\e]P62cccff'
+        printf %b '\e]PE8be9fd'
+        printf %b '\e]P7ffffff'
+        printf %b '\e]PFf8f8f2'
         clear
     fi
 fi
@@ -63,13 +58,14 @@ export XDG_CACHE_HOME="${HOME}/.cache"
 export HISTSIZE=10000
 export SAVEHIST=$HISTSIZE
 export HISTFILE=~/.local/history/.zshist
-export HISTORY_IGNORE="(\
-p(| *)|y(| *)|a(| *)|pq(| *)|pu(| *)|au(| *)|u(| *)|btw(| *)|\
-m(| *)|r(| *)|f(| *)|e(| *)|pkg(| *)|nf(| *)|of(| *)|pf(| *)|\
-l(| *)|ls(| *)|ld(| *)|lt(| *)|dc(| *)|ac(| *)|vc(| *)|.*(| *)|\
-c[1..5](| *)|clear(| *)|cls(| *)|now(| *)|net(| *)|zi(| *)|\
-man(| *)|pwd(| *)|bash(| *)|zsh(| *)|bpytop(| *)|ncmpcpp(| *)|\
-)"
+ignore=(
+    p y a pq pu au u pkg dc ac vc rf gf m r f ex af
+    nf of pf l ls ld lt ph fph zi dp db j ji :q :Q
+    . .. ... .... ..... c{1..5} clear cls now net e
+    man pwd bash zsh bpytop ncmpcpp I_use_Arch_btw
+)
+for i in $ignore; do HISTORY_IGNORE+="$i(| *)|"; done
+export HISTORY_IGNORE=$(echo "(${HISTORY%?})")
 #<<~>>
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
@@ -94,10 +90,8 @@ export PF_INFO="ascii title kernel os shell pkgs uptime memory"
 for f in /usr/share/fzf/*.zsh; do
     [[ ! -f $f ]] || source $f
 done
-
-fzf_exclude="-E '*ache*' -E '.git' -E '__pycache__' -E '*.py[co]' -E '.zoom'"
-export FZF_DEFAULT_COMMAND="fd -H -t f ${fzf_exclude}"
-export FZF_ALT_C_COMMAND="fd -H -t d ${fzf_exclude}"
+export FZF_DEFAULT_COMMAND="fd -H -t f"
+export FZF_ALT_C_COMMAND="fd -H -t d"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 D_CLR="\
@@ -110,18 +104,20 @@ ED_CLR="\
 --color=fg+:#ffffff,bg+:#44475a,hl+:#9b87fd \
 --color=prompt:#20e3b2,pointer:#ff79c6,marker:#20e3b2 \
 --color=header:#8d92ff,info:#ffb86c,spinner:#ffb86c,border:#2cccff "
+FZF_BIND="--bind 'ctrl-alt-a:select-all,alt-a:clear-selection' \
+--bind alt-z:toggle-preview,alt-x:refresh-preview,alt-w:toggle-preview-wrap \
+--bind change:first,alt-y:first,alt-o:last,alt-u:preview-top,alt-i:preview-bottom,\
+alt-j:preview-down,alt-k:preview-up,alt-h:preview-page-up,alt-l:preview-page-down"
 
-export FZF_DEFAULT_OPTS="${ED_CLR} --reverse --cycle --bind change:first \
---bind alt-y:first,alt-o:last,ctrl-a:toggle-all,alt-a:clear-selection \
---bind /:toggle-preview,?:refresh-preview,alt-w:toggle-preview-wrap,\
-alt-u:preview-top,alt-i:preview-bottom,alt-j:preview-down,alt-k:preview-up,\
-alt-h:preview-page-up,alt-l:preview-page-down --preview-window='70%,nowrap' \
---ansi --info=inline --border=rounded --prompt='|> ' --pointer='>' --marker='>'"
-export FZF_CTRL_T_OPTS="--preview 'bat -p {} 2>/dev/null' --preview-window='70%,<50(top,60%,border-bottom)'"
-export FZF_ALT_C_OPTS="--preview 'exa -TaD {}' --preview-window='70%,<50(top,60%,border-bottom)'"
+export FZF_DEFAULT_OPTS="${ED_CLR} $FZF_BIND --ansi \
+--reverse --cycle --preview-window='70%,nowrap,<50(top,60%,border-bottom)' \
+--info=inline --border=rounded --prompt='|> ' --pointer='>' --marker='>'"
+export FZF_CTRL_T_OPTS="--preview 'bat -p {} 2>/dev/null'"
+export FZF_ALT_C_OPTS="--preview 'exa -TaD {}'"
 #<<~>>
 export LESSHISTFILE="-"
 export LESSHISTSIZE=0
+export DELTA_PAGER=bat
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 export IPYTHONDIR="$XDG_CONFIG_HOME"/ipython
 export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
@@ -134,14 +130,11 @@ export npm_config_userconfig="$XDG_CONFIG_HOME"/npm/config
 export npm_config_cache="$XDG_CACHE_HOME"/npm
 export npm_config_prefix="$XDG_DATA_HOME"/npm
 export DOTDROP_AUTOUPDATE="no"
-
-##-----Plugins-----------------------------------------
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#545454,bg=#191a2e"
-ZSH_AUTOSUGGEST_STRATEGY="completion"
+function e() { return $1; }
 
 ##-----Path--------------------------------------------
 #<<fpath>>
-fpath+=(~/.local/share/completions/)
+fpath+=($ZDOTDIR/completions)
 
 #<<path>>
 path+=(

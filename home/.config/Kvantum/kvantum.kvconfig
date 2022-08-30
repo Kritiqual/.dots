@@ -1,2 +1,5 @@
 [General]
 theme=Sweet
+
+[Applications]
+Sweet=dolphin

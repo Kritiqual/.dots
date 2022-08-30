@@ -29,28 +29,38 @@ alias netrs='sudo systemctl restart NetworkManager'
 # alias flightoff='sudo rfkill unblock all'
 
 ##-----Pacman & AUR helper-----------------------------
-## While waiting for 'aura-rust' to be released, I will use yay,
-## because, aura does not support -l flag yet :)
+## Aura still not support -l flag, until aura-rust released
+## I use paru until then ;)
 alias p='sudo pacman'
 alias a='sudo aura'
 alias y='yay'
+alias u='paru'
 #<<~>>
-alias pu='sudo pacman -Syy'
-# alias au='sudo aura -Au'
-alias au='yay -Sau'
+alias pu='p -Syy'
+# alias pu='a -Syy'
+# alias pu='y -Syy'
+# alias pu='u -Syy'
 #<<~>>
-# alias u='sudo pacman -Su; sudo aura -Ayu'
-alias u='yay -Syu'
+# alias au='a -Au'
+# alias au='y -Sau'
+alias au='u -Sau'
 #<<~>>
-alias sc='sudo aura -Bc'
-alias cc='yay -Scc'
-alias co='sudo pacman -Rns $(pacman -Qtdq)'
+# alias up='a -Syu; a -Au'
+# alias up='y -Syu'
+alias up='u -Syu'
+#<<~>>
+# alias cc='y -Scc'
+alias cc='u -Scc'
+#<<~>>
+alias sc='a -Bc'
+alias co='p -Rns $(pacman -Qtdq)'
 alias unlock='sudo rm /var/lib/pacman/db.lck'
-alias pkg='pacman -Qeq > ~/.dots/pkg.txt'
+alias pkg='u -Qeq > ~/.dots/pkg.txt'
 
 ##-----Dotfiles manager--------------------------------
-alias d='DOTDROP_CONFIG=~/.dots/config.yaml ~/.dots/dotdrop.sh'
-# alias d="dotbare"
+alias dp='DOTDROP_CONFIG=~/.dots/config.yaml ~/.dots/dotdrop.sh'
+alias did='dp install -d'
+alias db="dotbare"
 
 ##-----Shorthand for [Neo]vi[m]------------------------
 alias v="nvim"
@@ -114,8 +124,9 @@ alias r='ranger'
 alias pq="pacman_fzf"
 alias m="man_fzf"
 alias rf="ripgrep_fzf"
+alias ghf="githelp_fzf"
 
-alias df='kitty +kitten diff'
+alias kd='kitty +kitten diff'
 alias now='date +"[%T] %a, %d/%m/%Y"'
 alias ph='echo -e ${PATH//:/\\n}'
 alias fph='echo -e "${fpath// /\\n}"'

@@ -95,14 +95,11 @@ export PF_INFO="ascii title kernel os shell pkgs uptime memory"
 #     pfetch # neofetch
 # fi
 #<<~>>
-fzf_arr=($(fd -t f .bash /usr/share/fzf/))
-for f in "${fzf_arr[@]}"; do
-    [[ -f $f ]] && source $f || echo "$f not found"
+for f in /usr/share/fzf/*.bash; do
+    [[ ! -f $f ]] || source $f
 done
-
-fzf_exclude="-E '*ache*' -E '.git' -E '__pycache__' -E '*.py[co]' -E '.zoom'"
-export FZF_DEFAULT_COMMAND="fd -H -t f ${fzf_exclude}"
-export FZF_ALT_C_COMMAND="fd -H -t d ${fzf_exclude}"
+export FZF_DEFAULT_COMMAND="fd -H -t f"
+export FZF_ALT_C_COMMAND="fd -H -t d"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 D_CLR="\
@@ -115,15 +112,16 @@ ED_CLR="\
 --color=fg+:#ffffff,bg+:#44475a,hl+:#9b87fd \
 --color=prompt:#20e3b2,pointer:#ff79c6,marker:#20e3b2 \
 --color=header:#8d92ff,info:#ffb86c,spinner:#ffb86c,border:#2cccff "
+FZF_BIND="--bind 'ctrl-alt-a:select-all,alt-a:clear-selection' \
+--bind alt-z:toggle-preview,alt-x:refresh-preview,alt-w:toggle-preview-wrap \
+--bind change:first,alt-y:first,alt-o:last,alt-u:preview-top,alt-i:preview-bottom,\
+alt-j:preview-down,alt-k:preview-up,alt-h:preview-page-up,alt-l:preview-page-down"
 
-export FZF_DEFAULT_OPTS="${ED_CLR} --reverse --cycle --bind change:first \
---bind alt-y:first,alt-o:last,ctrl-a:toggle-all,alt-a:clear-selection \
---bind /:toggle-preview,?:refresh-preview,alt-w:toggle-preview-wrap,\
-alt-u:preview-top,alt-i:preview-bottom,alt-j:preview-down,alt-k:preview-up,\
-alt-h:preview-page-up,alt-l:preview-page-down --preview-window='70%,nowrap' \
---ansi --info=inline --border=rounded --prompt='|> ' --pointer='>' --marker='>'"
-export FZF_CTRL_T_OPTS="--preview 'bat -p {} 2>/dev/null' --preview-window='70%,<50(top,60%,border-bottom)'"
-export FZF_ALT_C_OPTS="--preview 'exa -TaD {}' --preview-window='70%,<50(top,60%,border-bottom)'"
+export FZF_DEFAULT_OPTS="${ED_CLR} $FZF_BIND --ansi \
+--reverse --cycle --preview-window='70%,nowrap,<50(top,60%,border-bottom)' \
+--info=inline --border=rounded --prompt='|> ' --pointer='>' --marker='>'"
+export FZF_CTRL_T_OPTS="--preview 'bat -p {} 2>/dev/null'"
+export FZF_ALT_C_OPTS="--preview 'exa -TaD {}'"
 #<<~>>
 export LESSHISTFILE="-"
 export LESSHISTSIZE=0
@@ -138,6 +136,7 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export npm_config_userconfig="$XDG_CONFIG_HOME"/npm/config
 export npm_config_cache="$XDG_CACHE_HOME"/npm
 export npm_config_prefix="$XDG_DATA_HOME"/npm
+export DOTDROP_AUTOUPDATE="no"
 
 ##-----Path--------------------------------------------
 path_arr=(

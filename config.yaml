@@ -1,7 +1,9 @@
 actions:
   post:
-    setupibus: "[[ ! -z {{@@ env['DISPLAY'] @@}} ]] && ibus-setup"
-    mpdsv: systemctl --user enable mpd.service
+    ibussetup: >-
+      if [[ {{@@ env['DISPLAY'] @@}} == ":*" ]]; then
+        ibus-setup
+      fi
     xdgdir: mkdir -p ~/Projects ~/Pictures/Screenshots ~/Music/lyrics
 config:
   backup: false
@@ -10,96 +12,91 @@ config:
   keepdot: true
   showdiff: true
   check_version: true
-  dotpath: ~/.dots
-variables:
-  cfg: home/.config
+  dotpath: home
 dynvariables:
-  ffcss: fd -t d .default-release ~/.mozilla/firefox
+  ffcss: find ~/.mozilla/firefox/ -type d -name "*default-release"
 dotfiles:
-  d_home:
-    src: home
-    dst: ~
+  home:
+    src: .
+    dst: "~"
     link: link_children
     instignore:
-      - ".config"
-      - ".local"
-      - ".xdman"
-      - "firefox"
-  d_config:
-    src: "{{@@ cfg @@}}"
+      - .config
+      - .local
+      - .xdman
+      - bin
+      - firefox
+  config:
+    src: .config
     dst: ~/.config
     link: link_children
     instignore:
-      - "BetterDiscord"
-      - "Caprine"
-      - "gh"
-      - "mpd"
-      - "qt5ct"
-      - "Thunar"
-      - "viewnior"
-      - "ibus-bamboo"
-  BD_plugins_and_themes:
-    src: "{{@@ cfg @@}}/BetterDiscord"
-    dst: ~/.config/BetterDiscord
-    link: link_children
-    instignore:
-      - "data"
-  BD_data:
-    src: "{{@@ cfg @@}}/BetterDiscord/data"
-    dst: ~/.config/BetterDiscord/data
-    link: link_children
+      - Caprine
+      - gh
+      - ibus-bamboo
+      - mpd
+      - qBittorrent
+      - qt5ct
+      - Thunar
+      - viewnior
+      - systemd
   Caprine:
-    src: "{{@@ cfg @@}}/Caprine"
+    src: .config/Caprine
     dst: ~/.config/Caprine
     link: link_children
-  ibus_bamboo:
-    src: "{{@@ cfg @@}}/ibus-bamboo"
+  gh:
+    src: .config/gh
+    dst: ~/.config/gh
+    link: link_children
+  ibus-bamboo:
+    src: .config/ibus-bamboo
     dst: ~/.config/ibus-bamboo
     link: absolute
     actions:
-      - setupibus
-  gh:
-    src: "{{@@ cfg @@}}/gh"
-    dst: ~/.config/gh
-    link: link_children
+      - ibussetup
   mpd:
-    src: "{{@@ cfg @@}}/mpd"
+    src: .config/mpd
     dst: ~/.config/mpd
     link: link_children
+  qBittorrent:
+    src: .config/qBittorrent
+    dst: ~/.config/qBittorrent
+    link: link_children
   qt5ct:
-    src: "{{@@ cfg @@}}/qt5ct"
+    src: .config/qt5ct
     dst: ~/.config/qt5ct
     link: link_children
-  thunar:
-    src: "{{@@ cfg @@}}/Thunar"
+  Thunar:
+    src: .config/Thunar
     dst: ~/.config/Thunar
     link: link_children
   viewnior:
-    src: "{{@@ cfg @@}}/viewnior"
+    src: .config/viewnior
     dst: ~/.config/viewnior
     link: link_children
-  Xdman:
-    src: home/.xdman
-    dst: ~/.xdman
+  systemd:
+    src: .config/systemd
+    dst: ~/.config/systemd
     link: link_children
-  d_ffchrome:
-    src: home/firefox
+  ff_chrome:
+    src: firefox
     dst: "{{@@ ffcss @@}}/chrome"
     link: absolute
-  d_local:
-    src: home/.local
-    dst: ~/.local
+  xdman:
+    src: .xdman
+    dst: ~/.xdman
     link: link_children
-    instignore:
-      - "share"
-  d_localbin:
-    src: home/.local/share/bin
+  local_bin:
+    src: bin
     dst: ~/.local/share/bin
     link: absolute
+  # void_actions:
+  #   src:
+  #   dst:
+  #   actions:
 profiles:
   Archie:
     dotfiles:
       - ALL
     actions:
-      - mpdsv
       - xdgdir

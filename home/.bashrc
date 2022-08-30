@@ -5,7 +5,7 @@
 #######################################################
 if [[ -d $HOME/.config/bash ]]; then
     for f in $HOME/.config/bash/*.bash; do
-        [[ -f $f ]] && source $f
+        [[ ! -f $f ]] || source $f
     done
 fi
 
@@ -36,7 +36,5 @@ unset hstignore path_arr fzf_arr fzf_exclude D_CLR ED_CLR cmp_aliases_array
 #\===================================================/#
 #######################################################
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
-[[ -f /usr/bin/starship ]] && e() {
-    return $1
-}
+e() { return $1; }
 eval "$(starship init bash)"

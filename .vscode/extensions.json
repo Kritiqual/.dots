@@ -131,8 +131,9 @@
     "cliffordfajardo.highlight-line-vscode",
     "bierner.github-markdown-preview",
     "rapidapi.vscode-rapidapi-client",
-    "ittwist.vasuki-dark-theme",
+    "Ittwist.vasuki-dark-theme",
     "ms-vscode.hexeditor",
-    "mintlify.document"
+    "mintlify.document",
+    "CodeStream.codestream"
   ]
 }

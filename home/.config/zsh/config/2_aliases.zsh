@@ -127,7 +127,7 @@ alias rf="ripgrep_fzf"
 alias ghf="githelp_fzf"
 
 alias kd='kitty +kitten diff'
-alias now='date +"[%T] %a, %d/%m/%Y"'
+alias now='date +"[%T] %a, %Y/%m/%d"'
 alias ph='echo -e ${PATH//:/\\n}'
 alias fph='echo -e "${fpath// /\\n}"'
 

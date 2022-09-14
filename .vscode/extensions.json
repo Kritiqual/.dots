@@ -131,9 +131,12 @@
     "cliffordfajardo.highlight-line-vscode",
     "bierner.github-markdown-preview",
     "rapidapi.vscode-rapidapi-client",
-    "Ittwist.vasuki-dark-theme",
+    "ittwist.vasuki-dark-theme",
     "ms-vscode.hexeditor",
     "mintlify.document",
-    "CodeStream.codestream"
+    "codestream.codestream",
+    "karyfoundation.comment",
+    "cschlosser.doxdocgen",
+    "GitHub.copilot"
   ]
 }

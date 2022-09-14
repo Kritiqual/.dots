@@ -26,8 +26,10 @@ discord
 dmidecode
 dos2unix
 dosfstools
+dotbare
 efibootmgr
 evtest
+eww
 exa
 exfatprogs
 fd
@@ -78,6 +80,7 @@ mtpfs
 nano
 ncmpcpp
 neofetch-git
+neovide-git
 neovim-nightly-bin
 networkmanager
 nodejs

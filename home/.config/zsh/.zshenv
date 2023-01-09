@@ -1,6 +1,7 @@
 ##-----ZI----------------------------------------------
 typeset -A ZI
 export ZI[HOME_DIR]="${HOME}/.local/zi"
+export ZI[ZCOMPDUMP_PATH]="${XDG_DATA_HOME}/.zcompdump"
 
 ##-----Var---------------------------------------------
 if [ ! -z ${DISPLAY} ]; then
@@ -118,18 +119,28 @@ export FZF_ALT_C_OPTS="--preview 'exa -TaD {}'"
 export LESSHISTFILE="-"
 export LESSHISTSIZE=0
 export DELTA_PAGER=bat
+export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_STYLE_OVERRIDE=kvantum
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 export IPYTHONDIR="$XDG_CONFIG_HOME"/ipython
 export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+
+export JAVA_TOOL_OPTIONS='-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+export SILENT_JAVA_TOOL_OPTIONS='$JAVA_TOOL_OPTIONS'
+alias java='unset JAVA_TOOL_OPTIONS; java "$SILENT_JAVA_TOOL_OPTIONS"'
+
 export XCURSOR_PATH=/usr/share/icons:${XDG_DATA_HOME}/icons
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export GOPATH="$XDG_DATA_HOME"/go
 export npm_config_userconfig="$XDG_CONFIG_HOME"/npm/config
 export npm_config_cache="$XDG_CACHE_HOME"/npm
 export npm_config_prefix="$XDG_DATA_HOME"/npm
 export DOTDROP_AUTOUPDATE="no"
+export DOTDROP_CONFIG="$DS/config.yaml"
+export DOTDROP_PROFILE="Archie"
 function e() { return $1; }
 
 ##-----Path--------------------------------------------
@@ -138,7 +149,10 @@ fpath+=($ZDOTDIR/completions)
 
 #<<path>>
 path+=(
-    "$HOME/.local/bin" "$HOME/.local/share/bin"
-    "/usr/bin" "$XDG_DATA_HOME/npm/bin"
+    "/usr/bin"
+    "$HOME/.local/bin"
+    "$HOME/.local/share/bin"
+    "$XDG_DATA_HOME/npm/bin"
+    "$XDG_DATA_HOME/cargo/bin"
 )
 export PATH

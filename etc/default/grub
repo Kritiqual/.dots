@@ -4,11 +4,11 @@ GRUB_DEFAULT="0"
 GRUB_TIMEOUT="5"
 GRUB_RECORDFAIL_TIMEOUT="$GRUB_TIMEOUT"
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet nmi_watchdog=0 loglevel=3 rd.systemd.show_status=auto rd.udev.log_level=3 fsck.mode=skip fbcon=nodefer"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 rd.systemd.show_status=auto rd.udev.log_level=3 nowatchdog fsck.mode=skip zswap.enabled=0 fbcon=nodefer"
 
 # Uncomment this for plymouth
-# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nmi_watchdog=0 loglevel=3 rd.systemd.show_status=auto rd.udev.log_level=3 fsck.mode=skip fbcon=nodefer vt.global_cursor_default=1"
-GRUB_CMDLINE_LINUX="resume=/dev/nvme0n1p4"
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash loglevel=3 rd.systemd.show_status=auto rd.udev.log_level=3 nowatchdog fsck.mode=skip fbcon=nodefer vt.global_cursor_default=1"
+GRUB_CMDLINE_LINUX="resume=/dev/nvme0n1p5"
 GRUB_DISABLE_OS_PROBER="false"
 
 # Preload both GPT and MBR modules so that they are not missed

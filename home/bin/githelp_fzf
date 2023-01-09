@@ -1,1 +1,3 @@
-git help -a | awk '!/^$|See|Main|Ancillary|Interacting|Low-*|Command|sh-i18n|sh-setup/ {print $1}' |    head -n 140 | fzf --exit-0 --preview="git help {} | bat -l man" --preview-window="top,90%,nowrap,border-bottom"
+git help -a |
+    awk '!/^$|See|Main|Ancillary|Interacting|Low-*|Command|sh-i18n|sh-setup/ {print $1}' | head -n 140 |
+    fzf --exit-0 --preview="git help {} | bat -l man" --preview-window="top,90%,nowrap,border-bottom"

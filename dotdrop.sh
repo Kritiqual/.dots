@@ -7,11 +7,11 @@
 rl="readlink -f"
 
 if ! ${rl} "${0}" >/dev/null 2>&1; then
-  rl="realpath"
+    rl="realpath"
 
-  if ! hash ${rl}; then
-    echo "\"${rl}\" not found!" && exit 1
-  fi
+    if ! hash ${rl}; then
+        echo "\"${rl}\" not found!" && exit 1
+    fi
 fi
 
 # setup variables
@@ -26,8 +26,8 @@ cd "${cur}" || { echo "Directory \"${cur}\" doesn't exist, aborting." && exit 1;
 
 # init/update the submodule
 if [ "${DOTDROP_AUTOUPDATE-yes}" = yes ]; then
-  git submodule update --init --recursive
-  git submodule update --remote dotdrop
+    git submodule update --init --recursive
+    git submodule update --remote dotdrop
 fi
 
 # check python executable

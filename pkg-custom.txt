@@ -6,11 +6,14 @@ dotbare
 dolphin
 hollywood
 irssi
+ksnip
 linux-headers
 lolcat
 oneko
 pinta
+pipes.sh
 qalculate-gtk
 starship
+topgrade
 youtube-dl
 zoom

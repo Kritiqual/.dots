@@ -7,7 +7,7 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 xscreensaver.fade:   false
 xscreensaver.unfade: false
-Xcursor.theme: Sweet-cursors
+Xcursor.theme: Breeze_Hacked
 
 ! =======================
 ! Official Dracula Scheme

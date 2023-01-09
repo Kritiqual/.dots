@@ -1,0 +1,59 @@
+:emojisense:
+bash ide
+better comment
+better shell syntax
+better toml
+bracket select
+change-case (wmaurer)
+code autocomplete
+code runner
+codesnap
+color highlight
+color manager
+comment box
+dracula
+emoji
+evondev dracula
+filesize
+fluent icons
+format files
+GH PR & Issues
+GH repo
+gitignore
+gitlens
+indent-rainbow
+lua
+markdown AIO
+markdown checkboxes
+markdown emoji
+markdown footnotes
+markdown preview enhanced
+markdown preview GH styling
+markdown shortcut
+markdown table prettier
+markdown + math
+material icon
+path autocomplete
+prettier
+project manager
+remote repo
+(runme)
+shebang snippets
+shell-format
+snippets
+stylua
+svg
+syntax highlighter
+intellicode
+toggle quotes
+toggle semicolon
+yaml
+manpages
+wikitext
+c/c++
+debugger for java
+isort
+java
+java code generator
+python
+conventional commit

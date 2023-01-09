@@ -60,7 +60,6 @@
         "stackoverflow.com",
         "www.canva.com",
         "www.office.com",
-        "kritiqual-my.sharepoint.com",
         "getpocket.com",
         "app.daily.dev",
         "deepsource.io",
@@ -70,7 +69,14 @@
         "terraria.wiki.gg",
         "a1833a1a-9458-41e7-9275-ed62c62640cd",
         "wezfurlong.org",
-        "wiki.zshell.dev"
+        "wiki.zshell.dev",
+        "keytest.vn",
+        "eop.edu.vn",
+        "kritiqual-my.sharepoint.com",
+        "mkl.1office.vn",
+        "blogtruyen.vn",
+        "docs.google.com",
+        "awesomewm.org"
     ],
     "siteListEnabled": [],
     "applyToListedOnly": false,
@@ -92,10 +98,10 @@
     "enableForProtectedPages": false,
     "enableContextMenus": false,
     "detectDarkTheme": false,
+    "automationBehaviour": "OnOff",
     "displayedNews": [
         "mobile"
     ],
-    "automationBehaviour": "OnOff",
     "readNews": [
         "thanks-2021",
         "5m-users",

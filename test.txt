@@ -1,0 +1,10 @@
+bat
+fd
+rg
+fzf
+dotbare
+dotdrop
+gh cli
+neofetch
+pfetch
+onefetch

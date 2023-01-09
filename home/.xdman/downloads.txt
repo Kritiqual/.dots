@@ -1,4 +1,4 @@
-21
+30
 12
 id: 490f0f06-6b8f-480d-9d77-54a2c1547064
 file: Debian_1
@@ -9,6 +9,148 @@ date: 2022-04-24 19:04:29
 downloaded: 396361728
 size: 396361728
 progress: 91
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+11
+id: 947d3895-f8cd-46be-bc60-365644023bf1
+file: 277277360_307991508103355_3230281718178071370_n.mp4
+category: 30
+state: 100
+date: 2022-03-24 13:29:19
+downloaded: 171996
+size: 171996
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: fd2487f7-eea8-44c2-8a20-99d7e39ddf81
+file: PopOS
+category: 60
+state: 100
+folder: /mnt
+date: 2022-04-24 19:28:30
+downloaded: 2762833920
+size: 2762833920
+progress: 98
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 39d8ec54-d83b-428d-bb68-b3b6995847be
+file: Phieuso1_GUI.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-11-29 14:26:31
+downloaded: 743186
+size: 743186
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 3d205533-62ae-47fa-b03f-447ec89289e4
+file: BÃI 8- Äá» CÆ¯Æ NG BÃI GIáº¢NG.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2021-11-08 14:45:35
+downloaded: 643811
+size: 643811
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 743db537-d5e7-4e41-8127-a4a09f2f1ce3
+file: Terraria.zip
+category: 50
+state: 130
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-05-23 19:50:06
+downloaded: 0
+size: 0
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: fbbabfd5-8a65-4ac7-b931-dd611cfb86e2
+file: Void.iso
+category: 60
+state: 100
+folder: /mnt
+date: 2022-10-21 22:19:30
+downloaded: 695192032
+size: 695205888
+progress: 94
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 4647e99e-fbf3-4633-8e77-1730faa0cf3e
+file: PopOS_1.iso
+category: 60
+state: 100
+folder: /mnt
+date: 2022-10-21 22:20:59
+downloaded: 3024814080
+size: 3024814080
+progress: 98
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: ed4c7dac-8706-4c08-97c2-5b99e466d4e0
+file: BÃ i 8_ Pháº§n 1- ÄÆ°á»ng Äi ngáº¯n nháº¥t.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2021-11-08 14:45:45
+downloaded: 1060859
+size: 1060859
+progress: 98
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 5d993ce9-32eb-4486-bc4f-8d6886a429ef
+file: Phiáº¿u gá»­i hÃ ng.Nhanh*1.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-03-24 15:38:15
+downloaded: 108088
+size: 108088
+progress: 100
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 1e232e78-ccfd-4e0a-8002-764139a05c41
+file: nixos-minimal-22.05.3826.e6e675cafe6-x86_64-linux.iso
+category: 60
+state: 130
+folder: /mnt
+date: 2022-10-28 10:48:04
+downloaded: 859832320
+size: 859832320
+progress: 100
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 33966237-c64b-4fcb-be04-e1726a0b68b7
+file: Gentoo
+category: 60
+state: 100
+folder: /mnt
+date: 2022-04-24 17:33:55
+downloaded: 406847488
+size: 406847488
+progress: 86
 tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0
@@ -64,6 +206,19 @@ tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0
 12
+id: c5971252-3eaf-46b1-b9ae-7023498b1e9b
+file: Phieuso4_GUI.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-11-29 15:16:23
+downloaded: 970094
+size: 970094
+progress: 0
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
 id: 12f367d6-d820-4f86-9169-fb15e37104c8
 file: anarchy-1.3.4-x86_64.iso
 category: 60
@@ -73,6 +228,19 @@ date: 2022-01-13 15:09:34
 downloaded: 934621184
 size: 934621184
 progress: 93
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 534fa975-7d90-419f-b8f1-dc4a7c4c4cc2
+file: Phieuso2_GUI.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-11-29 15:14:33
+downloaded: 699436
+size: 699436
+progress: 0
 tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0
@@ -128,18 +296,6 @@ progress: 0
 tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0
-11
-id: 947d3895-f8cd-46be-bc60-365644023bf1
-file: 277277360_307991508103355_3230281718178071370_n.mp4
-category: 30
-state: 100
-date: 2022-03-24 13:29:19
-downloaded: 171996
-size: 171996
-progress: 0
-tempfolder: /home/kritiqual/.xdman/temp
-queueid: 
-formatIndex: 0
 12
 id: bdec3d1f-0f04-432f-90b6-e63aafe11d63
 file: dl.html
@@ -167,19 +323,6 @@ tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0
 12
-id: fd2487f7-eea8-44c2-8a20-99d7e39ddf81
-file: PopOS
-category: 60
-state: 100
-folder: /mnt
-date: 2022-04-24 19:28:30
-downloaded: 2762833920
-size: 2762833920
-progress: 98
-tempfolder: /home/kritiqual/.xdman/temp
-queueid: 
-formatIndex: 0
-12
 id: 2e1ed286-a813-4726-893b-e3da5bf0858a
 file: Terraria.zip
 category: 50
@@ -193,28 +336,15 @@ tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0
 12
-id: 3d205533-62ae-47fa-b03f-447ec89289e4
-file: BÃI 8- Äá» CÆ¯Æ NG BÃI GIáº¢NG.pdf
-category: 10
-state: 100
-folder: /home/kritiqual/Downloads/Documents
-date: 2021-11-08 14:45:35
-downloaded: 643811
-size: 643811
-progress: 0
-tempfolder: /home/kritiqual/.xdman/temp
-queueid: 
-formatIndex: 0
-12
-id: 743db537-d5e7-4e41-8127-a4a09f2f1ce3
-file: Terraria.zip
+id: 3ccd55b3-69fa-442f-8b64-403da92c8cfc
+file: wezterm-20221119-145034-49b9839f.zip
 category: 50
-state: 130
-folder: /home/kritiqual/Downloads/Documents
-date: 2022-05-23 19:50:06
-downloaded: 0
-size: 0
-progress: 0
+state: 100
+folder: /home/kritiqual
+date: 2022-12-13 15:36:01
+downloaded: 84313758
+size: 84313758
+progress: 99
 tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0
@@ -232,41 +362,28 @@ tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0
 12
-id: ed4c7dac-8706-4c08-97c2-5b99e466d4e0
-file: BÃ i 8_ Pháº§n 1- ÄÆ°á»ng Äi ngáº¯n nháº¥t.pdf
-category: 10
-state: 100
-folder: /home/kritiqual/Downloads/Documents
-date: 2021-11-08 14:45:45
-downloaded: 1060859
-size: 1060859
-progress: 98
-tempfolder: /home/kritiqual/.xdman/temp
-queueid: 
-formatIndex: 0
-12
-id: 5d993ce9-32eb-4486-bc4f-8d6886a429ef
-file: Phiáº¿u gá»­i hÃ ng.Nhanh*1.pdf
-category: 10
-state: 100
-folder: /home/kritiqual/Downloads/Documents
-date: 2022-03-24 15:38:15
-downloaded: 108088
-size: 108088
-progress: 100
-tempfolder: /home/kritiqual/.xdman/temp
-queueid: 
-formatIndex: 0
-12
-id: 33966237-c64b-4fcb-be04-e1726a0b68b7
-file: Gentoo
+id: 3c90b498-2e19-4f91-aa28-32e9fae284c2
+file: Anarchy.iso
 category: 60
 state: 100
 folder: /mnt
-date: 2022-04-24 17:33:55
-downloaded: 406847488
-size: 406847488
-progress: 86
+date: 2022-10-21 22:19:05
+downloaded: 934621184
+size: 934621184
+progress: 93
+tempfolder: /home/kritiqual/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: a5660596-33fb-4b32-b059-a774cc75ab52
+file: Phieuso3_GUI.pdf
+category: 10
+state: 100
+folder: /home/kritiqual/Downloads/Documents
+date: 2022-11-29 15:15:29
+downloaded: 944697
+size: 944697
+progress: 0
 tempfolder: /home/kritiqual/.xdman/temp
 queueid: 
 formatIndex: 0

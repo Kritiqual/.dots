@@ -51,14 +51,15 @@ alias up='u -Syu'
 #<<~>>
 # alias cc='y -Scc'
 alias cc='u -Scc'
+alias pc='paccache -ruk0 && paccache -rk1'
 #<<~>>
 alias sc='a -Bc'
 alias co='p -Rns $(pacman -Qtdq)'
-alias unlock='sudo rm /var/lib/pacman/db.lck'
-alias pkg='u -Qeq > ~/.dots/pkg.txt'
+alias ul='sudo rm /var/lib/pacman/db.lck'
+alias pkg='u -Qeq | rg -v "zoom" > ~/.dots/pkg.txt'
 
 ##-----Dotfiles manager--------------------------------
-alias dp='DOTDROP_CONFIG=~/.dots/config.yaml ~/.dots/dotdrop.sh'
+alias dp='$DS/dotdrop.sh'
 alias did='dp install -d'
 alias db="dotbare"
 
@@ -75,19 +76,33 @@ alias svim="sudo nvim"
 
 ##-----Colorizing some command-------------------------
 alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias egrep='grep -E --color=auto'
+alias fgrep='grep -F --color=auto'
 alias rg='rg --color=auto'
 #<<~>>
-default="\
---git --icons --classify --color=always \
---color-scale --group-directories-first \
---time-style=iso --ignore-glob='*.git|.zoom'\
-"
-alias l="exa -a $default"
-alias ls="exa -la $default"
-alias ld="exa -laD $default"
-alias lt="exa -laT $default"
+exa_params=(
+    '--git' '--icons' '--classify' '--color=always'
+    '--color-scale' '--group-directories-first'
+    '--time-style=long-iso' '-I "*.git"' '--group'
+)
+alias l="exa -a $exa_params"
+alias ls="l -l"
+alias ld="ls -D"
+alias lt="ls -T"
+
+alias lg="l --git-ignore"
+alias lgs="lg -l"
+alias lgd="lgs -D"
+alias lgt="lgs -T"
+
+alias lx="exa -abgHhilmUuS@ --git"
+
+if (( $+commands[exa] )) {
+    auto-ls () { l -a; }
+
+    [[ ${chpwd_functions[(r)auto-ls]} == auto-ls ]] ||
+    chpwd_functions=( auto-ls $chpwd_functions )
+}
 
 ##-----Quick cd----------------------------------------
 alias dc='cd $DS'
@@ -117,7 +132,8 @@ alias :Q=":q"
 alias cls='clear'
 alias cat='bat'
 alias rl!='exec "$SHELL" -l'
-alias rz!='SHELL=zsh rl!'
+alias ez='nvim ~/.dots/home/.config/zsh'
+alias ez!='code ~/.dots/home/.config/zsh'
 
 alias f='fzf'
 alias r='ranger'
@@ -125,6 +141,7 @@ alias pq="pacman_fzf"
 alias m="man_fzf"
 alias rf="ripgrep_fzf"
 alias ghf="githelp_fzf"
+alias ghe="gh ext list | cut -f 2 > ~/.dots/ghe.txt"
 
 alias kd='kitty +kitten diff'
 alias now='date +"[%T] %a, %Y/%m/%d"'

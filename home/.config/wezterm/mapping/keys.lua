@@ -129,7 +129,8 @@ local mykeys = {
     -------------------------------------------------------
 }
 assign(mykeys, "+", nil, act.IncreaseFontSize)
-assign(mykeys, { "-", "_" }, nil, act.DecreaseFontSize)
+assign(mykeys, "-", nil, act.DecreaseFontSize)
+assign(mykeys, "_", nil, act.DecreaseFontSize)
 -- assign(mykeys, "Backspace", { m.c, m.cs }, act.ResetFontSize)
 assign(mykeys, "0", { m.c, m.cs }, act.ResetFontSize)
 

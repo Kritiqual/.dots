@@ -9,6 +9,8 @@
 	helper = !/usr/bin/gh auth git-credential
 [init]
 	defaultBranch = main
+[protocol]
+	allow = always
 [core]
 	editor = nvim
 	autocrlf = input
@@ -120,12 +122,12 @@
 	ta = tag -a
 	kd = difftool --no-symlinks --dir-diff
 	rl = "reflog"
-	lg = "log --graph --date=format:'[%d/%m/%Y] —>— [%H:%M:%S]' --pretty=format:'\
-%C(cyan)%cd%C(auto)%d %n\
-%C(red)>>>> %C(green)Author%C(red): %C(blue)%an %C(red)<<<< %n\
-%C(yellow)Commit%C(red): %C(magenta)%h %C(reset)< %Cred%cn %n%n\
-%C(green)>%C(yellow)>%C(red)> %C(reset)%s%n'"
-	ll = "log --graph --pretty=format:'\
-%h %s'"
+# 	lg = "log --graph --date=format:'[%d/%m/%Y] —>— [%H:%M:%S]' --pretty=format:'\
+# %C(cyan)%cd%C(auto)%d %n\
+# %C(red)>>>> %C(green)Author%C(red): %C(blue)%an %C(red)<<<< %n\
+# %C(yellow)Commit%C(red): %C(magenta)%h %C(reset)< %Cred%cn %n%n\
+# %C(green)>%C(yellow)>%C(red)> %C(reset)%s%n'"
+# 	ll = "log --graph --pretty=format:'\
+# %h %s'"
 # %C(auto,yellow)%h%C(auto,magenta) %G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto)%gD%d'"
 # %C(green)[%C(magenta)%cn %Creset> %C(red)%h%C(green)] %C(white)%s %C(blue)(%C(yellow)%cr%C(blue)) %C(blue)%d'"

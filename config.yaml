@@ -1,102 +1,102 @@
 actions:
-  post:
-    ibussetup: >-
-      if [[ {{@@ env['DISPLAY'] @@}} == ":*" ]]; then
-        ibus-setup
-      fi
-    xdgdir: mkdir -p ~/Projects ~/Pictures/Screenshots ~/Music/lyrics
+    post:
+        ibussetup: >-
+            if [[ {{@@ env['DISPLAY'] @@}} == ":*" ]]; then
+              ibus-setup
+            fi
+        xdgdir: mkdir -p ~/{P{rojects,ictures/Screenshots},Music/lyrics}
 config:
-  backup: false
-  banner: false
-  create: true
-  keepdot: true
-  showdiff: true
-  check_version: true
-  dotpath: home
+    backup: false
+    banner: false
+    create: true
+    keepdot: true
+    showdiff: true
+    check_version: true
+    dotpath: home
 dynvariables:
-  ffcss: find ~/.mozilla/firefox/ -type d -name "*default-release"
+    ffcss: find ~/.mozilla/firefox/ -type d -name "*default-release"
 dotfiles:
-  home:
-    src: .
-    dst: "~"
-    link: link_children
-    instignore:
-      - .config
-      - .local
-      - .xdman
-      - bin
-      - firefox
-  config:
-    src: .config
-    dst: ~/.config
-    link: link_children
-    instignore:
-      - Caprine
-      - gh
-      - ibus-bamboo
-      - mpd
-      - qBittorrent
-      - qt5ct
-      - Thunar
-      - viewnior
-      - systemd
-  Caprine:
-    src: .config/Caprine
-    dst: ~/.config/Caprine
-    link: link_children
-  gh:
-    src: .config/gh
-    dst: ~/.config/gh
-    link: link_children
-  ibus-bamboo:
-    src: .config/ibus-bamboo
-    dst: ~/.config/ibus-bamboo
-    link: absolute
-    actions:
-      - ibussetup
-  mpd:
-    src: .config/mpd
-    dst: ~/.config/mpd
-    link: link_children
-  qBittorrent:
-    src: .config/qBittorrent
-    dst: ~/.config/qBittorrent
-    link: link_children
-  qt5ct:
-    src: .config/qt5ct
-    dst: ~/.config/qt5ct
-    link: link_children
-  Thunar:
-    src: .config/Thunar
-    dst: ~/.config/Thunar
-    link: link_children
-  viewnior:
-    src: .config/viewnior
-    dst: ~/.config/viewnior
-    link: link_children
-  systemd:
-    src: .config/systemd
-    dst: ~/.config/systemd
-    link: link_children
-  ff_chrome:
-    src: firefox
-    dst: "{{@@ ffcss @@}}/chrome"
-    link: absolute
-  xdman:
-    src: .xdman
-    dst: ~/.xdman
-    link: link_children
-  local_bin:
-    src: bin
-    dst: ~/.local/share/bin
-    link: absolute
-  # void_actions:
-  #   src:
-  #   dst:
-  #   actions:
+    home:
+        src: .
+        dst: '~'
+        link: link_children
+        instignore:
+            - .config
+            - .local
+            - .xdman
+            - bin
+            - firefox
+    config:
+        src: .config
+        dst: ~/.config
+        link: link_children
+        instignore:
+            - Caprinepol
+            - gh
+            - ibus-bamboo
+            - mpd
+            - qBittorrent
+            - qt5ct
+            - Thunar
+            - viewnior
+            - systemd
+    Caprine:
+        src: .config/Caprine
+        dst: ~/.config/Caprine
+        link: link_children
+    gh:
+        src: .config/gh
+        dst: ~/.config/gh
+        link: link_children
+    ibus-bamboo:
+        src: .config/ibus-bamboo
+        dst: ~/.config/ibus-bamboo
+        link: absolute
+        actions:
+            - ibussetup
+    mpd:
+        src: .config/mpd
+        dst: ~/.config/mpd
+        link: link_children
+    qBittorrent:
+        src: .config/qBittorrent
+        dst: ~/.config/qBittorrent
+        link: link_children
+    qt5ct:
+        src: .config/qt5ct
+        dst: ~/.config/qt5ct
+        link: link_children
+    Thunar:
+        src: .config/Thunar
+        dst: ~/.config/Thunar
+        link: link_children
+    viewnior:
+        src: .config/viewnior
+        dst: ~/.config/viewnior
+        link: link_children
+    systemd:
+        src: .config/systemd
+        dst: ~/.config/systemd
+        link: link_children
+    ff_chrome:
+        src: firefox
+        dst: '{{@@ ffcss @@}}/chrome'
+        link: absolute
+    xdman:
+        src: .xdman
+        dst: ~/.xdman
+        link: link_children
+    local_bin:
+        src: bin
+        dst: ~/.local/share/bin
+        link: absolute
+    # void_actions:
+    #   src:
+    #   dst:
+    #   actions:
 profiles:
-  Archie:
-    dotfiles:
-      - ALL
-    actions:
-      - xdgdir
+    Archie:
+        dotfiles:
+            - ALL
+        actions:
+            - xdgdir

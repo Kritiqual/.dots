@@ -1,9 +1,15 @@
 # <center>.dots</center>
 ```lua
 return {
-	os = "Archlinux", --btw
+	os = { "Archlinux", tool = "kasis" }, --btw
 	wm = function(rep)
-		pure = { "awesome-git", "picom-jonaburg-git" }
+		pure = {
+			main = "awesome-git",
+			compositor = {
+				name = "picom-git",
+				fork = { "jonaburg" },
+			},
+		}
 		per = { "rofi", "eww", "polybar" }
 		if rep then
 			return { pure, per }
@@ -12,17 +18,19 @@ return {
 	end,
 
 	shell = { "zsh", plugins_manager = "zi" },
-	editor = { "vscode", neovim = { "neovide" } },
-	music = { "mpd", "ncmpcpp" },
-	file_manager = {
-		{ "ranger", "clifm" },
-		{ "thunar", "dolphin" },
+	editor = {
+		gui = { "vscode", "vscode-insiders" },
+		cli = { "neovim-git", gui = "neovide" },
 	},
-	useful_tools = {
+	monitor = { "bpytop" },
+	music = { "mpd", { "ncmpcpp" } },
+	file_manager = { { "ranger" }, { "thunar" } },
+	useful_app = {
 		{ "fd", "rg", "exa" },
 		{ "fzf", "pacman_fzf" },
 	},
 }
+
 ```
 
 # THEME

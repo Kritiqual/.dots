@@ -74,7 +74,7 @@
                     "custom": { "name": "", "url": "", "queryName": "" }
                 },
                 "text": { "justify": "center" },
-                "size": 100,
+                "size": 95,
                 "newLine": true,
                 "newTab": true,
                 "string": ""

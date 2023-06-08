@@ -1,7 +1,21 @@
-[Default Applications]
-x-scheme-handler/tg=userapp-Telegram Desktop-6CRDO1.desktop
-image/png=viewnior.desktop
-
 [Added Associations]
-x-scheme-handler/tg=userapp-Telegram Desktop-6CRDO1.desktop;
+application/x-zerosize=nvim.desktop;
 image/png=viewnior.desktop;feh.desktop
+inode/directory=thunar.desktop;code.desktop;
+text/plain=code.desktop;nvim.desktop;
+text/x-matlab=visual-studio-code-insiders.desktop;neovide.desktop;
+x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/tel=Zoom.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-6CRDO1.desktop;userapp-Telegram Desktop-IN1TV1.desktop;
+
+[Default Applications]
+application/x-zerosize=nvim.desktop
+image/png=viewnior.desktop
+inode/directory=thunar.desktop;
+x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/tel=Zoom.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-IN1TV1.desktop

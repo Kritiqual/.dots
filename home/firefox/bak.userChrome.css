@@ -1,0 +1,291 @@
+/* Remove some unnecessary things*/
+.titlebar-buttonbox-container,
+#alltabs-button,
+#tabs-newtab-button,
+#new-tab-button,
+.tab-close-button,
+#identity-icon-label,
+toolbarbutton#scrollbutton-up,
+toolbarbutton#scrollbutton-down,
+toolbarbutton#nav-bar-overflow-button,
+.titlebar-spacer[type='pre-tabs'] {
+    display: none;
+}
+
+/* Vertical align tab's title */
+.tab-text,
+.tab-label {
+    text-align: center !important;
+}
+
+.tab-label-container {
+    display: grid !important;
+    justify-content: safe center !important;
+}
+
+.tab-secondary-label {
+    display: none !important;
+}
+
+.tab-label {
+    padding-top: 5px !important;
+    overflow: hidden !important;
+}
+
+#tab-content {
+    vertical-align: middle !important;
+}
+
+.tab-label-container {
+    display: grid;
+    justify-content: safe center;
+}
+
+.tab-label,
+.tab-secondary-label {
+    overflow: hidden;
+}
+
+.tabbrowser-tab[selected]:not(:hover):not([pinned]) .tab-label-container,
+#tabbrowser-tabs:not([closebuttons='activetab'])
+    .tabbrowser-tab:not(:hover):not([pinned])
+    .tab-label-container {
+    margin-inline-end: 7px;
+}
+
+:root[sizemode='normal'] #browser {
+    vertical-align: auto;
+}
+
+#nav-bar {
+    max-height: 39px !important;
+}
+
+#nav-bar[inFullscreen],
+#TabsToolbar[inFullscreen] {
+    display: none;
+}
+
+input::-moz-focus-inner
+
+/*Remove button padding in FF*/ {
+    border: 0;
+    padding: 0;
+}
+
+@-moz-document url(chrome://browser/content/browser.xhtml)
+{
+    :root:not([inFullscreen]) {
+        --uc-bottom-toolbar-height: calc(
+            35px + var(--toolbarbutton-outer-padding)
+        );
+    }
+
+    :root[uidensity='compact']:not([inFullscreen]) {
+        --uc-bottom-toolbar-height: calc(
+            30px + var(--toolbarbutton-outer-padding)
+        );
+    }
+
+    #browser,
+    #customization-container {
+        margin-bottom: var(--uc-bottom-toolbar-height, 0px);
+    }
+
+    #nav-bar {
+        position: fixed !important;
+        bottom: 0px;
+        display: -webkit-box;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #nav-bar-customization-target {
+        -webkit-box-flex: 1;
+    }
+
+    /* Fix panels sizing */
+    .panel-viewstack {
+        max-height: unset !important;
+    }
+
+    #urlbar[breakout][breakout-extend] {
+        display: flex !important;
+        flex-direction: column-reverse;
+        bottom: -1px !important;
+        top: auto !important;
+    }
+
+    .urlbarView-body-inner {
+        border-top-style: none !important;
+    }
+}
+
+/* Replace the button background-colors with a glow effect */
+:root {
+    --uc-icon-glow-primary: #2cccff;
+    --uc-icon-glow-secondary: #8be9fd;
+    --uc-icon-glow-hover-primary: #ff5555;
+    --uc-icon-glow-hover-secondary: #fde181;
+}
+
+/* Make backgrounds transparent */
+.close-icon,
+.urlbar-icon,
+.urlbar-icon-wrapper,
+toolbar .toolbarbutton-1,
+#tabbrowser-tabs toolbarbutton,
+toolbar toolbarbutton > .toolbarbutton-icon,
+toolbar toolbarbutton > .toolbarbutton-badge-stack,
+.titlebar-button,
+#identity-box,
+.identity-box-button,
+#tracking-protection-icon-container,
+.findbar-textbox ~ toolbarbutton,
+#reader-mode-button,
+#star-button-box,
+toolbarbutton.scrollbutton-up,
+toolbarbutton.scrollbutton-down,
+toolbarbutton#scrollbutton-up,
+toolbarbutton#scrollbutton-down {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+/* Glow effects on hover */
+.close-icon:hover,
+.urlbar-history-dropmarker:hover,
+#page-action-buttons > .urlbar-icon:hover,
+.urlbar-icon-wrapper:hover > .urlbar-icon,
+toolbar .toolbarbutton-1:not([disabled]):hover .toolbarbutton-icon,
+#TabsToolbar toolbarbutton:not([disabled]):hover .toolbarbutton-icon,
+toolbar #downloads-button:hover #downloads-indicator-anchor,
+.identity-box-button:hover,
+#tracking-protection-icon:hover,
+#reader-mode-button-icon:hover,
+#star-button:hover,
+#star-button[starred]:hover,
+#fxa-toolbar-menu-button:hover,
+.findbar-textbox ~ toolbarbutton:not([disabled]):hover,
+toolbarbutton.scrollbutton-up:not([disabled]):hover,
+toolbarbutton.scrollbutton-down:not([disabled]):hover,
+toolbarbutton#scrollbutton-up:not([disabled]):hover,
+toolbarbutton#scrollbutton-down:not([disabled]):hover {
+    filter: drop-shadow(0 0 2px var(--uc-icon-glow-secondary))
+        drop-shadow(0 0 1px var(--uc-icon-glow-primary));
+}
+
+/* Active states and close window button hover state */
+#titlebar .titlebar-buttonbox > .titlebar-close:hover > .toolbarbutton-icon,
+.close-icon:active,
+.urlbar-history-dropmarker:active,
+#page-action-buttons > .urlbar-icon:active,
+#page-action-buttons > .urlbar-icon[open],
+.urlbar-icon-wrapper:active > .urlbar-icon,
+.urlbar-icon-wrapper[open] > .urlbar-icon,
+toolbar toolbarbutton:not([disabled]):active .toolbarbutton-icon,
+toolbar toolbarbutton:not([disabled])[open] .toolbarbutton-icon,
+#TabsToolbar toolbarbutton:not([disabled]):active .toolbarbutton-icon,
+toolbar #downloads-button:active #downloads-indicator-anchor,
+toolbar #downloads-button[open] #downloads-indicator-anchor,
+.identity-box-button[open],
+#reader-mode-button[readeractive] #reader-mode-button-icon,
+#tracking-protection-icon-container[open] #tracking-protection-icon,
+#star-button-box[open] #star-button,
+#fxa-toolbar-menu-button[open],
+.findbar-textbox ~ toolbarbutton:not([disabled]):active,
+toolbarbutton.scrollbutton-up:active,
+toolbarbutton.scrollbutton-down:active,
+toolbarbutton#scrollbutton-up:active,
+toolbarbutton#scrollbutton-down:active {
+    filter: drop-shadow(0 0 2px var(--uc-icon-glow-hover-secondary))
+        drop-shadow(0 0 1px var(--uc-icon-glow-hover-primary));
+}
+
+/* Make tab goes full width */
+/* .tabbrowser-tab[fadein]:not([style^='max-width']) {
+    max-width: 100vw !important;
+} */
+
+/* Creates a colorful animated border around active tab */
+@keyframes filter {
+    from {
+        filter: hue-rotate(360deg);
+    }
+
+    to {
+        filter: hue-rotate(0deg);
+    }
+}
+.tabbrowser-tab[selected] > .tab-stack::before {
+    grid-area: 1/1;
+    content: '';
+    display: inherit;
+    margin-block: var(--tab-block-margin);
+    border-radius: var(--tab-border-radius);
+    z-index: 0;
+    background-image: conic-gradient(
+        /*
+        hsl(0 100% 70%),
+        hsl(60 100% 45%) 70deg,
+        hsl(120 100% 55%) 105deg,
+        hsl(160 100% 60%) 160deg,
+        hsl(200 100% 60%) 200deg,
+        hsl(240 100% 65%) 255deg,
+        hsl(300 100% 60%) 290deg,
+        hsl(360 100% 70%) 360deg);
+        */
+            #ff5555,
+        #fde181 70deg,
+        #ffb86c 105deg,
+        #20e3b2 160deg,
+        #2cccff 200deg,
+        #9b87fd 255deg,
+        #ff6bcb 290deg,
+        #ff5555 360deg
+    );
+    background-size: cover;
+    background-position: center;
+    animation: filter steps(30) 3s infinite;
+}
+
+.tab-background[selected] {
+    border: 1px solid transparent !important;
+    outline: none !important;
+    background-clip: padding-box !important;
+}
+
+/* Hide the normal loading indicator (just show tab-icon instead) and make the top tab-line bounce left-to-right */
+
+@keyframes tab-loading-line-anim {
+    from {
+        background-position-x: left;
+    }
+    to {
+        background-position-x: right;
+    }
+}
+.tabbrowser-tab[busy] > .tab-stack > .tab-background::before,
+.tab-background[selected]::before {
+    content: '';
+    display: flex;
+    height: 3px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-size 80ms linear;
+}
+
+.tabbrowser-tab[busy] > .tab-stack > .tab-background::before {
+    background-size: 10%;
+    background-image: linear-gradient(to right, #9b87fd, #ff6bcb);
+    opacity: 0.7;
+    animation: tab-loading-line-anim 400ms alternate infinite ease-in-out;
+}
+
+.tab-throbber {
+    display: none;
+}
+.tab-icon-image[src] {
+    display: block;
+}

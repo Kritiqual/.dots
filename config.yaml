@@ -4,7 +4,7 @@ actions:
             if [[ {{@@ env['DISPLAY'] @@}} == ":*" ]]; then
               ibus-setup
             fi
-        xdgdir: mkdir -p ~/{P{rojects,ictures/Screenshots},Music/lyrics}
+        xdgdir: mkdir -p ~/Projects ~/Pictures/Screenshots ~/Music/lyrics
 config:
     backup: false
     banner: false
@@ -14,7 +14,10 @@ config:
     check_version: true
     dotpath: home
 dynvariables:
-    ffcss: find ~/.mozilla/firefox/ -type d -name "*default-release"
+    ffcss: >-
+        if [[ -d ~/.mozilla/firefox ]]; then
+          find ~/.mozilla/firefox/ -type d -name "*default-release"
+        fi
 dotfiles:
     home:
         src: .
@@ -31,7 +34,7 @@ dotfiles:
         dst: ~/.config
         link: link_children
         instignore:
-            - Caprinepol
+            - Caprine
             - gh
             - ibus-bamboo
             - mpd

@@ -37,6 +37,12 @@
 	shallow = true
 	ignore = dirty
 	branch = master
+[submodule "/home/kritiqual/.dots/home/.config/ranger/plugins/ranger-zoxide"]
+	path = /home/kritiqual/.dots/home/.config/ranger/plugins/ranger-zoxide
+	url = https://github.com/jchook/ranger-zoxide
+    shallow = true
+	ignore = dirty
+	branch = master
 [submodule "home/.config/BetterDiscord"]
 	path = home/.config/BetterDiscord
 	url = https://github.com/Kritiqual/BetterDiscord

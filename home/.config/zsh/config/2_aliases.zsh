@@ -4,9 +4,9 @@
 #\===================================================/#
 #######################################################
 ##-----Change shell------------------------------------
-alias tob="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
-alias toz="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
-alias tof="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
+alias tob="sudo chsh $USER -s /bin/bash"
+alias toz="sudo chsh $USER -s /bin/zsh"
+alias tof="sudo chsh $USER -s /bin/fish"
 
 ##-----Command protection------------------------------
 alias cp='cp -iR'
@@ -19,14 +19,21 @@ alias chmod='chmod --preserve-root'
 alias md="mkdir -p"
 
 ##-----Power management--------------------------------
-alias reboot="systemctl reboot"
-alias poweroff="systemctl poweroff"
-alias shutdown="systemctl shutdown"
-alias suspend="systemctl suspend"
-alias hibernate="systemctl hibernate"
+# alias reboot="systemctl reboot"
+# alias poweroff="systemctl poweroff"
+# alias shutdown="systemctl shutdown"
+# alias suspend="systemctl suspend"
+# alias hibernate="systemctl hibernate"
+#<<~>>
+alias rb="systemctl reboot"
+alias po="systemctl poweroff"
+alias sp="systemctl suspend"
+alias sd="systemctl shutdown"
+alias hb="systemctl hibernate"
+#<<~>>
 alias netrs='sudo systemctl restart NetworkManager'
-# alias flighton='sudo rfkill block all'
-# alias flightoff='sudo rfkill unblock all'
+alias flighton='sudo rfkill block all'
+alias flightoff='sudo rfkill unblock all'
 
 ##-----Pacman & AUR helper-----------------------------
 ## Aura still not support -l flag, until aura-rust released
@@ -57,6 +64,8 @@ alias sc='a -Bc'
 alias co='p -Rns $(pacman -Qtdq)'
 alias ul='sudo rm /var/lib/pacman/db.lck'
 alias pkg='u -Qeq | rg -v "zoom" > ~/.dots/pkg.txt'
+alias unlocksudo='faillock --user kritiqual --reset'
+alias fixpython='u -S --rebuild --noconfirm $(u -Qoq /usr/lib/python)'
 
 ##-----Dotfiles manager--------------------------------
 alias dp='$DS/dotdrop.sh'
@@ -143,6 +152,7 @@ alias rf="ripgrep_fzf"
 alias ghf="githelp_fzf"
 alias ghe="gh ext list | cut -f 2 > ~/.dots/ghe.txt"
 
+alias cf='code --diff'
 alias kd='kitty +kitten diff'
 alias now='date +"[%T] %a, %Y/%m/%d"'
 alias ph='echo -e ${PATH//:/\\n}'
@@ -160,7 +170,8 @@ alias tk='$SHELL "/home/kritiqual/Projects/kasis/kasis"'
 #\===================================================/#
 #######################################################
 alias ip='ip -c'
-alias i='irssi --config=$XDG_CONFIG_HOME/irssi/config --home=$XDG_DATA_HOME/irssi'
+alias i='command irssi --config=$XDG_CONFIG_HOME/irssi/config --home=$XDG_DATA_HOME/irssi'
+alias irssi='i'
 alias svn="svn --config-dir $XDG_CONFIG_HOME/subversion"
 
 ##-----Yt-dlp------------------------------------------

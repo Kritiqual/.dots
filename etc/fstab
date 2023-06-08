@@ -7,6 +7,5 @@ UUID=2E8A-9491      				/boot     	vfat      	rw,noatime,fmask=0022,dmask=0022,c
 # swap /dev/nvme0n1p5
 UUID=e9ddc951-31d1-40f3-afca-38b603fc9e55	none      	swap      	defaults  												0 0
 
-# zram /dev/zram{0,1}
-/dev/zram0 					none 		swap 		defaults,pri=100  											0 0
-#/dev/zram1					none		swap		defaults												0 0
+# zram /dev/zram0
+#/dev/zram0 					none 		swap 		defaults,pri=100  											0 0

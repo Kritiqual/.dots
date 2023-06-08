@@ -1,0 +1,7 @@
+#!/bin/sh
+export DISPLAY=:0
+export XAUTHORITY="/home/kritiqual/.lyxauth"
+DEVICE=$(xinput list | grep -P '(?<= )[\w\s:]*(?i)touchpad(?-i).*?' -o | head -n1)
+
+[[ "$(xinput list-props "$DEVICE" | grep -P "Device Enabled.*\K." -o)" == "1" ]] &&
+    xinput disable "$DEVICE" || xinput enable "$DEVICE"

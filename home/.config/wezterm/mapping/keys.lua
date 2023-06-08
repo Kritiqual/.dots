@@ -128,11 +128,15 @@ local mykeys = {
     ----                      Tab                      ----
     -------------------------------------------------------
 }
-assign(mykeys, "+", nil, act.IncreaseFontSize)
-assign(mykeys, "-", nil, act.DecreaseFontSize)
-assign(mykeys, "_", nil, act.DecreaseFontSize)
+-- assign(mykeys, "+", nil, act.IncreaseFontSize)
+-- assign(mykeys, "-", nil, act.DecreaseFontSize)
+-- assign(mykeys, "_", nil, act.DecreaseFontSize)
 -- assign(mykeys, "Backspace", { m.c, m.cs }, act.ResetFontSize)
 assign(mykeys, "0", { m.c, m.cs }, act.ResetFontSize)
+-- assign(mykeys, "L", m.c, wezterm.action.ShowDebugOverlay)
+assign(mykeys, "P", m.c, wezterm.action.ActivateCommandPalette)
+assign(mykeys, "W", m.c, wezterm.action.CloseCurrentTab({ confirm = false }))
+assign(mykeys, "F5", m.cs, wezterm.action.ReloadConfiguration)
 
 -- for i = 1, 9 do
 --     table.insert(mykeys, {

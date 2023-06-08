@@ -18,7 +18,7 @@ return {
     inactive_tab_hover = {
         bg_color = "#6272a4",
         fg_color = "#f8f8f2",
-        italci = true,
+        italic = true,
     },
 
     new_tab = {

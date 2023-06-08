@@ -60,7 +60,7 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_STATE_HOME="${HOME}/.local/state"
 export XDG_CACHE_HOME="${HOME}/.cache"
 #<<~>>
-export HISTFILE="$HOME/.dots/home/.local/history/.bashist"
+export HISTFILE="$HOME/.local/history/.bashist"
 export HISTSIZE=10000
 export HISTCONTROL=$HISTCONTROL:ignoredups:erasedups
 hstignore=(

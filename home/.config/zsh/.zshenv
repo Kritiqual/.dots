@@ -4,6 +4,9 @@ export ZI[HOME_DIR]="${HOME}/.local/zi"
 export ZI[ZCOMPDUMP_PATH]="${XDG_DATA_HOME}/.zcompdump"
 
 ##-----Var---------------------------------------------
+if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
+    export MOZ_ENABLE_WAYLAND="1"
+fi
 if [ ! -z ${DISPLAY} ]; then
     export TERM='xterm-kitty'
 else
@@ -78,7 +81,7 @@ export GLFW_IM_MODULE=xim
 export MANPAGER="sh -c 'col -bx | bat -l man'" # Bat
 # export MANPAGER='nvim +Man! -c "nmap q :qa<CR>"' # Nvim
 #<<~>>
-export PF_INFO="ascii title kernel os shell pkgs uptime memory"
+# export PF_INFO="ascii title kernel os shell pkgs uptime memory"
 # export PF_COL1=1
 # export PF_COL2=6
 # export PF_COL3=4
@@ -88,9 +91,11 @@ export PF_INFO="ascii title kernel os shell pkgs uptime memory"
 #     pfetch # neofetch
 # fi
 #<<~>>
-for f in /usr/share/fzf/*.zsh; do
-    [[ ! -f $f ]] || source $f
-done
+if [[ -d /usr/share/fzf ]]; then
+    for f in /usr/share/fzf/*.zsh; do
+        [[ ! -f $f ]] || source $f
+    done
+fi
 export FZF_DEFAULT_COMMAND="fd -H -t f"
 export FZF_ALT_C_COMMAND="fd -H -t d"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -110,38 +115,42 @@ FZF_BIND="--bind 'ctrl-alt-a:select-all,alt-a:clear-selection' \
 --bind change:first,alt-y:first,alt-o:last,alt-u:preview-top,alt-i:preview-bottom,\
 alt-j:preview-down,alt-k:preview-up,alt-h:preview-page-up,alt-l:preview-page-down"
 
-export FZF_DEFAULT_OPTS="${ED_CLR} $FZF_BIND --ansi \
+export FZF_DEFAULT_OPTS="${ED_CLR} $FZF_BIND --exit-0 --select-1 --ansi \
 --reverse --cycle --preview-window='70%,nowrap,<50(top,60%,border-bottom)' \
 --info=inline --border=rounded --prompt='|> ' --pointer='>' --marker='>'"
 export FZF_CTRL_T_OPTS="--preview 'bat -p {} 2>/dev/null'"
 export FZF_ALT_C_OPTS="--preview 'exa -TaD {}'"
+export FZF_CTRL_R_OPTS="--no-sort --preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 #<<~>>
-export LESSHISTFILE="-"
-export LESSHISTSIZE=0
-export DELTA_PAGER=bat
-export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_STYLE_OVERRIDE=kvantum
-export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
-export IPYTHONDIR="$XDG_CONFIG_HOME"/ipython
-export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
-export GNUPGHOME="$XDG_DATA_HOME"/gnupg
-export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
-
-export JAVA_TOOL_OPTIONS='-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
-export SILENT_JAVA_TOOL_OPTIONS='$JAVA_TOOL_OPTIONS'
-alias java='unset JAVA_TOOL_OPTIONS; java "$SILENT_JAVA_TOOL_OPTIONS"'
-
-export XCURSOR_PATH=/usr/share/icons:${XDG_DATA_HOME}/icons
-export CARGO_HOME="$XDG_DATA_HOME"/cargo
-export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
-export GOPATH="$XDG_DATA_HOME"/go
-export npm_config_userconfig="$XDG_CONFIG_HOME"/npm/config
-export npm_config_cache="$XDG_CACHE_HOME"/npm
-export npm_config_prefix="$XDG_DATA_HOME"/npm
 export DOTDROP_AUTOUPDATE="no"
 export DOTDROP_CONFIG="$DS/config.yaml"
 export DOTDROP_PROFILE="Archie"
 function e() { return $1; }
+
+export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_STYLE_OVERRIDE=kvantum
+#<<~>>
+export ANDROID_HOME="$XDG_DATA_HOME"/android
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export DELTA_PAGER=bat
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export GOPATH="$XDG_DATA_HOME"/go
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
+export IPYTHONDIR="$XDG_CONFIG_HOME"/ipython
+export LESSHISTFILE="-"
+export LESSHISTSIZE=0
+export npm_config_prefix="$XDG_DATA_HOME"/npm
+export npm_config_userconfig="$XDG_CONFIG_HOME"/npm/config
+export npm_config_cache="$XDG_CACHE_HOME"/npm
+export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
+export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export XCURSOR_PATH=/usr/share/icons:${XDG_DATA_HOME}/icons
+
+export JAVA_TOOL_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
 
 ##-----Path--------------------------------------------
 #<<fpath>>

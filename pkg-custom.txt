@@ -4,6 +4,7 @@ cmatrix
 cronie
 dotbare
 dolphin
+git-delta-git
 hollywood
 irssi
 ksnip

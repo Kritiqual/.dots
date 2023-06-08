@@ -35,6 +35,7 @@ for k, v in pairs(d) do
     })
 end
 local DoN = function(event, button, mods, DoN)
+    local ev = {}
     if event == "Drag" then
         ev = { Drag = button }
     elseif event == "Up" then

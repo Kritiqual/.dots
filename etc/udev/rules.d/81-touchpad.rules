@@ -1,0 +1,5 @@
+# Disable Touchpad while USB mouse is present and Enable it when USB mouse is not
+ACTION=="add", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="006e", \
+ENV{XAUTHORITY}="/home/kritiqual/.lyxauth", ENV{DISPLAY}=":0", \
+ENV{REMOVE_CMD}="/usr/bin/xinput --enable 'DELL097B:00 04F3:30C3 Touchpad'", \
+RUN+="/usr/bin/xinput --disable 'DELL097B:00 04F3:30C3 Touchpad'"

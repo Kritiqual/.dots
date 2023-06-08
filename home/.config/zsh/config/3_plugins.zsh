@@ -21,8 +21,9 @@ zi depth'1' lucid light-mode for nocd \
     atinit'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' \
     atload'source $ZDOTDIR/.p10k.zsh' romkatv/powerlevel10k
 
+# z-shell/{zui,zi-console,zbrowse,zzcomplete} Aloxaf/fzf-tab \
 zi wait lucid light-mode for \
-    z-shell/{zui,zi-console,zbrowse,zzcomplete} Aloxaf/fzf-tab \
+    z-shell/{zui,zi-console,zbrowse,zzcomplete} \
     atload'zicompinit; zicdreplay' z-shell/F-Sy-H davidde/git \
     blockf atpull'zi creinstall -q ..' zsh-users/zsh-completions \
     atinit'bindkey "^W" autopair-delete' hlissner/zsh-autopair \

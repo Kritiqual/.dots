@@ -8,3 +8,14 @@ gh cli
 neofetch
 pfetch
 onefetch
+
+
+
+kazam
+ksnip
+Simplescreenrecorder
+maim
+flameshot
+
+feh
+viewnior

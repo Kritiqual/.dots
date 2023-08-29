@@ -36,7 +36,7 @@ dotbare
 dragon-drop
 efibootmgr
 evtest
-eww
+eww-x11
 exa
 exfatprogs
 fd
@@ -47,7 +47,6 @@ fuse3
 fuseiso
 fzf
 git
-git-delta-git
 github-cli
 glow
 gnome-keyring
@@ -71,6 +70,9 @@ kitty
 ksnip
 kvantum
 kvantum-theme-sweet-git
+kwallet
+kwallet-pam
+kwalletmanager
 lazygit
 libcaca
 linux
@@ -90,6 +92,7 @@ neofetch-git
 neovide-git
 neovim-nightly-bin
 networkmanager
+nm-connection-editor
 nodejs
 npm
 ntfs-3g
@@ -104,7 +107,7 @@ pacman-contrib
 paru-bin
 pavucontrol
 pfetch-git
-picom-jonaburg-git
+picom-ftlabs-git
 playerctl
 polkit-gnome
 polybar
@@ -136,7 +139,7 @@ tree
 ttf-cascadia-code-nerd
 ttf-material-design-iconic-font
 ttf-meslo-nerd-font-powerlevel10k
-ttf-ms-fonts
+ttf-ms-win11-auto
 ttf-ubraille
 ttf-vietnamese-tcvn3
 ttf-vietnamese-vni

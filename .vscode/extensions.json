@@ -168,6 +168,11 @@
         "1password.op-vscode",
         "dotenv.dotenv-vscode",
         "deerawan.vscode-faker",
-        "github.copilot-chat"
+        "github.copilot-chat",
+        "marp-team.marp-vscode",
+        "vsls-contrib.codetour",
+        "sleistner.vscode-fileutils",
+        "robole.file-bunny",
+        "dkundel.vscode-new-file"
     ]
 }

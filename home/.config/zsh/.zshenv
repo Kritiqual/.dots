@@ -78,8 +78,21 @@ export QT4_IM_MODULE=ibus
 export CLUTTER_IM_MODULE=ibus
 export GLFW_IM_MODULE=xim
 #<<~>>
-export MANPAGER="sh -c 'col -bx | bat -l man'" # Bat
+# Bat
+export MANROFFOPT="-c"
+export MANPAGER="sh -c 'col -bx | bat -l man'"
+# Nvim
 # export MANPAGER='nvim +Man! -c "nmap q :qa<CR>"' # Nvim
+# Less
+# export MANPAGER="less -s -M +Gg"
+# export LESS_TERMCAP_mb=$'\e[1;31m'
+# export LESS_TERMCAP_md=$'\e[1;34m'
+# export LESS_TERMCAP_so=$'\e[01;45;37m'
+# export LESS_TERMCAP_us=$'\e[01;36m'
+# export LESS_TERMCAP_me=$'\e[0m'
+# export LESS_TERMCAP_se=$'\e[0m'
+# export LESS_TERMCAP_ue=$'\e[0m'
+# export GROFF_NO_SGR=1
 #<<~>>
 # export PF_INFO="ascii title kernel os shell pkgs uptime memory"
 # export PF_COL1=1

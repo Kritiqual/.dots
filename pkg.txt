@@ -37,8 +37,8 @@ dragon-drop
 efibootmgr
 evtest
 eww-x11
-exa
 exfatprogs
+eza
 fd
 feh
 firefox
@@ -70,9 +70,6 @@ kitty
 ksnip
 kvantum
 kvantum-theme-sweet-git
-kwallet
-kwallet-pam
-kwalletmanager
 lazygit
 libcaca
 linux
@@ -94,6 +91,7 @@ neovim-nightly-bin
 networkmanager
 nm-connection-editor
 nodejs
+notion-app-enhanced
 npm
 ntfs-3g
 nwg-look
@@ -105,6 +103,7 @@ otf-comicshanns-nerd
 pacman
 pacman-contrib
 paru-bin
+paruz
 pavucontrol
 pfetch-git
 picom-ftlabs-git

@@ -10,6 +10,7 @@ irssi
 ksnip
 linux-headers
 lolcat
+obsidian
 oneko
 pinta
 pipes.sh

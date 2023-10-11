@@ -71,31 +71,11 @@
 		],
 		"enabled": true
 	},
-	{
-		"name": "09. Wiki",
-		"rootPath": "~/Projects/ter-wiki",
-		"paths": [],
-		"tags": [
-			"04. Projects"
-		],
-		"enabled": true
-	},
-	{
-		"name": "10. Aura-tr",
-		"rootPath": "~/Projects/aura",
-		"paths": [],
-		"tags": [
-			"04. Projects"
-		],
-		"enabled": true
-	},
-	{
-		"name": "11. Shapez-tr",
-		"rootPath": "~/Projects/shapez-vi",
-		"paths": [],
-		"tags": [
-			"04. Projects"
-		],
-		"enabled": true
-	}
+    {
+        "name": "09. README",
+        "rootPath": "~/Projects/Kritiqual",
+        "paths": [],
+        "tags": ["04. Projects"],
+        "enabled": true
+    }
 ]

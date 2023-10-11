@@ -76,7 +76,10 @@
         "mkl.1office.vn",
         "blogtruyen.vn",
         "docs.google.com",
-        "awesomewm.org"
+        "awesomewm.org",
+        "graystudio.notion.site",
+        "qwertykeys.notion.site",
+        "chat.zalo.me"
     ],
     "siteListEnabled": [],
     "applyToListedOnly": false,
@@ -98,10 +101,6 @@
     "enableForProtectedPages": false,
     "enableContextMenus": false,
     "detectDarkTheme": false,
-    "automationBehaviour": "OnOff",
-    "displayedNews": [
-        "mobile"
-    ],
     "readNews": [
         "thanks-2021",
         "5m-users",
@@ -121,5 +120,9 @@
         "thanks-for-contribution",
         "dynamic-theme",
         "chrome-favorites-2021"
+    ],
+    "automationBehaviour": "OnOff",
+    "displayedNews": [
+        "mobile"
     ]
 }

@@ -135,7 +135,8 @@ export FZF_CTRL_T_OPTS="--preview 'bat -p {} 2>/dev/null'"
 export FZF_ALT_C_OPTS="--preview 'exa -TaD {}'"
 export FZF_CTRL_R_OPTS="--no-sort --preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 #<<~>>
-export DOTDROP_AUTOUPDATE="no"
+export DOTDROP_AUTOUPDATE="yes"
+export DOTDROP_VIRTUALENV=".venv"
 export DOTDROP_CONFIG="$DS/config.yaml"
 export DOTDROP_PROFILE="Archie"
 function e() { return $1; }

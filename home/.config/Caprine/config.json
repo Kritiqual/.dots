@@ -1,7 +1,7 @@
 {
 	"theme": "dark",
 	"privateMode": false,
-	"showPrivateModePrompt": true,
+	"showPrivateModePrompt": false,
 	"vibrancy": "none",
 	"zoomFactor": 1,
 	"lastWindowState": {
@@ -18,11 +18,11 @@
 	"showUnreadBadge": true,
 	"showMessageButtons": true,
 	"launchMinimized": false,
-	"flashWindowOnMessage": false,
+	"flashWindowOnMessage": true,
 	"notificationMessagePreview": true,
 	"block": {
-		"chatSeen": false,
-		"typingIndicator": false,
+		"chatSeen": true,
+		"typingIndicator": true,
 		"deliveryReceipt": false
 	},
 	"emojiStyle": "facebook-3-0",

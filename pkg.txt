@@ -1,11 +1,9 @@
-7-zip
+7-zip-full
 acpi
 acpid
 acpilight
-all-repository-fonts
 alsa-plugins
 alsa-utils
-android-studio
 android-tools
 atool
 aura-bin
@@ -59,10 +57,10 @@ haveged
 i3lock-color
 ibus-bamboo
 imwheel
+inetutils
 intel-ucode
 iptables
 irssi
-jdk-openjdk
 jmtpfs
 jupyter-nbconvert
 kazam
@@ -84,6 +82,7 @@ mpc
 mpd
 mpv
 mtools
+ncdu
 ncmpcpp
 neofetch-git
 neovide-git
@@ -106,7 +105,7 @@ paru-bin
 paruz
 pavucontrol
 pfetch-git
-picom-ftlabs-git
+picom-simpleanims-next-git
 playerctl
 polkit-gnome
 polybar
@@ -126,6 +125,8 @@ rsync
 sdl_ttf
 seahorse
 simplescreenrecorder
+spotify
+spotx-git
 subversion
 sweet-cursor-theme-git
 sweet-folders-icons-git
@@ -149,6 +150,7 @@ unrar
 unzip
 usbutils
 via-appimage
+vial-appimage
 viewnior
 visual-studio-code-bin
 vlc
@@ -204,7 +206,11 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xsel
 yay-bin
 yt-dlp
+ytfzf
+zellij
+zip
 zoxide
 zsh

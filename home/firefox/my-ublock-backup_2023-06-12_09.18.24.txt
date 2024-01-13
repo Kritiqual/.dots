@@ -1,0 +1,62 @@
+{
+  "timeStamp": 1686536304480,
+  "version": "1.49.2",
+  "userSettings": {
+    "advancedUserEnabled": true,
+    "cloudStorageEnabled": true,
+    "uiAccentCustom": true,
+    "uiAccentCustom0": "#9b87fd",
+    "externalLists": "https://secure.fanboy.co.nz/fanboy-annoyance_ubo.txt",
+    "firewallPaneMinimized": false,
+    "importedLists": [
+      "https://secure.fanboy.co.nz/fanboy-annoyance_ubo.txt"
+    ],
+    "popupPanelSections": 31,
+    "tooltipsDisabled": true
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-unbreak",
+    "easylist",
+    "easyprivacy",
+    "urlhaus-1",
+    "curben-phishing",
+    "curben-pup",
+    "ublock-annoyances",
+    "dpollock-0",
+    "plowe-0",
+    "VIE-1",
+    "https://secure.fanboy.co.nz/fanboy-annoyance_ubo.txt"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "about-scheme",
+    "app.element.io",
+    "beastgiveaways.netlify.app",
+    "canhan.gdt.gov.vn",
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "downloadly.cloud",
+    "edge-scheme",
+    "lutris.net",
+    "meet.google.com",
+    "moz-extension-scheme",
+    "onedrive.live.com",
+    "opera-scheme",
+    "pay.openai.com",
+    "platform.openai.com",
+    "sv.haui.edu.vn",
+    "twitter.com",
+    "vivaldi-scheme",
+    "www.notion.so",
+    "wyciwyg-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop\n* * 3p-script block\n* * 3p-frame block\n* googlevideo.com * noop\n* www.youtube.com * noop\n* ytimg.com * noop\n* ajax.googleapis.com * noop\n* alphacdn.net * noop\n* azure.com * noop\n* cdnjs.cloudflare.com * noop\n* www.facebook.com * noop\n* fbcdn.net * noop\n* gist.github.com * noop\n* www.instagram.com * noop\n* live.com * noop\n* www.messenger.com * noop\n* microsoft.com * noop\n* microsoftonline.com * noop\n* services.mozilla.com * noop\n* msftauth.net * noop\n* office.com * noop\n* cdn.office.net * noop\n* sigmacdn.net * noop\n* cdn.sstatic.net * noop\ndiscord.com * 3p-script noop\nhub.docker.com auth0.com * noop\nhub.docker.com cdn.cookielaw.org * noop\nhub.docker.com d36jcksde1wxzq.cloudfront.net * noop\ngeeksforgeeks.org apis.google.com * noop\ngeeksforgeeks.org code.jquery.com * noop\ngithub.com github.githubassets.com * noop\ngithub.com githubusercontent.com * noop\ngitlab.com assets.gitlab-static.net * noop\ninstagram.com cdninstagram.com * noop\ninstagram.com facebook.com * noop\nlogin.live.com alphacdn.net * noop\nlogin.live.com msauth.net * noop\nlogin.live.com msftauth.net * noop\nmicrosoft.com * 3p-frame noop\nmicrosoft.com t-s1-msedge.net * noop\nmicrosoft365.com * 3p-frame noop\noffice.com * 3p-frame noop\npreferences.about-scheme * 3p-script noop\npreferences.about-scheme * 3p-frame noop\nreddit.com external-preview.redd.it * noop\nreddit.com i.redd.it * noop\nreddit.com preview.redd.it * noop\nreddit.com oauth.reddit.com * noop\nreddit.com dualstack.reddit.map.fastly.net * noop\nreddit.com redditmedia.com * noop\nreddit.com redditstatic.com * noop\nsharepoint.com * 3p-frame noop\nsharepoint.com b-msedge.net * noop\nstackoverflow.com * 3p-script noop\nthegioididong.com cdn.tgdd.vn * noop\nthegioididong.com img.tgdd.vn * noop\nthegioididong.com s.tgdd.vn * noop\nthegioididong.com www.youtube.com * noop\nthekeebs.store hstatic.net * noop\n* office365.com * noop\n* twitter.com * noop\naccount.microsoft.com msauth.net * noop\ntwitter.com * 3p-script noop\ntwitter.com twimg.com * noop\n* msauth.net * noop\nstore.steampowered.com steamstatic.com * noop\nsteamcommunity.com steamstatic.com * noop\nstore.epicgames.com * 3p-script noop\nfptshop.com.vn images.fpt.shop * noop\ngoogle.com googleusercontent.com * noop\nforums.terraria.org edgecastcdn.net * noop\ntwitter.com accounts.google.com * noop\naccounts.google.com * 3p-script noop\naccounts.firefox.com mozilla.net * noop\naddons.mozilla.org addons-amo.cdn.mozilla.net * noop\nsupport.mozilla.org support.cdn.mozilla.net * noop\nsupport.mozilla.org static-media-prod-cdn.sumo.mozilla.net * noop\n* player.twitch.tv * noop\ntwitch.tv twitchcdn.net * noop\n* embed.spotify.com * noop\n* open.spotify.com * noop\nspotify.com * 3p-script noop\ntiktok.com * 3p-script noop\nepicgames.com cloudfront.net * noop\nepicgames.com static-assets-prod.unrealengine.com * noop\nsoundcloud.com * 3p-script noop\nsoundcloud.com scorecardresearch.com * noop\nsoundcloud.com cloudfront.net * noop\nspotify.com scdn.co * noop\nspotify.com spotifycdn.com * noop\nopen.spotify.com sentry.io * noop\nopen.spotify.com spotifycdn.com * noop\n* music.youtube.com * noop\n* www.google.com * noop\n* akamaiedge.net * noop\n* akadns.com * noop\n* akamai.net * noop\n* akamaihd.net * noop\n* akamaized.net * noop\n* apis.google.com * noop\n* assets.pinterest.com * noop\n* widgets.pinterest.com * noop\npinterest.com pinimg.com * noop\n* imgur.com * noop\nimgur.com imgur.map.fastly.net * noop\nimgur.com media-lab.ai * noop\nimgur.io media-lab.ai * noop\n* flickr.com * noop\npixiv.net pximg.net * noop\nflickr.com combo.staticflickr.com * noop\nwww.flickr.com d2es9cpp0lrwos.cloudfront.net * noop\n* assets.tumblr.com * noop\n* embed.tumblr.com * noop\nflickr.com * 3p-script noop\nwww.flickr.com * 3p-script noop\n* calendar.google.com * noop\nwww.tumblr.com ced.sascdn.com * noop\nwww.tumblr.com wp.com * noop\nid.atlassian.com * 3p-script noop\nbitbucket.org d301sr5gafysq2.cloudfront.net * noop\n* youtube-ui.l.google.com * noop\nsemicolon.dev google.com * noop\nwww.youtube.com youtube-ui.l.google.com * noop\nsv.dhcnhn.vn * 3p-script noop\nsv.dhcnhn.vn cdn-01.dhcnhn.vn * noop\nctpl.haui.vn * 3p-script noop\n* gstatic.com * noop\n* hcaptcha.com * noop\n* goo.gl * noop\nmarketplace.visualstudio.com * 3p-script noop\nmega.nz * 3p-script noop\nmega.nz mega.co.nz * noop\nmega.nz mega.io * noop\nmega.nz mega.nz * noop\nmephimtv2.com * 3p-script noop\nchat.zalo.me zadn.vn * noop\nid.zalo.me zdn.vn * noop\nonedrive.live.com * 3p-script noop\nshopee.vn shopeemobile.com * noop\nsoigear.vn sapoapps.vn * noop\nsoigear.vn * 3p-script noop\nwww.levandong.com * 3p-script noop\n* wikipedia.org * noop\nchat.zalo.me zdn.vn * noop\nchat.zalo.me zalo.me * noop\nelement.io cloudflare.com * noop\nelement.io d3e54v103j8qbb.cloudfront.net * noop\napp.element.io element.io * noop\napp.element.io matrix.org * noop\napp.element.io vector.im * noop\ni.redd.it * 3p-script noop\ngraystudio.club graystudio.club * noop\ngraystudio.club shopifycdn.com * noop\ngraystudio.club shopify.com * noop\ngraystudio.club shippingratescalculator.com * noop\nlogin.microsoftonline.com omegacdn.net * noop\nmeet.google.com meet.google.com * noop\nwww.quora.com quoracdn.net * noop\nwww.quora.com cloudflare.net * noop\ndocs.qmk.fm unpkg.com * noop\ngeekhack.org dzrrfgr1e6vrv.cloudfront.net * noop\ngeekhack.org jquery.com * noop\ngeon.works jsdelivr.map.fastly.net * noop\ngeon.works shopify.com * noop\ngeon.works shopifycdn.com * noop\ngeon.works jsdelivr.net * noop\nvn.mechkey.store mechkey.store * noop\nvn.mechkey.store shopify.com * noop\nmechkey.store shopify.com * noop\nmechkey.store shopifycdn.com * noop\nmechkey.store shopifycloud.com * noop\nen.zfrontier.com shopifycdn.com * noop\nen.zfrontier.com shopify.com * noop\nen.zfrontier.com d1liekpayvooaz.cloudfront.net * noop\nen.zfrontier.com d1639lhkj5l89m.cloudfront.net * noop\nen.zfrontier.com recaptcha.net * noop\nwww.zfrontier.com kunlunso.com * noop\nshop.wuquestudio.com shopify.com * noop\nshop.wuquestudio.com d1um8515vdn9kb.cloudfront.net * noop\nshop.wuquestudio.com youtube.com * noop\nviet69.sh * 3p-script noop\nviet69.sh * 3p-frame noop\nmokbstore.com * 3p-script noop\nmokbstore.com bizweb.dktcdn.net * noop\nmokbstore.com mixcdn.egany.com * noop\npoe.com google.com * noop\npoe.com poecdn.net * noop\npoe.com cloudflare.net * noop\n* cloudfront.net * noop\ngitlab.com cloudflare.com * noop\ncodepen.io cloudflare.com * noop\ncode.visualstudio.com * 3p-script noop\ncode.visualstudio.com * 3p-frame noop\nhentaivn.team cloudflare.com * noop\nonedrive.live.com b-0016.b-msedge.net * noop\nphotos.onedrive.com onedrvphotosp-cdn.azureedge.net * noop\nphotos.onedrive.com v0cdn.net * noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
+  "userFilters": ""
+}

@@ -14,7 +14,7 @@
             "width": 100,
             "padding": 20,
             "gutter": 20,
-            "breakpoint": "xxl",
+            "breakpoint": "xs",
             "scrollbar": "none",
             "title": "I use Arch btw",
             "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAKzUlEQVR4XtUbCVBUV7LfMIwBERFwZvBWVGQJl2JMtDw2x1Y0ZjceySZG1LBGKwokbnTNViVKTO2mvMtBTLkaj2jAitForWbNuq7ZoKvxgsGg4IluFGa4PVCYYf52DwwLzMz/f/68Qberpgbmv9fdr1+/7tfHZ+Bj0H1m1DILjLExiGEAQwSAwfjdDcmG4Ceomfw9/K7BZ9X4rFhgQhEIrJCpIdf0TrzZlywiPf6gz8obLtjYGwDsBcQegx+ldFAmUMgE9nfGWE5pWuwZ3twqZcyJj1DDyWA1C5iDCFPwYTRvRpvwsQsCCFttdZ02ViwecpcHDa8F0GtNYahV3fguqm0aMkSq3RFAR8Wg8WPrbs6Lq/aGoHIBCALTZhYkMwarkIHu3jDhxdwqnLvMVBmXCRnMpgSPIgF0zyocqBIs29FQjVRC1DEnSR8IdMjPltV5g4bmHhcE1UxzeuxVTxF5LADt+vxJaJS2ICGy4l6B4fne4IcqNP/wTa/wNJkHIJswx5Qav8sTZPIFkCGodKEFq5HQe54QcDe2ayc/yH8rGtQqBsO3F0HZfQsPtICbs6asKnaR3CMhSwAxGYWaijDrNuQQXRsfmBMfDstG97AjW/mjCVafNvFB3IQl26SxzIK5SZJSlRRA8+K/QaQTeHL4r2mDISr0CTtKE+5+EmqBxUYWgRewgyZNwyQpIYgLAC29fn3BNmRrBi+2CM/InkGwd9KANijnfncT9l+u4UmGcOWgh5gudhxEBaAzGNfyOvOtV7bpxb7w8sCubRZ7Bj3BxK+v8BYAXUFXlaXFL3KH2K0A9JkFr+Kt6yveHPXqooGTyVF249cefr3nKpwqvc+bJKCvnWZKj89xhdilALSG85GM2c7ihLbbxIG1JaMiYF6i63vTt9dqIeXbGxyoOKGoRX871DQv7lr7J84CwHOvyzIe8/aS42oVAWoV5M2KhpAn/FwukmzgmOxiuFJdz10IiDrXnBo3FhhrY2mdBKBbb5yNKrOJOweIMCUuDP48pqco6u0/VcLi72/5gjyuHWaVpcZvb428jQAosLGorcVoOcJ5c0CEjr0ZBZHdOomirm8U0CVehPI6K28WCJ+53mqLqlmQ2OJu2ggADd8yNHwf+YIyqf3R1wdDRJC/JPq1p82w/McyyXFKBmDUutScmrDMMbdFABTP+7OAEnzgk5C2T7AGyPDvnRQJPSSEcLehEYZ/UQQ1DxuVrFFqTlVjXad+jnxCiwC0mcaF+M9KqdlKnj/btwtsGd8X/nSiDA6X3IHsl/vDgBDxo7AGr8Yr8IrsC0AteB+1YA3hbhGALtN4Hv9/kjdBInDotUEQrw2woz7+8z3IPFcOs9EgPt8v2C25O6QFeD2urfeFFrALprQ4StU1CaAph6c6xXvxhO/F/sGw7aV+TqhPl9ahs0GDp+9sPxqugAIkCpR8ATZBGFqenpBnJ63LzEd1YAt4EyLk/0DDFxPeFPS4AvL97gTgSy1wXJGbBWD8CZmzqwRPoPs+3fu9gVWnTEAfH0C+KS0+kVHeHqxAPkcyNPaECdrVI7j70WHud18OPh9qgeCnsWiZ3mCcKjDYLYcZT8ZMHhwCG37Vx5Mpbsf6yhYIgjCF6TONGXgMl3LhtBkJ5fko4TFQ4tYnl+Z9iw2e3lHE/XaIRngJQ/dHYeLrcpmRM+630d1g3XO95QyVPeYvxgpYkntb9nhZA5nwJcPg5wx6o2GyJsgY5I+H/9j0KOiLNz+eYMEYYdSXxXDzTgM/tAI7TRpQghi9M9WtWEqOCYWVv+zFj8lWmHZdrIL3jvzME/d1EkAlYgzlgZXi/ROY7dF3Fg94GgUBNuZXwDeXagD/tKfH3sEkCZa6RNmgeeOyL8FlXvkCASpIAJR94KKvC4ZrYfEIvegi6OIz+283gLI/rWFs7yDYiTECHSExOHC11j6fE9RzE0B4gBpzfUMgSKMS5W0zGrMP3Riz94frYNEIneh8SueM/+oK5Ju9LqcRHbsAuByBT8f2hLdiw0SZJ0OWsO0iVD5wnezo7K+CszPdp8wcyH/4zz14bb9Tes9zpWg+Al4bQQptye9Lqe931+/AzINEzj2sQgM6HQ2pFLy67xrkYmTpJaAR5OAGN2OsPzFSOoH88fFS+CyvXJTniWgQN8uIH/JMdTBh9xV7dVkxNLvBbESguOY3DEvcB6YOlBVIvPnX63DkhnhjB90eKXfYHh5abXAOFx0RpIH+XZts9u/QGB5Eo6gc2E5scjAuRbuboRTJ/imRMCKis6zp43HHaOfEgHKHRbNdB6a023uKq2F3UTX8ZlAIJOgC4YVdl4HcoyIQ2EckgCkogK+VIBg/IBi2Tugne+pLWPqSaoYgL3JljnhiiozooqO3oKD8AVjRryotrWNqbLLicJhKW9+/4VnAk3ygxJ4TFANKmx93cQRczSGXSnZFYVXZhuGwzpEQ8TgfOPPJMFg+TrzI0ZppUtOFuGs5F6itxz1Q28y+yZEua4euZp28fR/ePnTD40gRF56HRdOhilJi5K9P4KVHG6gWXczVmnq70TuG7urkrftAyQ05QMfgmR5BMBpvh8/16SJZTCm9Z4FxOZc8SqBiDmSlOTX+D3YBRGSeT7KB7bQc5mjMwqd09o8rIGt9uOQu7CishFy8sCg0T21Qx2FGOTkmDCah4XN308zCTPMn/y6VuwSwqWyJ5fMT8z1Oi9Ou0+6TFrSGktoGyDpnhj0Y4NRhAsMXEIg0KdM0f6i2xRU66JDgn9lZDKQN0tAuLU4T5BZGVuC5n4Hn3wHFVQ9x4eWwFxdOFrkjgOIlqiksQi2M7d5UbyAg+7Lgn9LhssvCSPjyoi5+gfUUZrktjdElhSw/eQAKST/FSs+h67XQQet2ki0JYvyArvDB03oYhLyRoX025zLQpoiA69IYTdAbCj5G6SxxN5kKHE9FBAIVL7eer+ywHZfSKhLE1Khu8OHICMjHi9YMkXiD8oDmtIRPHDjbBN99NhR0w/J0MT50auGg4sYraIQMZ8uBipePI5CNSMGIlIIko/mBKxZNDRpLVPXcpJb7s1P2QWfIT8FOgs/bz6aBHXPCvRetO15Ru2dgUXRHawrO6RdqkVlfkIuDRnnPyuODATfvB2yRGSfZIkMs+7JJ6hGJpAabpIbJa5Jq5tBXFaNHIQCqAJnTE/a6oi2agUSvsBrPze8fBdO8aKLVX4FWf7E7fOIpWHopIsu4BTuwZ/FiqIPxZGOrbLLiVlk7sxvP+Osa/PfhX1ybpTtAEAewY3yyd83SDi4zjqp14WEbsYpBL0T9HwDbiZ3iKVKLp4XI7wlo6hxfge5k4WMsAbwMCxTmftDe3SmzAS5m4YtSrzAQ6JUZn7TTKRcuu4P9zW+XpSZ41OAtXwNacabbUDBAaBS24eTRyhnmN5MuOcjLLGx5ue4pVkUCsBP532tz1Fuo9ZQwp/FVqOp/NM2P3SRX5dvTVS6AZkwha/NCNP4sHV3lu/iTdEmHz8or8ayvs2ishtaBjRLUXgvAQRTfJQxigmUOCoI8BfeOs2Y62M3GtthUfpvK58d4XRfzzAt4IN7uhvxE7BOahruEL0+zWJwqXjJ2j5tyawWYwDwsMFs25fA8YEPWUG4a4I5aj41nwq316jEMVL/Al/roperBzUfF6fV5/B3PNOYjbKoiQWUrVPtbc2/PTaqQtRKFg/4L++XvQC+bm4wAAAAASUVORK5CYII=",
@@ -23,12 +23,12 @@
         "header": {
             "item": { "justify": "center" },
             "greeting": {
-                "show": false,
-                "type": "good",
-                "custom": "",
-                "name": "",
-                "size": 100,
-                "newLine": false
+                "show": true,
+                "type": "custom",
+                "custom": "#VNMK",
+                "name": "HOÀNG CHÍ BẰNG",
+                "size": 400,
+                "newLine": true
             },
             "transitional": {
                 "show": false,
@@ -43,7 +43,7 @@
                 "separator": { "show": true, "text": "" },
                 "meridiem": { "show": false },
                 "hour24": { "show": true },
-                "size": 125,
+                "size": 400,
                 "newLine": false
             },
             "date": {
@@ -63,11 +63,11 @@
                 "year": { "show": true, "display": "number" },
                 "separator": { "show": true, "text": "" },
                 "format": "month-date",
-                "size": 125,
+                "size": 400,
                 "newLine": false
             },
             "search": {
-                "show": true,
+                "show": false,
                 "width": { "by": "custom", "size": 25 },
                 "engine": {
                     "selected": "google",
@@ -79,7 +79,7 @@
                 "newTab": true,
                 "string": ""
             },
-            "order": ["clock", "date", "search"],
+            "order": ["greeting", "clock", "date"],
             "edit": false
         },
         "bookmark": {
@@ -93,7 +93,7 @@
             "newTab": true,
             "edit": false,
             "add": false,
-            "show": true,
+            "show": false,
             "item": {}
         },
         "group": {

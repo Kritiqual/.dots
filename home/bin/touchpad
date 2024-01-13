@@ -1,4 +1,6 @@
 #!/bin/sh
+# Script to toggle touchpad
+# Not auto-detect usb mouse
 export DISPLAY=:0
 export XAUTHORITY="/home/kritiqual/.lyxauth"
 DEVICE=$(xinput list | grep -P '(?<= )[\w\s:]*(?i)touchpad(?-i).*?' -o | head -n1)

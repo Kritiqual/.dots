@@ -91,7 +91,7 @@ alias rg='rg --color=auto'
 #<<~>>
 exa_params=(
     '--git' '--icons' '--classify' '--color=always'
-    '--color-scale' '--group-directories-first'
+    '--group-directories-first' '--color-scale=all'
     '--time-style=long-iso' '-I "*.git"' '--group'
 )
 alias l="exa -a $exa_params"
@@ -104,7 +104,7 @@ alias lgs="lg -l"
 alias lgd="lgs -D"
 alias lgt="lgs -T"
 
-alias lx="exa -abgHhilmUuS@ --git"
+alias lx="exa -abFgHhilmUuS@ --git"
 
 if (( $+commands[exa] )) {
     auto-ls () { l -a; }

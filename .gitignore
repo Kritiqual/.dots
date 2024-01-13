@@ -1,3 +1,4 @@
 *cache*
 *.log
 home/.config/zsh/.zcalc_history
+.venv

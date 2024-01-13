@@ -1,76 +1,60 @@
 [
-	{
-		"name": "01. Home",
-		"rootPath": "~",
-		"paths": [],
-		"tags": [
-			"01. Dots"
-		],
-		"enabled": true
-	},
-	{
-		"name": "02. Dots",
-		"rootPath": "~/.dots",
-		"paths": [],
-		"tags": [
-			"01. Dots"
-		],
-		"enabled": true
-	},
-	{
-		"name": "03. Awesome",
-		"rootPath": "~/.dots/home/.config/awesome",
-		"paths": [],
-		"tags": [
-			"01. Dots",
-			"02. Awesome"
-		],
-		"enabled": true
-	},
-	{
-		"name": "04. Nvim",
-		"rootPath": "~/.dots/home/.config/nvim",
-		"paths": [],
-		"tags": [
-			"01. Dots",
-			"03. Nvim"
-		],
-		"enabled": true
-	},
-	{
-		"name": "05. Study",
-		"rootPath": "~/Projects/Study",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "06. Lib",
-		"rootPath": "/usr/share/awesome",
-		"paths": [],
-		"tags": [
-			"02. Awesome"
-		],
-		"enabled": true
-	},
-	{
-		"name": "07. Kasis",
-		"rootPath": "~/Projects/kasis",
-		"paths": [],
-		"tags": [
-			"04. Projects"
-		],
-		"enabled": true
-	},
-	{
-		"name": "08. Page",
-		"rootPath": "~/Projects/kritiqual.github.io",
-		"paths": [],
-		"tags": [
-			"04. Projects"
-		],
-		"enabled": true
-	},
+    {
+        "name": "01. Home",
+        "rootPath": "~",
+        "paths": [],
+        "tags": ["01. Dots"],
+        "enabled": true
+    },
+    {
+        "name": "02. Dots",
+        "rootPath": "~/.dots",
+        "paths": [],
+        "tags": ["01. Dots"],
+        "enabled": true
+    },
+    {
+        "name": "03. Awesome",
+        "rootPath": "~/.dots/home/.config/awesome",
+        "paths": [],
+        "tags": ["01. Dots", "02. Awesome"],
+        "enabled": true
+    },
+    {
+        "name": "04. Nvim",
+        "rootPath": "~/.dots/home/.config/nvim",
+        "paths": [],
+        "tags": ["01. Dots", "03. Nvim"],
+        "enabled": true
+    },
+    {
+        "name": "05. Study",
+        "rootPath": "~/Projects/Study",
+        "paths": [],
+        "tags": ["04. Projects"],
+        "enabled": true
+    },
+    {
+        "name": "06. Lib",
+        "rootPath": "/usr/share/awesome",
+        "paths": [],
+        "tags": ["02. Awesome"],
+        "enabled": true
+    },
+    {
+        "name": "07. Kasis",
+        "rootPath": "~/Projects/kasis",
+        "paths": [],
+        "tags": ["04. Projects"],
+        "enabled": true
+    },
+    {
+        "name": "08. Page",
+        "rootPath": "~/Projects/kritiqual.github.io",
+        "paths": [],
+        "tags": ["04. Projects"],
+        "enabled": true
+    },
     {
         "name": "09. README",
         "rootPath": "~/Projects/Kritiqual",

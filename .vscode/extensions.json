@@ -173,6 +173,11 @@
         "vsls-contrib.codetour",
         "sleistner.vscode-fileutils",
         "robole.file-bunny",
-        "dkundel.vscode-new-file"
+        "dkundel.vscode-new-file",
+        "kisstkondoros.vscode-gutter-preview",
+        "hbenl.vscode-test-explorer",
+        "gruntfuggly.activitusbar",
+        "jerrygoyal.shortcut-menu-bar",
+        "amos402.scope-bar"
     ]
 }

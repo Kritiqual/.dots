@@ -2,13 +2,16 @@
 application/x-zerosize=nvim.desktop;
 image/png=viewnior.desktop;feh.desktop
 inode/directory=thunar.desktop;code.desktop;
-text/plain=code.desktop;nvim.desktop;
+text/plain=neovide.desktop;code.desktop;nvim.desktop;
 text/x-matlab=visual-studio-code-insiders.desktop;neovide.desktop;
 x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/tel=Zoom.desktop;
-x-scheme-handler/tg=userapp-Telegram Desktop-6CRDO1.desktop;userapp-Telegram Desktop-IN1TV1.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-6CRDO1.desktop;userapp-Telegram Desktop-IN1TV1.desktop;org.telegram.desktop.desktop;
+application/json=code.desktop;
+application/octet-stream=nvim.desktop;
+application/x-wine-extension-ini=code.desktop;nvim.desktop;
 
 [Default Applications]
 application/x-zerosize=nvim.desktop
@@ -18,4 +21,8 @@ x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/tel=Zoom.desktop;
-x-scheme-handler/tg=userapp-Telegram Desktop-IN1TV1.desktop
+x-scheme-handler/tg=org.telegram.desktop.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
+application/json=code.desktop
+application/octet-stream=nvim.desktop
+application/x-wine-extension-ini=nvim.desktop

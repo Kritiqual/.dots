@@ -1,0 +1,54 @@
+trash-put
+rifle
+touch config.toml
+open_with d
+mkdir java
+sort
+sort date
+sort time
+rename .config
+dragon
+map
+rename test.java
+map <C-d> shell dragon-drop -a -x %p
+rename icons
+mkdir curl
+touch .curlrc
+cd trash
+trash
+search java
+ranger
+shell ranger
+search wez
+search mellow
+s
+mkdir -p tmp
+mkdir tmp
+mkdir tmp2
+open_with nvim
+touch test.txt
+search xbacklight
+search xorg-xbacklight
+mkdir ./TH7
+mkdir eww
+search neovide
+search sweet
+filter
+cd Projects
+open_with 2
+open_with 
+rename .android
+shell 
+find 
+search betterdiscord
+search pariu
+search paru
+rename Fedora.iso
+search edwin
+search python
+search _yaourt
+delete
+mkdir ./.local
+mkdir share
+
+toggle

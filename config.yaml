@@ -43,6 +43,13 @@ dotfiles:
     - Thunar
     - viewnior
     - systemd
+    - simplescreenrecorder
+  local_share:
+    src: .local/share
+    dst: ~/.local/share
+    link: link_children
+    instignore:
+    - zoxide
   Caprine:
     src: .config/Caprine
     dst: ~/.config/Caprine
@@ -81,6 +88,14 @@ dotfiles:
     src: .config/systemd
     dst: ~/.config/systemd
     link: link_children
+  simplescreenrecorder:
+    src: .config/simplescreenrecorder
+    dst: ~/.config/simplescreenrecorder
+    link: link_children
+  zoxide:
+    src: .local/share/zoxide
+    dst: ~/.local/share/zoxide
+    link: link_children
   ff_chrome:
     src: firefox
     dst: '{{@@ ffcss @@}}/chrome'
@@ -89,10 +104,6 @@ dotfiles:
     src: .xdman
     dst: ~/.xdman
     link: link_children
-  local_bin:
-    src: bin
-    dst: ~/.local/share/bin
-    link: absolute
 profiles:
   Archie:
     dotfiles:

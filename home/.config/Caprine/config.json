@@ -21,13 +21,13 @@
 	"flashWindowOnMessage": true,
 	"notificationMessagePreview": true,
 	"block": {
-		"chatSeen": true,
+		"chatSeen": false,
 		"typingIndicator": true,
 		"deliveryReceipt": false
 	},
 	"emojiStyle": "facebook-3-0",
 	"useWorkChat": false,
-	"sidebar": "default",
+	"sidebar": "wide",
 	"autoHideMenuBar": true,
 	"notificationsMuted": false,
 	"callRingtoneMuted": false,

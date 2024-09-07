@@ -5,6 +5,7 @@ acpilight
 alsa-plugins
 alsa-utils
 android-tools
+atlauncher-bin
 atool
 aura-bin
 awesome-git
@@ -19,7 +20,7 @@ betterdiscord-installer-bin
 blueman
 bluez-utils
 bpytop
-breeze-hacked-cursor-theme
+breeze-hacked-cursor-theme-git
 btrfs-progs
 candy-icons-git
 caprine
@@ -34,9 +35,10 @@ dotbare
 dragon-drop
 efibootmgr
 evtest
-eww-x11
+eww
 exfatprogs
 eza
+fastfetch
 fd
 feh
 firefox
@@ -63,12 +65,14 @@ iptables
 irssi
 jmtpfs
 jupyter-nbconvert
-kazam
 kitty
 ksnip
 kvantum
 kvantum-theme-sweet-git
 lazygit
+lib32-dbus
+lib32-glu
+lib32-libcurl-compat
 libcaca
 linux
 linux-firmware
@@ -90,11 +94,10 @@ neovim-nightly-bin
 networkmanager
 nm-connection-editor
 nodejs
-notion-app-enhanced
 npm
 ntfs-3g
 nwg-look
-onefetch-git
+ollama
 oneko
 os-prober
 otf-comic-shanns-v2
@@ -115,6 +118,7 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 python-pip
 qbittorrent
+qmk-git
 qt5ct
 ranger-git
 reflector
@@ -127,6 +131,7 @@ seahorse
 simplescreenrecorder
 spotify
 spotx-git
+steam
 subversion
 sweet-cursor-theme-git
 sweet-folders-icons-git
@@ -154,7 +159,7 @@ vial-appimage
 viewnior
 visual-studio-code-bin
 vlc
-wezterm-git
+warp-terminal
 wget
 xcape-git
 xclip
@@ -208,6 +213,7 @@ xorg-xwininfo
 xorg-xwud
 xsel
 yay-bin
+youtube-dl-git
 yt-dlp
 ytfzf
 zellij

@@ -63,7 +63,7 @@ alias pc='paccache -ruk0 && paccache -rk1'
 alias sc='a -Bc'
 alias co='p -Rns $(pacman -Qtdq)'
 alias ul='sudo rm /var/lib/pacman/db.lck'
-alias pkg='u -Qeq | rg -v "zoom" > ~/.dots/pkg.txt'
+alias pkg='u -Qeq > ~/.dots/pkg.txt'
 alias unlocksudo='faillock --user kritiqual --reset'
 alias fixpython='u -S --rebuild --noconfirm $(u -Qoq /usr/lib/python)'
 
@@ -154,7 +154,7 @@ alias ghe="gh ext list | cut -f 2 > ~/.dots/ghe.txt"
 
 alias cf='code --diff'
 alias kd='kitty +kitten diff'
-alias now='date +"[%T] %a, %Y/%m/%d"'
+alias now='date +"[%T] %a, %d/%m/%Y"'
 alias ph='echo -e ${PATH//:/\\n}'
 alias fph='echo -e "${fpath// /\\n}"'
 

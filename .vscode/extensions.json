@@ -178,6 +178,8 @@
         "hbenl.vscode-test-explorer",
         "gruntfuggly.activitusbar",
         "jerrygoyal.shortcut-menu-bar",
-        "amos402.scope-bar"
+        "amos402.scope-bar",
+        "blackboxapp.blackbox",
+        "googlecloudtools.cloudcode"
     ]
 }

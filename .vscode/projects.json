@@ -61,5 +61,12 @@
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
+    },
+    {
+        "name": "10. QMK",
+        "rootPath": "~/Projects/qmk_firmware",
+        "paths": [],
+        "tags": ["04. Projects"],
+        "enabled": true
     }
 ]

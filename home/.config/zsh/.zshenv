@@ -1,7 +1,7 @@
 ##-----ZI----------------------------------------------
 typeset -A ZI
 export ZI[HOME_DIR]="${HOME}/.local/zi"
-export ZI[ZCOMPDUMP_PATH]="${XDG_DATA_HOME}/.zcompdump"
+export ZI[ZCOMPDUMP_PATH]="${XDG_CACHE_HOME}/.zcompdump"
 
 ##-----Var---------------------------------------------
 if [[ $XDG_SESSION_TYPE == "wayland" ]]; then

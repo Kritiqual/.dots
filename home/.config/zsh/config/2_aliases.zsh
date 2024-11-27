@@ -19,12 +19,6 @@ alias chmod='chmod --preserve-root'
 alias md="mkdir -p"
 
 ##-----Power management--------------------------------
-# alias reboot="systemctl reboot"
-# alias poweroff="systemctl poweroff"
-# alias shutdown="systemctl shutdown"
-# alias suspend="systemctl suspend"
-# alias hibernate="systemctl hibernate"
-#<<~>>
 alias rb="systemctl reboot"
 alias po="systemctl poweroff"
 alias sp="systemctl suspend"
@@ -85,8 +79,8 @@ alias svim="sudo nvim"
 
 ##-----Colorizing some command-------------------------
 alias grep='grep --color=auto'
-alias egrep='grep -E --color=auto'
-alias fgrep='grep -F --color=auto'
+alias eg='grep -E --color=auto'
+alias fg='grep -F --color=auto'
 alias rg='rg --color=auto'
 #<<~>>
 exa_params=(
@@ -105,7 +99,6 @@ alias lgd="lgs -D"
 alias lgt="lgs -T"
 
 alias lx="exa -abFgHhilmUuS@ --git"
-
 if (( $+commands[exa] )) {
     auto-ls () { l -a; }
 
@@ -131,10 +124,9 @@ alias c4="cd ../../../.."
 alias c5="cd ../../../../.."
 
 ##-----Stuff-------------------------------------------
-alias nf='neofetch'
+alias ff='fastfetch'
 alias of='onefetch'
-alias pf='pfetch'
-alias I_use_Arch_btw='pf'
+alias I_use_Arch_btw='ff'
 
 alias :q="exit"
 alias :Q=":q"
@@ -153,7 +145,7 @@ alias ghf="githelp_fzf"
 alias ghe="gh ext list | cut -f 2 > ~/.dots/ghe.txt"
 
 alias cf='code --diff'
-alias kd='kitty +kitten diff'
+alias kf='kitty +kitten diff'
 alias now='date +"[%T] %a, %d/%m/%Y"'
 alias ph='echo -e ${PATH//:/\\n}'
 alias fph='echo -e "${fpath// /\\n}"'
@@ -170,9 +162,8 @@ alias tk='$SHELL "/home/kritiqual/Projects/kasis/kasis"'
 #\===================================================/#
 #######################################################
 alias ip='ip -c'
-alias i='command irssi --config=$XDG_CONFIG_HOME/irssi/config --home=$XDG_DATA_HOME/irssi'
-alias irssi='i'
-alias svn="svn --config-dir $XDG_CONFIG_HOME/subversion"
+alias irssi='irssi --config=$XDG_CONFIG_HOME/irssi/config --home=$XDG_DATA_HOME/irssi'
+alias i='irssi'
 
 ##-----Yt-dlp------------------------------------------
 ## This need to be convert from youtube-dl to yt-dlp
@@ -194,3 +185,6 @@ alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 # alias mr="reflector -f 30 -l 30 -n 15 --verbose"     # --save /etc/pacman.d/mirrorlist"
 # alias mrd="reflector --latest 50 -n 20 --sort delay" # --save /etc/pacman.d/mirrorlist"
 # alias mrs="reflector --latest 50 -n 20 --sort score" # --save /etc/pacman.d/mirrorlist"
+
+##-----Wget--------------------------------------------
+alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"

@@ -21,18 +21,19 @@ zi depth'1' lucid light-mode for nocd \
     atinit'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' \
     atload'source $ZDOTDIR/.p10k.zsh' romkatv/powerlevel10k
 
-# z-shell/{zui,zi-console,zbrowse,zzcomplete} Aloxaf/fzf-tab \
 zi wait lucid light-mode for \
+    cloneonly nocompile Aloxaf/fzf-tab \
     z-shell/{zui,zi-console,zbrowse,zzcomplete} \
     atload'zicompinit; zicdreplay' z-shell/F-Sy-H davidde/git \
     blockf atpull'zi creinstall -q ..' zsh-users/zsh-completions \
+    nocompile nocompletions MenkeTechnologies/zsh-more-completions \
     atinit'bindkey "^W" autopair-delete' hlissner/zsh-autopair \
     atload'_zsh_autosuggest_start' zsh-users/zsh-autosuggestions
 
-zi wait lucid is-snippet for OMZL::{key-bindings,spectrum,functions,clipboard}.zsh OMZP::sudo \
-    OMZP::{extract,universalarchive,safe-paste,copypath,copyfile,history,lol,npm,nvm,alias-finder,web-search,frontend-search,pip} \
-    atclone'gh completion --shell zsh > _gh' OMZP::gitignore as'completion' OMZP::fd/_fd as'completion' OMZP::ripgrep/_ripgrep
-zi wait lucid is-snippet svn for OMZP::aliases
+zi wait lucid is-snippet for OMZL::{spectrum,functions,clipboard}.zsh OMZP::sudo \
+    OMZP::{extract,universalarchive,safe-paste,copypath,copyfile,history,lol,alias-finder,web-search,frontend-search} \
+    atclone'gh completion --shell zsh > _gh' OMZP::gitignore
+
 #######################################################
 #/===================================================\#
 #|>                PLUGINS SETTINGS                 <|#

@@ -4,7 +4,9 @@ actions:
       if [[ {{@@ env['DISPLAY'] @@}} == ":*" ]]; then
         ibus-setup
       fi
-    xdgdir: mkdir -p ~/Projects ~/Pictures/Screenshots ~/Music/lyrics
+    dircreate: >-
+      mkdir -p ~/Documents/Projects ~/Pictures/Screenshots ~/Music/lyrics
+      mkdir -p ~/.local/share/ly ~/.local/share/themes
 config:
   backup: false
   banner: false
@@ -18,6 +20,10 @@ dynvariables:
     if [[ -d ~/.mozilla/firefox ]]; then
       find ~/.mozilla/firefox/ -type d -name "*default-release"
     fi
+  zencss: >-
+    if [[ -d ~/.zen ]]; then
+      find ~/.zen/ -type d -name "*Default (alpha)"
+    fi
 dotfiles:
   home:
     src: .
@@ -28,16 +34,21 @@ dotfiles:
     - .local
     - .xdman
     - bin
-    - firefox
+    - browser
   config:
     src: .config
     dst: ~/.config
     link: link_children
     instignore:
+    - aura
     - Caprine
     - gh
     - ibus-bamboo
+    - irssi
+    - Kvantum
+    - lazygit
     - mpd
+    - ncmpcpp
     - qBittorrent
     - qt5ct
     - Thunar
@@ -49,7 +60,12 @@ dotfiles:
     dst: ~/.local/share
     link: link_children
     instignore:
+    - icons
     - zoxide
+  aura:
+    src: .config/aura
+    dst: ~/.config/aura
+    link: link_children
   Caprine:
     src: .config/Caprine
     dst: ~/.config/Caprine
@@ -64,9 +80,29 @@ dotfiles:
     link: absolute
     actions:
     - ibussetup
+  irssi:
+    src: .config/irssi
+    dst: ~/.config/irssi
+    link: link_children
+  icons:
+    src: .local/share/icons/default
+    dst: ~/.local/share/icons/default
+    link: link_children
+  Kvantum:
+    src: .config/Kvantum
+    dst: ~/.config/Kvantum
+    link: link_children
+  lazygit:
+    src: .config/lazygit
+    dst: ~/.config/lazygit
+    link: link_children
   mpd:
     src: .config/mpd
     dst: ~/.config/mpd
+    link: link_children
+  ncmpcpp:
+    src: .config/ncmpcpp
+    dst: ~/.config/ncmpcpp
     link: link_children
   qBittorrent:
     src: .config/qBittorrent
@@ -76,6 +112,14 @@ dotfiles:
     src: .config/qt5ct
     dst: ~/.config/qt5ct
     link: link_children
+  simplescreenrecorder:
+    src: .config/simplescreenrecorder
+    dst: ~/.config/simplescreenrecorder
+    link: link_children
+  systemd:
+    src: .config/systemd
+    dst: ~/.config/systemd
+    link: link_children
   Thunar:
     src: .config/Thunar
     dst: ~/.config/Thunar
@@ -84,29 +128,25 @@ dotfiles:
     src: .config/viewnior
     dst: ~/.config/viewnior
     link: link_children
-  systemd:
-    src: .config/systemd
-    dst: ~/.config/systemd
-    link: link_children
-  simplescreenrecorder:
-    src: .config/simplescreenrecorder
-    dst: ~/.config/simplescreenrecorder
+  xdman:
+    src: .xdman
+    dst: ~/.xdman
     link: link_children
   zoxide:
     src: .local/share/zoxide
     dst: ~/.local/share/zoxide
     link: link_children
   ff_chrome:
-    src: firefox
+    src: browser/firefox
     dst: '{{@@ ffcss @@}}/chrome'
     link: absolute
-  xdman:
-    src: .xdman
-    dst: ~/.xdman
-    link: link_children
+  zen_chrome:
+    src: browser/zen/userChrome.css
+    dst: '{{@@ zencss @@}}/chrome/userChrome.css'
+    link: absolute
 profiles:
   Archie:
     dotfiles:
     - ALL
     actions:
-    - xdgdir
+    - dircreate

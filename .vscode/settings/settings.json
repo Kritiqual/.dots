@@ -1,6 +1,7 @@
 {
+    "editor.fontFamily": "'Cascadia Code PL', 'CaskaydiaCove Nerd Font'",
+    // "editor.fontFamily": "'Cascadia Code PL'",
     "files.autoSave": "afterDelay",
-    "editor.fontFamily": "'Cascadia Code PL', 'MesloLGS NF', 'CaskaydiaCove Nerd Font'",
     "files.exclude": {
         "*ache*": true
     },
@@ -13,7 +14,6 @@
     "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.lineNumbers": "relative",
     "editor.linkedEditing": true,
-    "editor.mouseWheelZoom": true,
     "editor.quickSuggestionsDelay": 1,
     "editor.renderLineHighlight": "gutter",
     "editor.scrollbar.verticalScrollbarSize": 13,
@@ -34,7 +34,6 @@
     "diffEditor.codeLens": true,
     "diffEditor.diffAlgorithm": "advanced",
     "diffEditor.maxComputationTime": 0,
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.minimap.enabled": false,
     "editor.minimap.autohide": true,
     "editor.minimap.scale": 3,
@@ -45,7 +44,8 @@
     "files.associations": {
         "*.wikitext": "wikitext",
         "*.wktxt": "wikitext",
-        "LICENSE": "plaintext"
+        "LICENSE": "plaintext",
+        "zshoptions": "manpage"
     },
     "files.autoSaveDelay": 100,
     "files.autoGuessEncoding": true,
@@ -63,33 +63,29 @@
     "workbench.list.smoothScrolling": true,
     "workbench.startupEditor": "none",
     "workbench.trustedDomains.promptInTrustedWorkspace": true,
-    "workbench.colorTheme": "Evondev Dracula High Contrast",
     "workbench.preferredDarkColorTheme": "Evondev Dracula Darker Contrast",
     "workbench.preferredLightColorTheme": "Evondev Dracula High Contrast",
-    "workbench.productIconTheme": "fluent-icons",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.tree.renderIndentGuides": "always",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.tabCloseButton": "off",
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.untitled.labelFormat": "name",
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.mouseBackForwardToNavigate": false,
     "workbench.editorAssociations": {
+        "git:/**/*.code-snippets": "default",
+        "gitlens:/**/*.code-snippets": "default",
         "*.bmp": "cweijan.officeViewer",
         "*.md": "default",
-        "*.jpg": "cweijan.officeViewer"
+        "*.jpg": "cweijan.officeViewer",
+        "{git,gitlens}:/**/*.{md,csv,svg}": "default"
     },
     "zenMode.fullScreen": false,
-    "zenMode.hideTabs": false,
     "screencastMode.keyboardShortcutsFormat": "commandWithGroupAndKeys",
     "screencastMode.mouseIndicatorColor": "#ff5555",
     "screencastMode.mouseIndicatorSize": 30,
     "screencastMode.verticalOffset": 0,
-    "window.commandCenter": true,
     "window.dialogStyle": "custom",
-    "window.menuBarVisibility": "hidden",
     "window.restoreFullscreen": true,
     "explorer.autoRevealExclude": {
         "*ache*": true
@@ -103,13 +99,11 @@
     "search.showLineNumbers": true,
     "search.smartCase": true,
     "debug.allowBreakpointsEverywhere": false,
-    "debug.autoExpandLazyVariables": true,
     "debug.console.closeOnEnd": true,
     "debug.console.fontSize": 13,
     "debug.console.wordWrap": false,
     "debug.showBreakpointsInOverviewRuler": true,
     "debug.terminal.clearBeforeReusing": true,
-    "extensions.autoUpdate": false,
     "extensions.experimental.deferredStartupFinishedActivation": true,
     "extensions.ignoreRecommendations": true,
     "terminal.explorerKind": "external",
@@ -117,6 +111,8 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorWidth": 3,
     "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.experimentalImageSupport": true,
+    "terminal.integrated.fontLigatures": true,
     "terminal.integrated.lineHeight": 0,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.shellIntegration.history": 10000,
@@ -161,7 +157,6 @@
     "material-icon-theme.folders.color": "#9b87fd",
     "material-icon-theme.hidesExplorerArrows": true,
     "projectManager.projectsLocation": "~/.dots/.vscode",
-    "workbench.view.alwaysShowHeaderActions": true,
     "better-comments.highlightPlainText": true,
     "better-comments.tags": [
         {
@@ -229,7 +224,8 @@
             "boxWidth": 0,
             "removeEmptyLines": false,
             "ignoreOuterIndentation": true,
-            "ignoreInnerIndentation": true
+            "ignoreInnerIndentation": true,
+            "maxEndColumn": 999
         },
         "LuaHead": {
             "boxWidth": 55,
@@ -279,7 +275,7 @@
             "bottomEdgeToken": "=",
             "leftEdgeToken": "#|> ",
             "rightEdgeToken": " <|#",
-            "fillingToken": ""
+            "fillingToken": " "
         },
         "Sect": {
             "boxWidth": 47,
@@ -319,10 +315,8 @@
     "errorLens.errorGutterIconColor": "#ff5555",
     "errorLens.warningGutterIconColor": "#ffb86c",
     "errorLens.infoGutterIconColor": "#20e3b2",
-    "filesize.showGzipInStatusBar": true,
     "gitlens.views.experimental.multiSelect.enabled": true,
     "gitlens.views.repositories.compact": true,
-    "gitlens.graph.showRemoteNames": true,
     "gitlens.keymap": "alternate",
     "gitlens.advanced.blame.delayAfterEdit": 1000,
     "gitlens.telemetry.enabled": false,
@@ -331,7 +325,6 @@
     "gitlens.statusBar.enabled": false,
     "gitlens.hovers.annotations.over": "annotation",
     "gitlens.currentLine.scrollable": false,
-    "gitlens.hovers.currentLine.changes": false,
     "gitlens.blame.highlight.locations": ["overview", "gutter", "line"],
     "gitlens.changes.locations": ["gutter", "line", "overview"],
     "gitlens.menus": {
@@ -373,7 +366,6 @@
             "stash": true
         }
     },
-    "gitlens.plusFeatures.enabled": false,
     "gitlens.showWelcomeOnInstall": false,
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.heatmap.hotColor": "#ff5555",
@@ -439,7 +431,7 @@
     "scss.format.enable": false,
     "yaml.format.enable": false,
     "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.defaultFormatter": "darkriszty.markdown-table-prettify",
         "editor.wordWrap": "off"
     },
     "[python]": {
@@ -479,5 +471,52 @@
         "errorLens.statusBarWarningForeground": "#eac394",
         "errorLens.statusBarInfoForeground": "#8be9fd",
         "errorLens.statusBarHintForeground": "#50fa7b"
-    }
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "filesize.showGzipInStatusBar": true,
+    "workbench.editor.tabActionCloseVisibility": false,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "bash (MSYS2)": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": ["--login", "-i"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "gitlens.ai.experimental.provider": "openai",
+    "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+    "gitlens.hovers.currentLine.changes": false,
+    "notebook.experimental.remoteSave": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.untrackedChanges": "separate",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Evondev Dracula High Contrast",
+    "workbench.iconTheme": "material-icon-theme",
+    "gitlens.graph.showRemoteNames": true,
+    "indentRainbow.excludedLanguages": ["manpage", "plaintext"],
+    "codeium.enableConfig": {
+        "*": true
+    },
+    "workbench.productIconTheme": "bongocat",
+    "diffEditor.experimental.showMoves": true,
+    "diffEditor.experimental.useTrueInlineView": true,
+    "editor.experimental.treeSitterTelemetry": true,
+    "notebook.multiCursor.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.stickyScroll.enabled": true
 }

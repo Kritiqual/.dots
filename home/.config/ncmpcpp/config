@@ -153,7 +153,7 @@ song_window_title_format = ncmpcpp
 # show_duplicate_tags = yes
 
 # incremental_seeking = yes
-# seek_time = 1
+seek_time = 5
 
 # volume_change_step = 2
 
@@ -166,12 +166,12 @@ autocenter_mode = yes
 # progressbar_look = ▒▒░
 # progressbar_look = ▒▓░
 # progressbar_look = ┅┅┄
-# progressbar_look = ─⊙┄
+progressbar_look = ─⊙┄
 # progressbar_look = ─➞─
 # progressbar_look = ─┅─
 # progressbar_look = ▪▪▪
 # progressbar_look = ▪▪▫
-progressbar_look = ───
+# progressbar_look = ───
 # progressbar_look = ▁▁▁
 # progressbar_look = ‒‒‒
 # progressbar_look = ▶
@@ -209,7 +209,7 @@ show_hidden_files_in_local_browser = no
 ## media_library, playlist_editor, tag_editor, outputs, visualizer, clock,
 ## lyrics, last_fm.
 ##
-#screen_switcher_mode = playlist, browser
+screen_switcher_mode = playlist, browser
 
 startup_screen = playlist
 # startup_slave_screen = visualizer
@@ -251,7 +251,7 @@ main_window_color = blue
 color1 = red
 color2 = red
 progressbar_color = 9
-progressbar_elapsed_color = blue
+progressbar_elapsed_color = green
 statusbar_color = green
 statusbar_time_color = cyan
 player_state_color = green

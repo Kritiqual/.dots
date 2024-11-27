@@ -7,3 +7,4 @@ for f in $ZDOTDIR/config/*.zsh; do
 done
 
 (( $+commands[zoxide] )) && eval "$(zoxide init zsh --cmd j)"
+set +x

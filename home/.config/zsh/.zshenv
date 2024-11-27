@@ -76,7 +76,7 @@ export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT4_IM_MODULE=ibus
 export CLUTTER_IM_MODULE=ibus
-export GLFW_IM_MODULE=xim
+export GLFW_IM_MODULE=ibus
 #<<~>>
 # Bat
 export MANROFFOPT="-c"
@@ -93,15 +93,9 @@ export MANPAGER="sh -c 'col -bx | bat -l man'"
 # export LESS_TERMCAP_se=$'\e[0m'
 # export LESS_TERMCAP_ue=$'\e[0m'
 # export GROFF_NO_SGR=1
-#<<~>>
-# export PF_INFO="ascii title kernel os shell pkgs uptime memory"
-# export PF_COL1=1
-# export PF_COL2=6
-# export PF_COL3=4
-# export PF_SEP=""
 
 # if [[ $TERM_PROGRAM == "" && $TERMINAL_EMULATOR == "" && $FLOATERM == "" ]]; then
-#     pfetch # neofetch
+#     fastfetch
 # fi
 #<<~>>
 if [[ -d /usr/share/fzf ]]; then
@@ -130,7 +124,7 @@ alt-j:preview-down,alt-k:preview-up,alt-h:preview-page-up,alt-l:preview-page-dow
 
 export FZF_DEFAULT_OPTS="${ED_CLR} $FZF_BIND --exit-0 --select-1 --ansi \
 --reverse --cycle --preview-window='70%,nowrap,<50(top,60%,border-bottom)' \
---info=inline --border=rounded --prompt='|> ' --pointer='>' --marker='>'"
+--info=inline --border=rounded --prompt='> ' --pointer='>' --marker='>'"
 export FZF_CTRL_T_OPTS="--preview 'bat -p {} 2>/dev/null'"
 export FZF_ALT_C_OPTS="--preview 'exa -TaD {}'"
 export FZF_CTRL_R_OPTS="--no-sort --preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
@@ -158,6 +152,7 @@ export LESSHISTSIZE=0
 export npm_config_prefix="$XDG_DATA_HOME"/npm
 export npm_config_userconfig="$XDG_CONFIG_HOME"/npm/config
 export npm_config_cache="$XDG_CACHE_HOME"/npm
+export NVM_DIR="$XDG_DATA_HOME"/nvm
 export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
 export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup

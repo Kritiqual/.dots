@@ -1,1 +1,1 @@
-/home/kritiqual/Projects/qmk_firmware/util/qmk_tab_complete.sh
+/home/kritiqual/Documents/Projects/qmk_firmware/util/qmk_tab_complete.sh

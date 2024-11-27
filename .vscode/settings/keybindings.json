@@ -41,7 +41,7 @@
         "command": "workbench.action.toggleScreencastMode"
     },
     {
-        "key": "ctrl+alt+b",
+        "key": "ctrl+shift+alt+b",
         "command": "workbench.action.toggleActivityBarVisibility"
     },
     {
@@ -123,40 +123,43 @@
         "key": "ctrl+alt+1",
         "command": "workbench.view.extension.project-manager"
     },
+    // {
+    //     "key": "ctrl+alt+2",
+    //     "command": "workbench.view.explorer",
+    //     "when": "viewContainer.workbench.view.explorer.enabled"
+    // },
     {
         "key": "ctrl+alt+2",
-        "command": "workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
-    },
-    {
-        "key": "ctrl+alt+3",
         "command": "workbench.view.search",
         "when": "workbench.view.search.active"
     },
     {
-        "key": "ctrl+alt+5",
+        "key": "ctrl+alt+3",
         "command": "workbench.view.debug",
         "when": "viewContainer.workbench.view.debug.enabled"
     },
     {
-        "key": "ctrl+alt+7",
+        "key": "ctrl+alt+4",
+        "command": "workbench.view.extension.color_manager_webview_container"
+    },
+    {
+        "key": "ctrl+alt+5",
+        "command": "workbench.view.extension.snippetsmanager-snippetsView"
+    },
+    {
+        "key": "ctrl+alt+6",
         "command": "workbench.view.extensions",
         "when": "viewContainer.workbench.view.extensions.enabled"
     },
     {
-        "key": "ctrl+alt+8",
-        "command": "workbench.view.extension.github-pull-requests"
-    },
-    {
-        "key": "ctrl+alt+8",
+        "key": "ctrl+alt+7",
         "command": "workbench.view.scm",
         "when": "workbench.scm.active"
     },
-    {
-        "key": "ctrl+alt+8",
-        "command": "workbench.view.scm",
-        "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-    },
+    // {
+    //     "key": "ctrl+alt+8",
+    //     "command": "workbench.view.extension.github-pull-requests"
+    // },
     {
         "key": "ctrl+j ctrl+s",
         "command": "workbench.action.openSettingsJson"
@@ -264,14 +267,6 @@
         "command": "-projectManager.listProjects"
     },
     {
-        "key": "ctrl+alt+4",
-        "command": "workbench.view.extension.color_manager_webview_container"
-    },
-    {
-        "key": "ctrl+alt+6",
-        "command": "workbench.view.extension.snippets-explorer"
-    },
-    {
         "key": "ctrl+k ;",
         "command": "editor.createFoldingRangeFromSelection",
         "when": "editorTextFocus && foldingEnabled"
@@ -308,16 +303,6 @@
         "key": "ctrl+tab",
         "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
         "when": "!activeEditorGroupEmpty"
-    },
-    {
-        "key": "ctrl+alt+i",
-        "command": "emojisense.quickEmojitext",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-emojisense.quickEmojitext",
-        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+b",
@@ -491,5 +476,33 @@
     {
         "key": "ctrl+j ctrl+k",
         "command": "workbench.action.openGlobalKeybindingsFile"
+    },
+    {
+        "key": "alt+q",
+        "command": "extension.conventionalCommits"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "emojisense.quickEmojitext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-emojisense.quickEmojitext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k delete",
+        "command": "notifications.clearAll"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "-workbench.action.quickchat.toggle",
+        "when": "chatIsEnabled"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-codeium.openCodeiumCommand",
+        "when": "codeium.commandEnabled && editorTextFocus && !inlineSuggestionsVisible"
     }
 ]

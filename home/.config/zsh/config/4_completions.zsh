@@ -1,4 +1,8 @@
-zstyle ':completion:*' cache-path $XDG_CACHE_HOME/zsh/zcompcache
+if [[ ! -d "${ZI[CACHE_DIR]:-${XDG_CACHE_HOME:-${ZDOTDIR:-$HOME/.cache}}/zi}" ]]; then
+    mkdir -p "${ZI[CACHE_DIR]:-${XDG_CACHE_HOME:-${ZDOTDIR:-$HOME/.cache}}/zi}"
+fi
+
+zstyle ':completion:*' cache-path "${ZI[CACHE_DIR]:-${XDG_CACHE_HOME:-${ZDOTDIR:-$HOME/.cache}}/zi}"
 
 # zstyle ':completion:*' list-prompt ''
 

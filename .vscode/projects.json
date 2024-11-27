@@ -14,7 +14,7 @@
         "enabled": true
     },
     {
-        "name": "03. Awesome",
+        "name": "03. AwesomeWM",
         "rootPath": "~/.dots/home/.config/awesome",
         "paths": [],
         "tags": ["01. Dots", "02. Awesome"],
@@ -29,7 +29,7 @@
     },
     {
         "name": "05. Study",
-        "rootPath": "~/Projects/Study",
+        "rootPath": "~/Documents/Projects/Study",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
@@ -43,28 +43,28 @@
     },
     {
         "name": "07. Kasis",
-        "rootPath": "~/Projects/kasis",
+        "rootPath": "~/Documents/Projects/kasis",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
     },
     {
         "name": "08. Page",
-        "rootPath": "~/Projects/kritiqual.github.io",
+        "rootPath": "~/Documents/Projects/kritiqual.github.io",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
     },
     {
         "name": "09. README",
-        "rootPath": "~/Projects/Kritiqual",
+        "rootPath": "~/Documents/Projects/Kritiqual",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
     },
     {
         "name": "10. QMK",
-        "rootPath": "~/Projects/qmk_firmware",
+        "rootPath": "~/Documents/Projects/qmk_firmware",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true

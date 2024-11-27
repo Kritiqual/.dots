@@ -40,8 +40,8 @@ categoryMusic:/home/kritiqual/Downloads/Music
 categoryVideos:/home/kritiqual/Downloads/Video
 categoryPrograms:/home/kritiqual/Downloads/Programs
 fetchTs:false
-noTransparency:false
+noTransparency:true
 forceSingleFolder:false
-hideTray:false
+hideTray:true
 showVideoListOnlyInBrowser:true
 zoomLevelIndex:0

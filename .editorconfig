@@ -12,8 +12,8 @@ max_line_length = unset
 trailing_table_separator = smart
 call_arg_parentheses = keep
 
-end_of_line = auto
-detect_end_of_line = false
+end_of_line = crlf
+detect_end_of_line = true
 insert_final_newline = true
 
 # [space]

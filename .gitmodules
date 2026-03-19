@@ -6,12 +6,12 @@ ignore = dirty
 branch = master
 [submodule "home/.config/awesome"]
 path = home/.config/awesome
-url = https://github.com/Kritiqual/Awesome
+url = https://github.com/Kritiqual/awesome
 ignore = dirty
 branch = main
 [submodule "home/.config/nvim"]
 path = home/.config/nvim
-url = https://github.com/Kritiqual/Nuavim
+url = https://github.com/Kritiqual/nvim
 ignore = dirty
 branch = main
 [submodule "home/.config/BetterDiscord"]
@@ -43,9 +43,3 @@ url = https://github.com/jchook/ranger-zoxide
 shallow = true
 ignore = dirty
 branch = master
-[submodule "home/.config/BetterDiscord"]
-path = home/.config/BetterDiscord
-url = https://github.com/Kritiqual/BetterDiscord
-shallow = true
-ignore = dirty
-branch = main

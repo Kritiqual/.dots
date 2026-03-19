@@ -35,6 +35,6 @@ unset hstignore path_arr fzf_arr fzf_exclude D_CLR ED_CLR cmp_aliases_array
 #|>           STARSHIP (NEED TO BE HERE)            <|#
 #\===================================================/#
 #######################################################
-export STARSHIP_CONFIG="$HOME/.config/starship.toml"
+# export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 e() { return $1; }
-eval "$(starship init bash)"
+# eval "$(starship init bash)"

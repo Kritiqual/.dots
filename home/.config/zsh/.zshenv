@@ -1,3 +1,8 @@
+#######################################################
+#/===================================================\#
+#|>                     .ZSHENV                     <|#
+#\===================================================/#
+#######################################################
 ##-----ZI----------------------------------------------
 typeset -A ZI
 export ZI[HOME_DIR]="${HOME}/.local/zi"
@@ -33,26 +38,14 @@ else
     fi
 fi
 
-# export LC_ALL=en_US.UTF-8
-export TERMINAL="kitty"
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
 export DS="$HOME/.dots"
-export AW="$DS/home/.config/awesome"
-export NV="$DS/home/.config/nvim"
-#<<~>>
-# case ${TERM} in
-# xterm* | rxvt* | Eterm* | aterm | kterm | gnome* | alacritty | st | konsole*)
-#     # PROMPT_COMMAND='echo -ne "\033]0;K@A: ${PWD/#$HOME/\~}\007"'
-#     # PROMPT_COMMAND='echo -ne "\033]0;K@A: ${PWD##*/}\007"'
-#     PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
-#     ;;
-# screen*)
-#     # PROMPT_COMMAND='echo -ne "\033_K@A:${PWD/#$HOME/\~}\033\\"'
-#     # PROMPT_COMMAND='echo -ne "\033_K@A:${PWD##*/}\033\\"'
-#     PROMPT_COMMAND='echo -ne "\033_${PWD##*/}\033\\"'
-#     ;;
-# esac
+export CFG="$DS/home/.config"
+export AW="$CFG/awesome"
+export NV="$CFG/nvim"
+export CHROOT="$DS/.chroot"
+export SUDO_PROMPT="[!] $(tput setaf 1)>$(tput setaf 3)>$(tput setaf 2)>$(tput setaf 4)>$(tput setaf 6)>$(tput setaf 5)>$(tput setaf 7)>$(tput sgr0) "
 #<<~>>
 export XDG_DATA_HOME="${HOME}/.local/share"
 export XDG_CONFIG_HOME="${HOME}/.config"
@@ -63,10 +56,10 @@ export HISTSIZE=10000
 export SAVEHIST=$HISTSIZE
 export HISTFILE=~/.local/history/.zshist
 ignore=(
-    p y a pq pu au u pkg dc ac vc rf gf m r f ex af
-    nf of pf l ls ld lt ph fph zi dp db j ji :q :Q
-    . .. ... .... ..... c{1..5} clear cls now net e
-    man pwd bash zsh bpytop ncmpcpp I_use_Arch_btw
+    p a u pu au up pkg ghe dc ac vc f rf ghf m r y cf kf zi
+    ff of l ls ld lt lg lgs lgd lgt lx ph fph dp db i j ji
+    :q :Q . .. ... .... ..... c{1..5} clear cls now net e
+    man pwd bash zsh bpytop ncmpcpp I_use_Arch_btw tmux t
 )
 for i in $ignore; do HISTORY_IGNORE+="$i(| *)|"; done
 export HISTORY_IGNORE=$(echo "(${HISTORY%?})")

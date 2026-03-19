@@ -1,12 +1,14 @@
-RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case --hidden "
-INITIAL_QUERY="${*:-}"
-IFS=: read -ra selected < <(
-    FZF_DEFAULT_COMMAND="$RG_PREFIX $(printf %q "$INITIAL_QUERY")" \
-        fzf \
-        --prompt 'Rg> ' --delimiter : --disabled --query "$INITIAL_QUERY" \
-        --bind "change:reload:sleep 0.1; $RG_PREFIX {q} || true" \
-        --bind "alt-f:unbind(change)+change-prompt(Fzf> )+enable-search+clear-query" \
-        --bind "alt-r:change-prompt(Rg> )+disable-search+reload($RG_PREFIX {q} || true)+rebind(change)" \
-        --preview 'bat -p {1} --highlight-line {2}' --preview-window=up,80%,border-bottom
-)
-[ -n "${selected[0]}" ] && nvim "${selected[0]}" "+${selected[1]}"
+#!/usr/bin/env zsh
+RELOAD='reload:rg --column --color=always --smart-case {q} || :'
+OPENER='if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
+            nvim {1} +{2}
+        else
+            nvim +cw -q {+f}
+        fi'
+fzf --disabled --ansi --multi --query "$*" \
+    --bind "start:$RELOAD" --bind "change:$RELOAD" \
+    --bind "enter:become:$OPENER" --bind "ctrl-o:execute:$OPENER" \
+    --bind 'alt-a:select-all,alt-d:deselect-all,ctrl-/:toggle-preview' \
+    --delimiter : \
+    --preview 'bat --style=header,numbers --highlight-line {2} {1}' \
+    --preview-window '~1,+{2}+1/3,<80(up)' --query "$*"

@@ -1,1 +1,1 @@
-/home/kritiqual/Documents/Projects/qmk_firmware/util/qmk_tab_complete.sh
+eval "$(register-python-argcomplete --no-defaults qmk)"

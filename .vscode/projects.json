@@ -29,7 +29,7 @@
     },
     {
         "name": "05. Study",
-        "rootPath": "~/Documents/Projects/Study",
+        "rootPath": "~/Projects/Study",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
@@ -43,28 +43,28 @@
     },
     {
         "name": "07. Kasis",
-        "rootPath": "~/Documents/Projects/kasis",
+        "rootPath": "~/Projects/kasis",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
     },
     {
         "name": "08. Page",
-        "rootPath": "~/Documents/Projects/kritiqual.github.io",
+        "rootPath": "~/Projects/kritiqual.github.io",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
     },
     {
         "name": "09. README",
-        "rootPath": "~/Documents/Projects/Kritiqual",
+        "rootPath": "~/Projects/Kritiqual",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true
     },
     {
         "name": "10. QMK",
-        "rootPath": "~/Documents/Projects/qmk_firmware",
+        "rootPath": "~/Projects/qmk_firmware",
         "paths": [],
         "tags": ["04. Projects"],
         "enabled": true

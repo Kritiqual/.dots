@@ -13,19 +13,19 @@ opwd=$(pwd)
 cd "${cur}" || { echo "Directory \"${cur}\" doesn't exist, aborting." && exit 1; }
 
 # init/update the submodule
-if [ "${DOTDROP_AUTOUPDATE-yes}" = yes ] ; then
-  git submodule update --init --recursive
-  git submodule update --remote dotdrop
+if [ "${DOTDROP_AUTOUPDATE-yes}" = yes ]; then
+	git submodule update --init --recursive
+	git submodule update --remote dotdrop
 fi
 
 # check python executable
 pybin="python3"
 if [ -z "${ENV_DIR}" ]; then
-  hash ${pybin} 2>/dev/null || pybin="python"
-  [[ "$(${pybin} -V 2>&1)" =~ "Python 3" ]] || { echo "install Python 3" && exit 1; }
+	hash ${pybin} 2>/dev/null || pybin="python"
+	[[ "$(${pybin} -V 2>&1)" =~ "Python 3" ]] || { echo "install Python 3" && exit 1; }
 else
-  # virtualenv
-  pybin="${ENV_DIR}/bin/python"
+	# virtualenv
+	pybin="${ENV_DIR}/bin/python"
 fi
 hash "${pybin}" 2>/dev/null || { echo "python executable not found" && exit 1; }
 

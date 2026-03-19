@@ -1,5 +1,2 @@
 [General]
-theme=Sweet
-
-[Applications]
-Sweet=dolphin
+theme=Sweet-transparent-toolbar

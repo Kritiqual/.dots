@@ -1,12 +1,12 @@
 actions:
   post:
-    ibussetup: >-
+    fcitxsetup: >-
       if [[ {{@@ env['DISPLAY'] @@}} == ":*" ]]; then
-        ibus-setup
+        fcitx5-configtool
       fi
     dircreate: >-
-      mkdir -p ~/Documents/Projects ~/Pictures/Screenshots ~/Music/lyrics
-      mkdir -p ~/.local/share/ly ~/.local/share/themes
+      mkdir -p ~/Projects ~/.local/share/themes;
+      mkdir -p ~/Pictures/Screenshots ~/Music/lyrics;
 config:
   backup: false
   banner: false
@@ -20,48 +20,44 @@ dynvariables:
     if [[ -d ~/.mozilla/firefox ]]; then
       find ~/.mozilla/firefox/ -type d -name "*default-release"
     fi
-  zencss: >-
-    if [[ -d ~/.zen ]]; then
-      find ~/.zen/ -type d -name "*Default (alpha)"
-    fi
 dotfiles:
   home:
     src: .
-    dst: '~'
+    dst: "~"
     link: link_children
     instignore:
-    - .config
-    - .local
-    - .xdman
-    - bin
-    - browser
+      - .config
+      - .local
+      - bin
+      - browser
   config:
     src: .config
     dst: ~/.config
     link: link_children
     instignore:
-    - aura
-    - Caprine
-    - gh
-    - ibus-bamboo
-    - irssi
-    - Kvantum
-    - lazygit
-    - mpd
-    - ncmpcpp
-    - qBittorrent
-    - qt5ct
-    - Thunar
-    - viewnior
-    - systemd
-    - simplescreenrecorder
+      - aura
+      - Caprine
+      - fcitx5
+      - gh
+      - ibus-bamboo
+      - irssi
+      - Kvantum
+      - lazygit
+      - mpd
+      - ncmpcpp
+      - qBittorrent
+      - qt6ct
+      - Thunar
+      - viewnior
+      - systemd
+      - starship.toml
   local_share:
     src: .local/share
     dst: ~/.local/share
     link: link_children
     instignore:
-    - icons
-    - zoxide
+      - icons
+      - zoxide
   aura:
     src: .config/aura
     dst: ~/.config/aura
@@ -70,16 +66,16 @@ dotfiles:
     src: .config/Caprine
     dst: ~/.config/Caprine
     link: link_children
+  fcitx5:
+    src: .config/fcitx5
+    dst: ~/.config/fcitx5
+    link: link_children
+    actions:
+      - fcitxsetup
   gh:
     src: .config/gh
     dst: ~/.config/gh
     link: link_children
-  ibus-bamboo:
-    src: .config/ibus-bamboo
-    dst: ~/.config/ibus-bamboo
-    link: absolute
-    actions:
-    - ibussetup
   irssi:
     src: .config/irssi
     dst: ~/.config/irssi
@@ -109,12 +105,8 @@ dotfiles:
     dst: ~/.config/qBittorrent
     link: link_children
   qt5ct:
-    src: .config/qt5ct
-    dst: ~/.config/qt5ct
-    link: link_children
-  simplescreenrecorder:
-    src: .config/simplescreenrecorder
-    dst: ~/.config/simplescreenrecorder
+    src: .config/qt6ct
+    dst: ~/.config/qt6ct
     link: link_children
   systemd:
     src: .config/systemd
@@ -128,25 +120,17 @@ dotfiles:
     src: .config/viewnior
     dst: ~/.config/viewnior
     link: link_children
-  xdman:
-    src: .xdman
-    dst: ~/.xdman
-    link: link_children
   zoxide:
     src: .local/share/zoxide
     dst: ~/.local/share/zoxide
     link: link_children
   ff_chrome:
     src: browser/firefox
-    dst: '{{@@ ffcss @@}}/chrome'
-    link: absolute
-  zen_chrome:
-    src: browser/zen/userChrome.css
-    dst: '{{@@ zencss @@}}/chrome/userChrome.css'
+    dst: "{{@@ ffcss @@}}/chrome"
     link: absolute
 profiles:
-  Archie:
+  Archlinux:
     dotfiles:
-    - ALL
+      - ALL
     actions:
-    - dircreate
+      - dircreate

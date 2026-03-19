@@ -1,2 +1,3 @@
+#!/usr/bin/env zsh
 set -o pipefail
 "$@" --help 2>&1 | bat -p --language=cmd-help

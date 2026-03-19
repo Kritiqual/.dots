@@ -36,19 +36,38 @@ search sweet
 filter
 cd Projects
 open_with 2
-open_with 
 rename .android
-shell 
-find 
+shell
+find
 search betterdiscord
 search pariu
-search paru
 rename Fedora.iso
 search edwin
 search python
 search _yaourt
-delete
 mkdir ./.local
 mkdir share
-
 toggle
+rename cargo
+search paru
+search spoti
+search compose
+search windows
+search wi
+search win
+search _font
+rename bak.rc.lua
+delete
+cd
+open_with
+search neo
+search nvi
+search ne
+search fcit
+touch wget-hsts
+9uxse
+9u[112;9u
+9u
+
+rename nvim
+search sudo

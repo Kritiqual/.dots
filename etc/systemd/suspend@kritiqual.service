@@ -1,13 +1,16 @@
 [Unit]
 Description=i3lock
 Before=sleep.target
+Before=suspend.target
+Before=hibernate.target
 
 [Service]
-User=kritiqual
+User=%I
 Type=forking
 Environment=DISPLAY=:0
 ExecStart=/home/kritiqual/.local/share/bin/lock
-ExecStartPost=/usr/bin/sleep 1
 
 [Install]
 WantedBy=sleep.target
+WantedBy=suspend.target
+WantedBy=hibernate.target

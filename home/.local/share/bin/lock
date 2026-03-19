@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 CLEAR='#00000000'
 BLUR='#ffffff1a'
 TEXT='#ffffff'

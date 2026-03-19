@@ -13,7 +13,6 @@
         "bierner.color-info",
         "leetcode.vscode-leetcode",
         "shalldie.background",
-        "formulahendry.auto-rename-tag",
         "ms-azuretools.vscode-docker",
         "jock.svg",
         "esbenp.prettier-vscode",
@@ -180,6 +179,14 @@
         "jerrygoyal.shortcut-menu-bar",
         "amos402.scope-bar",
         "blackboxapp.blackbox",
-        "googlecloudtools.cloudcode"
+        "googlecloudtools.cloudcode",
+        "formulahendry.auto-rename-tag",
+        "luisfontes19.vscode-swissknife",
+        "catppuccin.catppuccin-vsc",
+        "catppuccin.catppuccin-vsc-icons",
+        "davraamides.todotxt-mode",
+        "usernamehw.todo-md",
+        "pekuid0209.peku-kanban",
+        "rarnoldmobile.todo-txt"
     ]
 }

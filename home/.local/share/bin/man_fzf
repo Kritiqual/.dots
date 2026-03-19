@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 man -k . | awk '{print $1}' | fzf -q "$1" --prompt="Man> " \
     --preview-window=up,85%,border-bottom --preview $'\
         echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' |

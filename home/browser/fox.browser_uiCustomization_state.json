@@ -1,6 +1,7 @@
 {
     "placements": {
-        "widget-overflow-fixed-list": [
+        "widget-overflow-fixed-list": [],
+        "unified-extensions-area": [
             "_762f9885-5a13-4abd-9c77-433dcd38b8fd_-browser-action",
             "jid1-niffy2ca8fy1tg_jetpack-browser-action",
             "adblockultimate_adblockultimate_net-browser-action",
@@ -29,38 +30,36 @@
             "_6ac85730-7d0f-4de0-b3fa-21142dd85326_-browser-action",
             "_dcb8caa2-63fa-41aa-a508-a45c5990ebdd_-browser-action",
             "_7962ff4a-5985-4cf2-9777-4bb642ad05b8_-browser-action",
-            "_4b547b2c-e114-4344-9b70-09b2fe0785f3_-browser-action"
+            "_4b547b2c-e114-4344-9b70-09b2fe0785f3_-browser-action",
+            "firefox-extension_steamdb_info-browser-action",
+            "webextension_metamask_io-browser-action"
         ],
         "nav-bar": [
-            "screenshot-button",
+            "fxa-toolbar-menu-button",
             "back-button",
             "home-button",
             "forward-button",
             "stop-reload-button",
             "customizableui-special-spring1",
             "customizableui-special-spring8",
+            "vertical-spacer",
             "customizableui-special-spring5",
             "urlbar-container",
             "customizableui-special-spring9",
             "customizableui-special-spring10",
             "customizableui-special-spring2",
-            "preferences-button",
-            "fxa-toolbar-menu-button",
             "downloads-button",
             "_3c078156-979c-498b-8990-85f7987dd929_-browser-action",
-            "simple-tab-groups_drive4ik-browser-action"
+            "simple-tab-groups_drive4ik-browser-action",
+            "reset-pbm-toolbar-button",
+            "logins-button",
+            "preferences-button",
+            "unified-extensions-button"
         ],
-        "toolbar-menubar": [
-            "menubar-items"
-        ],
-        "TabsToolbar": [
-            "tabbrowser-tabs",
-            "new-tab-button",
-            "alltabs-button"
-        ],
-        "PersonalToolbar": [
-            "personal-bookmarks"
-        ]
+        "toolbar-menubar": ["menubar-items"],
+        "TabsToolbar": ["tabbrowser-tabs", "new-tab-button"],
+        "vertical-tabs": [],
+        "PersonalToolbar": ["personal-bookmarks"]
     },
     "seen": [
         "save-to-pocket-button",
@@ -95,15 +94,20 @@
         "fdm_ffext2_freedownloadmanager_org-browser-action",
         "_9ce99d37-4a5e-409a-a04b-0f3f50491bc7_-browser-action",
         "_7962ff4a-5985-4cf2-9777-4bb642ad05b8_-browser-action",
-        "_dcb8caa2-63fa-41aa-a508-a45c5990ebdd_-browser-action"
+        "_dcb8caa2-63fa-41aa-a508-a45c5990ebdd_-browser-action",
+        "firefox-extension_steamdb_info-browser-action",
+        "webextension_metamask_io-browser-action",
+        "screenshot-button"
     ],
     "dirtyAreaCache": [
         "nav-bar",
         "PersonalToolbar",
         "toolbar-menubar",
         "TabsToolbar",
-        "widget-overflow-fixed-list"
+        "widget-overflow-fixed-list",
+        "unified-extensions-area",
+        "vertical-tabs"
     ],
-    "currentVersion": 17,
-    "newElementCount": 27
+    "currentVersion": 23,
+    "newElementCount": 30
 }

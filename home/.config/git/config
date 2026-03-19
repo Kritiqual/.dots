@@ -17,6 +17,12 @@
 	whitespace = cr-at-eol
 	safecrlf = false
 	pager = bat
+	compression = 0
+
+[https]
+	postbuffer = 524288000
+[http]
+	postBuffer = 524288000
 [diff]
 	tool = kitty
 	guitool = kitty.gui
@@ -29,7 +35,7 @@
 [difftool "kitty.gui"]
 	cmd = kitty kitty +kitten diff $LOCAL $REMOTE
 [color]
-	ui = always
+	ui = auto
 [color "advice"]
 	hint = yellow bold italic
 [color "branch"]

@@ -22,7 +22,7 @@ Press Command/Ctrl+R in Caprine to see your changes.
 	--base-ten: rgba(255, 255, 255, 0.1);
 	--base-nine: rgba(255, 255, 255, 0.09);
 	--container-color: #323232;
-	--container-dark-color: #282a36;
+	--container-dark-color: #191a2e;
 	--list-header-color: #222;
 	--blue: #0084ff;
 	--selected-conversation-background: linear-gradient(hsla(209, 110%, 45%, 0.9), hsla(209, 110%, 42%, 0.9));
@@ -48,12 +48,12 @@ body::-webkit-scrollbar {
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #6272a4;
+    background-color: #8d92ff;
     background-clip: content-box;
     border: 1px solid transparent;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #6272a4;
+    background-color: #8d92ff;
 }
 
 /* Dark theme from Ferdi user.css. /
@@ -61,30 +61,30 @@ body::-webkit-scrollbar {
 :root,
 .__fb-light-mode,
 .__fb-dark-mode {
-    --card-background: #282a36 !important;
+    --card-background: #191a2e !important;
     --comment-background: #44475a !important;
     --card-background-flat: #44475a !important;
-    --disabled-button-background: #6272a4 !important;
+    --disabled-button-background: #8d92ff !important;
     --divider: #44475a !important;
     --hosted-view-selected-state: #44475a !important;
     --hover-overlay: rgba(255, 255, 255, 0.05) !important;
     --media-inner-border: rgba(255, 255, 255, 0.1) !important;
-    --messenger-card-background: #282a36 !important;
+    --messenger-card-background: #191a2e !important;
     --messenger-reply-background: #44475a !important;
     --overlay-alpha-80: rgba(41, 41, 41, 0.8) !important;
     --popover-background: #44475a !important;
-    --primary-icon: #bd93f9 !important;
-    --primary-text: #f8f8f2 !important;
-    --scroll-thumb: #6272a4 !important;
-    --secondary-button-background: #6272a4 !important;
-    --secondary-icon: #6272a4 !important;
-    --secondary-text: #bd93f9 !important;
+    --primary-icon: #9b87fd !important;
+    --primary-text: #ffffff !important;
+    --scroll-thumb: #8d92ff !important;
+    --secondary-button-background: #8d92ff !important;
+    --secondary-icon: #8d92ff !important;
+    --secondary-text: #9b87fd !important;
     --shadow-1: rgba(0, 0, 0, 0.3) !important;
     --shadow-2: rgba(0, 0, 0, 0.4) !important;
     --shadow-5: rgba(0, 0, 0, 0.7) !important;
     --shadow-8: rgba(0, 0, 0, 1) !important;
     --shadow-inset: rgba(000, 000, 000, 0.5) !important;
-    --surface-background: #282a36 !important;
+    --surface-background: #191a2e !important;
     --wash: #44475a !important;
     --web-wash: #44475a !important;
 }
@@ -116,7 +116,7 @@ path[d='M18 30c-6.627 0-12-5.372-12-12 0-6.627 5.373-12 12-12 6.628 0 12 5.373 1
 
 /* App download */
 .oajrlxb2.q2y6ezfg.gcieejh5.bn081pho.humdl8nn.izx4hr6d.rq0escxv.nhd2j8a9.j83agx80.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.jb3vyjys.d1544ag0.qt6c0cv9.tw6a2znq.i1ao9s8h.esuyzwwr.f1sip0of.lzcic4wl.l9j0dhe7.abiwlrkh.p8dawk7l.beltcj47.p86d2i9g.aot14ch1.kzx2olss.cbu4d94t.taijpn5t.ni8dbmo4.stjgntxs.k4urcfbm.tv7at329 {
-    background: #50fa7b;
+    background: #20e3b2;
 }
 
 .sn0e7ne5 {

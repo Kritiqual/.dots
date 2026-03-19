@@ -17,7 +17,7 @@ hotedit = false
 shellcheck = false
 diff = false
 delmakedeps = false
-clean = false
+clean = true
 warn_unknowns = true
 nocheck = false
 skipdepcheck = false
@@ -26,4 +26,3 @@ reverse = false
 [backups]
 snapshots = "/home/kritiqual/.cache/aura/snapshots"
 automatic = true
-

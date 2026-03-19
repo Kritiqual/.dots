@@ -2,12 +2,13 @@ Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
-Xft.autohint: false
+Xft.autohint: true
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 xscreensaver.fade:   false
 xscreensaver.unfade: false
-! Xcursor.theme: Breeze_Hacked
+Xcursor.theme: Breeze_Hacked
+Xcursor.size: 24
 
 ! =======================
 ! Official Dracula Scheme

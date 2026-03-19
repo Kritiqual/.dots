@@ -2,6 +2,8 @@ from kitty.fast_data_types import Screen
 from kitty.rgb import Color
 from kitty.tab_bar import *
 
+# OS, tab, name, host, date
+
 # from kitty.tab_bar import DrawData, ExtraData, TabBarData, as_rgb, draw_title, draw_tab_with_powerline
 def _draw_left_status(
     draw_data: DrawData,

@@ -1,0 +1,115 @@
+#######################################################
+#/===================================================\#
+#|>                      FONTS                      <|#
+#\===================================================/#
+#######################################################
+##-----Fonts-------------------------------------------
+font-size = 24.0
+font-family = FiraCode Nerd Font
+# font-family-bold =
+# font-family-italic =
+# font-family-bold-italic =
+
+##-----Font styles-------------------------------------
+# font-style =
+# font-style-bold =
+# font-style-italic =
+# font-style-bold-italic =
+# font-synthetic-style =
+
+##-----Adjust w-h--------------------------------------
+adjust-cell-width = 0
+adjust-cell-height = 0
+adjust-font-baseline = 0
+
+adjust-underline-position = 0
+adjust-underline-thickness = 0
+
+adjust-strikethrough-position = 0
+adjust-strikethrough-thickness = 0
+
+adjust-overline-position = 0
+adjust-overline-thickness = 0
+
+adjust-box-thickness = 0
+
+##-----Font features-----------------------------------
+font-feature = calt, cv01, cv02, cv13, cv14, cv16, cv17, cv22, cv25, cv27, cv28, cv29, cv30, cv31, cv32, ss01, ss03, ss04, ss05, ss07, ss09, zero
+# calt, cv01, cv02, cv13, cv14, cv16, cv17, cv22, cv25, cv27, cv28, cv29, cv30, cv31, cv32, ss01, ss03, ss04, ss05, ss07, ss09, zero
+# font-codepoint-map =
+# font-thicken =
+# font-thicken-strength =
+# font-shaping-break =
+# alpha-blending =
+# grapheme-width-method =
+# freetype-load-flags =
+
+#######################################################
+#/===================================================\#
+#|>                     CURSORS                     <|#
+#\===================================================/#
+#######################################################
+adjust-cursor-height = 1
+adjust-cursor-thickness = 3
+cursor-color = #9b87fd
+cursor-opacity = 1
+cursor-style = bar
+cursor-style-blink = true
+cursor-text = #50fa7b
+cursor-click-to-move = true
+
+mouse-hide-while-typing = true
+scroll-to-bottom = keystroke, no-output
+mouse-shift-capture = false
+mouse-scroll-multiplier = 5
+
+theme = Edracula
+
+background-image = ""
+background-image-opacity =
+background-image-position = center
+background-image-fit = contain
+background-image-repeat = false
+background-opacity = 0.8
+background-opacity-cells = true
+background-blur = 64
+unfocused-split-opacity = 0.75
+# unfocused-split-fill =
+split-divider-color = #20e3b2
+# command =
+# initial-command =
+# env =
+# input =
+# wait-after-command = false
+# abnormal-command-exit-runtime =
+scrollback-limit = 512
+# link =
+# link-url =
+link-previews = true
+maximize = false
+fullscreen = false
+# title = "Ghostty"
+# class = "com.mitchellh.ghostty"
+# x11-instance-name =
+# working-directory =
+
+#######################################################
+#/===================================================\#
+#|>                KEYBOARD SHORTCUT                <|#
+#\===================================================/#
+#######################################################
+config-file = bindings/keyboard
+
+window-padding-x = 0
+window-padding-y = 0
+window-padding-balance = true
+# window-padding-color = extend
+window-vsync = true
+window-inherit-working-directory = false
+window-decoration = none
+# windows-title-font-family =
+
+selection-clear-on-typing = true
+selection-clear-on-copy = true
+# minimum-contrast =1.1
+# term=

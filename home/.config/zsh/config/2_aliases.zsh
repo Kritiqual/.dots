@@ -30,27 +30,20 @@ alias flighton='sudo rfkill block all'
 alias flightoff='sudo rfkill unblock all'
 
 ##-----Pacman & AUR helper-----------------------------
-## Aura still not support -l flag, until aura-rust released
-## I use paru until then ;)
 alias p='sudo pacman'
-alias a='sudo aura'
-alias y='yay'
+alias a='aura'
 alias u='paru'
 #<<~>>
 alias pu='p -Syy'
 # alias pu='a -Syy'
-# alias pu='y -Syy'
 # alias pu='u -Syy'
 #<<~>>
 # alias au='a -Au'
-# alias au='y -Sau'
 alias au='u -Sau'
 #<<~>>
 # alias up='a -Syu; a -Au'
-# alias up='y -Syu'
 alias up='u -Syu'
 #<<~>>
-# alias cc='y -Scc'
 alias cc='u -Scc'
 alias pc='paccache -ruk0 && paccache -rk1'
 #<<~>>
@@ -58,6 +51,7 @@ alias sc='a -Bc'
 alias co='p -Rns $(pacman -Qtdq)'
 alias ul='sudo rm /var/lib/pacman/db.lck'
 alias pkg='u -Qeq > ~/.dots/pkg.txt'
+alias ghp="gh ext list | cut -f 2 > ~/.dots/ghe.txt"
 alias unlocksudo='faillock --user kritiqual --reset'
 alias fixpython='u -S --rebuild --noconfirm $(u -Qoq /usr/lib/python)'
 
@@ -83,12 +77,12 @@ alias eg='grep -E --color=auto'
 alias fg='grep -F --color=auto'
 alias rg='rg --color=auto'
 #<<~>>
-exa_params=(
+eza_params=(
     '--git' '--icons' '--classify' '--color=always'
     '--group-directories-first' '--color-scale=all'
-    '--time-style=long-iso' '-I "*.git"' '--group'
+    '--time-style iso' '-I "*.git"'
 )
-alias l="exa -a $exa_params"
+alias l="eza -a $eza_params"
 alias ls="l -l"
 alias ld="ls -D"
 alias lt="ls -T"
@@ -98,8 +92,8 @@ alias lgs="lg -l"
 alias lgd="lgs -D"
 alias lgt="lgs -T"
 
-alias lx="exa -abFgHhilmUuS@ --git"
-if (( $+commands[exa] )) {
+alias lx="eza -abgHhilmUuS@ --git"
+if (( $+commands[eza] )) {
     auto-ls () { l -a; }
 
     [[ ${chpwd_functions[(r)auto-ls]} == auto-ls ]] ||
@@ -131,24 +125,30 @@ alias I_use_Arch_btw='ff'
 alias :q="exit"
 alias :Q=":q"
 alias cls='clear'
+alias clrscr='clear'
+alias cwd='pwd'
 alias cat='bat'
 alias rl!='exec "$SHELL" -l'
-alias ez='nvim ~/.dots/home/.config/zsh'
-alias ez!='code ~/.dots/home/.config/zsh'
+alias rn!='nvim ~/.dots/home/.config/zsh'
+alias rz!='code ~/.dots/home/.config/zsh'
 
 alias f='fzf'
 alias r='ranger'
-alias pq="pacman_fzf"
-alias m="man_fzf"
+alias y='yazi'
+alias b='bpytop'
+alias n='ncmpcpp'
+alias pf="pacman_fzf"
+alias mf="man_fzf"
 alias rf="ripgrep_fzf"
 alias ghf="githelp_fzf"
-alias ghe="gh ext list | cut -f 2 > ~/.dots/ghe.txt"
 
 alias cf='code --diff'
 alias kf='kitty +kitten diff'
 alias now='date +"[%T] %a, %d/%m/%Y"'
 alias ph='echo -e ${PATH//:/\\n}'
 alias fph='echo -e "${fpath// /\\n}"'
+
+alias t='tmux'
 
 alias net='ping -q archlinux.org -c 10 -i .002'
 alias jctl="journalctl -q -p 3 -xb"
@@ -188,3 +188,6 @@ alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
 ##-----Wget--------------------------------------------
 alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
+
+##-----Xargs-------------------------------------------
+alias xargs="xargs "
